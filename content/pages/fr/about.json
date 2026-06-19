@@ -1,0 +1,911 @@
+{
+  "page": "about",
+  "title": "About the Project — DIGI-METER",
+  "description": "Learn about DIGI-METER — an Erasmus+ Forward-Looking project that translates DigComp 2.2 into practical, AI-supported digital competence assessment tools for schools and VET providers.",
+  "translation_status": "needs_translation",
+  "strings": [
+    {
+      "key": "text_0",
+      "source": "Skip to main content",
+      "value": "Skip to main content"
+    },
+    {
+      "key": "text_1",
+      "source": "Co-funded by the",
+      "value": "Co-funded by the"
+    },
+    {
+      "key": "text_2",
+      "source": "European Union",
+      "value": "European Union"
+    },
+    {
+      "key": "text_3",
+      "source": "High Contrast",
+      "value": "High Contrast"
+    },
+    {
+      "key": "text_4",
+      "source": "A-",
+      "value": "A-"
+    },
+    {
+      "key": "text_5",
+      "source": "A+",
+      "value": "A+"
+    },
+    {
+      "key": "text_6",
+      "source": "Select language",
+      "value": "Select language"
+    },
+    {
+      "key": "text_7",
+      "source": "EN — English",
+      "value": "EN — English"
+    },
+    {
+      "key": "text_8",
+      "source": "EL — Ελληνικά",
+      "value": "EL — Ελληνικά"
+    },
+    {
+      "key": "text_9",
+      "source": "DE — Deutsch",
+      "value": "DE — Deutsch"
+    },
+    {
+      "key": "text_10",
+      "source": "FR — Français",
+      "value": "FR — Français"
+    },
+    {
+      "key": "text_11",
+      "source": "IT — Italiano",
+      "value": "IT — Italiano"
+    },
+    {
+      "key": "text_12",
+      "source": "PT — Português",
+      "value": "PT — Português"
+    },
+    {
+      "key": "text_13",
+      "source": "NL — Nederlands",
+      "value": "NL — Nederlands"
+    },
+    {
+      "key": "text_14",
+      "source": "🔍",
+      "value": "🔍"
+    },
+    {
+      "key": "text_15",
+      "source": "About",
+      "value": "About"
+    },
+    {
+      "key": "text_16",
+      "source": "News",
+      "value": "News"
+    },
+    {
+      "key": "text_17",
+      "source": "Outputs",
+      "value": "Outputs"
+    },
+    {
+      "key": "text_18",
+      "source": "Events",
+      "value": "Events"
+    },
+    {
+      "key": "text_19",
+      "source": "Partners",
+      "value": "Partners"
+    },
+    {
+      "key": "text_20",
+      "source": "Platform",
+      "value": "Platform"
+    },
+    {
+      "key": "text_21",
+      "source": "Contact",
+      "value": "Contact"
+    },
+    {
+      "key": "text_22",
+      "source": "Subscribe",
+      "value": "Subscribe"
+    },
+    {
+      "key": "text_23",
+      "source": "About the Project",
+      "value": "About the Project"
+    },
+    {
+      "key": "text_24",
+      "source": "Outputs & Resources",
+      "value": "Outputs & Resources"
+    },
+    {
+      "key": "text_25",
+      "source": "Events & Webinars",
+      "value": "Events & Webinars"
+    },
+    {
+      "key": "text_26",
+      "source": "Consortium Partners",
+      "value": "Consortium Partners"
+    },
+    {
+      "key": "text_27",
+      "source": "Platform Access",
+      "value": "Platform Access"
+    },
+    {
+      "key": "text_28",
+      "source": "News & Updates",
+      "value": "News & Updates"
+    },
+    {
+      "key": "text_29",
+      "source": "Contact Us",
+      "value": "Contact Us"
+    },
+    {
+      "key": "text_30",
+      "source": "Subscribe",
+      "value": "Subscribe"
+    },
+    {
+      "key": "text_31",
+      "source": "Home",
+      "value": "Home"
+    },
+    {
+      "key": "text_32",
+      "source": "›",
+      "value": "›"
+    },
+    {
+      "key": "text_33",
+      "source": "About the Project",
+      "value": "About the Project"
+    },
+    {
+      "key": "text_34",
+      "source": "Erasmus+ Forward-Looking · Grant No. 101259860",
+      "value": "Erasmus+ Forward-Looking · Grant No. 101259860"
+    },
+    {
+      "key": "text_35",
+      "source": "About",
+      "value": "About"
+    },
+    {
+      "key": "text_36",
+      "source": "DIGI-METER",
+      "value": "DIGI-METER"
+    },
+    {
+      "key": "text_37",
+      "source": "An EU-funded research and development project translating the DigComp 2.2 framework into practical, evidence-based digital competence assessment tools for European schools and VET providers.",
+      "value": "An EU-funded research and development project translating the DigComp 2.2 framework into practical, evidence-based digital competence assessment tools for European schools and VET providers."
+    },
+    {
+      "key": "text_38",
+      "source": "The Challenge",
+      "value": "The Challenge"
+    },
+    {
+      "key": "text_39",
+      "source": "Why DIGI-METER Exists",
+      "value": "Why DIGI-METER Exists"
+    },
+    {
+      "key": "text_40",
+      "source": "While the DigComp 2.2 framework clearly defines the digital competences citizens need in today's world, its practical use in European schools and vocational education and training remains fragmented. Schools lack reliable tools to measure where learners actually stand. Teachers struggle to connect framework descriptors to everyday classroom realities. Policymakers cannot compare performance data across institutions and borders.",
+      "value": "While the DigComp 2.2 framework clearly defines the digital competences citizens need in today's world, its practical use in European schools and vocational education and training remains fragmented. Schools lack reliable tools to measure where learners actually stand. Teachers struggle to connect framework descriptors to everyday classroom realities. Policymakers cannot compare performance data across institutions and borders."
+    },
+    {
+      "key": "text_41",
+      "source": "DIGI-METER bridges this gap. By translating DigComp 2.2 into measurable indicators, AI-supported assessment tools, and clear dashboards, the project equips every stakeholder — learner, educator, institution, and policymaker — with actionable insight into digital competence development.",
+      "value": "DIGI-METER bridges this gap. By translating DigComp 2.2 into measurable indicators, AI-supported assessment tools, and clear dashboards, the project equips every stakeholder — learner, educator, institution, and policymaker — with actionable insight into digital competence development."
+    },
+    {
+      "key": "text_42",
+      "source": "· EU Framework",
+      "value": "· EU Framework"
+    },
+    {
+      "key": "text_43",
+      "source": "DigComp 2.2",
+      "value": "DigComp 2.2"
+    },
+    {
+      "key": "text_44",
+      "source": "· AI Design",
+      "value": "· AI Design"
+    },
+    {
+      "key": "text_45",
+      "source": "Ethics-First",
+      "value": "Ethics-First"
+    },
+    {
+      "key": "text_46",
+      "source": "Our Approach",
+      "value": "Our Approach"
+    },
+    {
+      "key": "text_47",
+      "source": "Evidence-Based, Ethics-First",
+      "value": "Evidence-Based, Ethics-First"
+    },
+    {
+      "key": "text_48",
+      "source": "DIGI-METER develops AI-supported self-assessment tools, educator dashboards, and policy-ready indicator frameworks — all built on a foundation of rigorous research, inclusive design, and responsible AI principles. Our approach is grounded in real classrooms, validated across countries, and designed to grow alongside learners.",
+      "value": "DIGI-METER develops AI-supported self-assessment tools, educator dashboards, and policy-ready indicator frameworks — all built on a foundation of rigorous research, inclusive design, and responsible AI principles. Our approach is grounded in real classrooms, validated across countries, and designed to grow alongside learners."
+    },
+    {
+      "key": "text_49",
+      "source": "Ethics by Design",
+      "value": "Ethics by Design"
+    },
+    {
+      "key": "text_50",
+      "source": "Every DIGI-METER tool is built with transparency, fairness, GDPR compliance, and explainability as core design requirements — not afterthoughts. Learners always retain control over their data.",
+      "value": "Every DIGI-METER tool is built with transparency, fairness, GDPR compliance, and explainability as core design requirements — not afterthoughts. Learners always retain control over their data."
+    },
+    {
+      "key": "text_51",
+      "source": "Project Objectives",
+      "value": "Project Objectives"
+    },
+    {
+      "key": "text_52",
+      "source": "What We Set Out to Achieve",
+      "value": "What We Set Out to Achieve"
+    },
+    {
+      "key": "text_53",
+      "source": "Five core objectives guide the DIGI-METER project. Final wording will be aligned with the approved project application.",
+      "value": "Five core objectives guide the DIGI-METER project. Final wording will be aligned with the approved project application."
+    },
+    {
+      "key": "text_54",
+      "source": "01",
+      "value": "01"
+    },
+    {
+      "key": "text_55",
+      "source": "Translate DigComp 2.2 into Measurable Indicators",
+      "value": "Translate DigComp 2.2 into Measurable Indicators"
+    },
+    {
+      "key": "text_56",
+      "source": "Turn the DigComp 2.2 framework into measurable indicators and practical assessment tools for schools and vocational education and training.",
+      "value": "Turn the DigComp 2.2 framework into measurable indicators and practical assessment tools for schools and vocational education and training."
+    },
+    {
+      "key": "text_57",
+      "source": "02",
+      "value": "02"
+    },
+    {
+      "key": "text_58",
+      "source": "Develop AI-Supported Self-Assessment Tools",
+      "value": "Develop AI-Supported Self-Assessment Tools"
+    },
+    {
+      "key": "text_59",
+      "source": "Develop AI-supported self-assessment tools that give learners clear, personalised feedback on their digital competences.",
+      "value": "Develop AI-supported self-assessment tools that give learners clear, personalised feedback on their digital competences."
+    },
+    {
+      "key": "text_60",
+      "source": "03",
+      "value": "03"
+    },
+    {
+      "key": "text_61",
+      "source": "Create a Teacher Dashboard & Open Resources",
+      "value": "Create a Teacher Dashboard & Open Resources"
+    },
+    {
+      "key": "text_62",
+      "source": "Provide a teacher dashboard and open resources that help schools, VET providers, and policymakers understand, monitor, and improve digital skills.",
+      "value": "Provide a teacher dashboard and open resources that help schools, VET providers, and policymakers understand, monitor, and improve digital skills."
+    },
+    {
+      "key": "text_63",
+      "source": "04",
+      "value": "04"
+    },
+    {
+      "key": "text_64",
+      "source": "Embed Ethics, Inclusion & Data Protection by Design",
+      "value": "Embed Ethics, Inclusion & Data Protection by Design"
+    },
+    {
+      "key": "text_65",
+      "source": "Follow an ethics-by-design approach with attention to transparency, GDPR compliance, fairness, explainability, and user control, so that digital assessment is trustworthy, human-centred, and accessible to diverse learners.",
+      "value": "Follow an ethics-by-design approach with attention to transparency, GDPR compliance, fairness, explainability, and user control, so that digital assessment is trustworthy, human-centred, and accessible to diverse learners."
+    },
+    {
+      "key": "text_66",
+      "source": "05",
+      "value": "05"
+    },
+    {
+      "key": "text_67",
+      "source": "Validate Across European Contexts & Inform Policy",
+      "value": "Validate Across European Contexts & Inform Policy"
+    },
+    {
+      "key": "text_68",
+      "source": "Test and validate the tools across European contexts, supporting learners, teachers, education providers, and policy stakeholders in strengthening digital competence across Europe.",
+      "value": "Test and validate the tools across European contexts, supporting learners, teachers, education providers, and policy stakeholders in strengthening digital competence across Europe."
+    },
+    {
+      "key": "text_69",
+      "source": "The EU Framework",
+      "value": "The EU Framework"
+    },
+    {
+      "key": "text_70",
+      "source": "Understanding DigComp 2.2",
+      "value": "Understanding DigComp 2.2"
+    },
+    {
+      "key": "text_71",
+      "source": "DigComp 2.2 is the European Digital Competence Framework for Citizens, developed by the Joint Research Centre of the European Commission. It describes 21 digital competences across 5 areas and 8 proficiency levels — from Foundation (Level 1) to Highly Specialised (Level 8). DIGI-METER operationalises this framework into measurable, classroom-ready indicators.",
+      "value": "DigComp 2.2 is the European Digital Competence Framework for Citizens, developed by the Joint Research Centre of the European Commission. It describes 21 digital competences across 5 areas and 8 proficiency levels — from Foundation (Level 1) to Highly Specialised (Level 8). DIGI-METER operationalises this framework into measurable, classroom-ready indicators."
+    },
+    {
+      "key": "text_72",
+      "source": "Area",
+      "value": "Area"
+    },
+    {
+      "key": "text_73",
+      "source": "Focus",
+      "value": "Focus"
+    },
+    {
+      "key": "text_74",
+      "source": "Key Competences",
+      "value": "Key Competences"
+    },
+    {
+      "key": "text_75",
+      "source": "Area 1",
+      "value": "Area 1"
+    },
+    {
+      "key": "text_76",
+      "source": "Information & Data Literacy",
+      "value": "Information & Data Literacy"
+    },
+    {
+      "key": "text_77",
+      "source": "Browsing, searching, filtering; Evaluating data; Managing data",
+      "value": "Browsing, searching, filtering; Evaluating data; Managing data"
+    },
+    {
+      "key": "text_78",
+      "source": "Area 2",
+      "value": "Area 2"
+    },
+    {
+      "key": "text_79",
+      "source": "Communication & Collaboration",
+      "value": "Communication & Collaboration"
+    },
+    {
+      "key": "text_80",
+      "source": "Interacting; Sharing; Engaging citizenship; Collaborating; Netiquette; Managing digital identity",
+      "value": "Interacting; Sharing; Engaging citizenship; Collaborating; Netiquette; Managing digital identity"
+    },
+    {
+      "key": "text_81",
+      "source": "Area 3",
+      "value": "Area 3"
+    },
+    {
+      "key": "text_82",
+      "source": "Digital Content Creation",
+      "value": "Digital Content Creation"
+    },
+    {
+      "key": "text_83",
+      "source": "Developing content; Integrating and re-elaborating; Copyright and licences; Programming",
+      "value": "Developing content; Integrating and re-elaborating; Copyright and licences; Programming"
+    },
+    {
+      "key": "text_84",
+      "source": "Area 4",
+      "value": "Area 4"
+    },
+    {
+      "key": "text_85",
+      "source": "Safety",
+      "value": "Safety"
+    },
+    {
+      "key": "text_86",
+      "source": "Protecting devices; Protecting personal data; Protecting health and well-being; Protecting the environment",
+      "value": "Protecting devices; Protecting personal data; Protecting health and well-being; Protecting the environment"
+    },
+    {
+      "key": "text_87",
+      "source": "Area 5",
+      "value": "Area 5"
+    },
+    {
+      "key": "text_88",
+      "source": "Problem Solving",
+      "value": "Problem Solving"
+    },
+    {
+      "key": "text_89",
+      "source": "Solving technical problems; Identifying needs; Creatively using digital tools; Identifying digital competence gaps",
+      "value": "Solving technical problems; Identifying needs; Creatively using digital tools; Identifying digital competence gaps"
+    },
+    {
+      "key": "text_90",
+      "source": "Project Facts",
+      "value": "Project Facts"
+    },
+    {
+      "key": "text_91",
+      "source": "Programme",
+      "value": "Programme"
+    },
+    {
+      "key": "text_92",
+      "source": "Erasmus+ Forward-Looking Projects",
+      "value": "Erasmus+ Forward-Looking Projects"
+    },
+    {
+      "key": "text_93",
+      "source": "Grant Agreement",
+      "value": "Grant Agreement"
+    },
+    {
+      "key": "text_94",
+      "source": "101259860",
+      "value": "101259860"
+    },
+    {
+      "key": "text_95",
+      "source": "Duration",
+      "value": "Duration"
+    },
+    {
+      "key": "text_96",
+      "source": "36 months",
+      "value": "36 months"
+    },
+    {
+      "key": "text_97",
+      "source": "Target Groups",
+      "value": "Target Groups"
+    },
+    {
+      "key": "text_98",
+      "source": "Learners, Educators, Institutions, Policymakers",
+      "value": "Learners, Educators, Institutions, Policymakers"
+    },
+    {
+      "key": "text_99",
+      "source": "Framework",
+      "value": "Framework"
+    },
+    {
+      "key": "text_100",
+      "source": "DigComp 2.2 (JRC/European Commission)",
+      "value": "DigComp 2.2 (JRC/European Commission)"
+    },
+    {
+      "key": "text_101",
+      "source": "Coordinator",
+      "value": "Coordinator"
+    },
+    {
+      "key": "text_102",
+      "source": "Center for Social Innovation (CSI), Cyprus",
+      "value": "Center for Social Innovation (CSI), Cyprus"
+    },
+    {
+      "key": "text_103",
+      "source": "Work Packages",
+      "value": "Work Packages"
+    },
+    {
+      "key": "text_104",
+      "source": "Work Plan Overview",
+      "value": "Work Plan Overview"
+    },
+    {
+      "key": "text_105",
+      "source": "WP1",
+      "value": "WP1"
+    },
+    {
+      "key": "text_106",
+      "source": "Work Package 1",
+      "value": "Work Package 1"
+    },
+    {
+      "key": "text_107",
+      "source": "[Work package title and summary — to be confirmed from the approved project application]",
+      "value": "[Work package title and summary — to be confirmed from the approved project application]"
+    },
+    {
+      "key": "text_108",
+      "source": "WP2",
+      "value": "WP2"
+    },
+    {
+      "key": "text_109",
+      "source": "Work Package 2",
+      "value": "Work Package 2"
+    },
+    {
+      "key": "text_110",
+      "source": "[Work package title and summary — to be confirmed from the approved project application]",
+      "value": "[Work package title and summary — to be confirmed from the approved project application]"
+    },
+    {
+      "key": "text_111",
+      "source": "WP3",
+      "value": "WP3"
+    },
+    {
+      "key": "text_112",
+      "source": "Work Package 3",
+      "value": "Work Package 3"
+    },
+    {
+      "key": "text_113",
+      "source": "[Work package title and summary — to be confirmed from the approved project application]",
+      "value": "[Work package title and summary — to be confirmed from the approved project application]"
+    },
+    {
+      "key": "text_114",
+      "source": "WP4",
+      "value": "WP4"
+    },
+    {
+      "key": "text_115",
+      "source": "Work Package 4",
+      "value": "Work Package 4"
+    },
+    {
+      "key": "text_116",
+      "source": "[Work package title and summary — to be confirmed from the approved project application]",
+      "value": "[Work package title and summary — to be confirmed from the approved project application]"
+    },
+    {
+      "key": "text_117",
+      "source": "WP5",
+      "value": "WP5"
+    },
+    {
+      "key": "text_118",
+      "source": "Communication, Dissemination & Exploitation",
+      "value": "Communication, Dissemination & Exploitation"
+    },
+    {
+      "key": "text_119",
+      "source": "Co-led by Outside Media & Knowledge — project branding, website, communication and dissemination of project results.",
+      "value": "Co-led by Outside Media & Knowledge — project branding, website, communication and dissemination of project results."
+    },
+    {
+      "key": "text_120",
+      "source": "Current Status",
+      "value": "Current Status"
+    },
+    {
+      "key": "text_121",
+      "source": "Project status updates will be published in the News section as the project progresses.",
+      "value": "Project status updates will be published in the News section as the project progresses."
+    },
+    {
+      "key": "text_122",
+      "source": "Who Benefits",
+      "value": "Who Benefits"
+    },
+    {
+      "key": "text_123",
+      "source": "DIGI-METER Serves Four Key Groups",
+      "value": "DIGI-METER Serves Four Key Groups"
+    },
+    {
+      "key": "text_124",
+      "source": "Learners",
+      "value": "Learners"
+    },
+    {
+      "key": "text_125",
+      "source": "Personalised self-assessment results and feedback helping them understand where they are and what to focus on next in their digital competence journey.",
+      "value": "Personalised self-assessment results and feedback helping them understand where they are and what to focus on next in their digital competence journey."
+    },
+    {
+      "key": "text_126",
+      "source": "Educators",
+      "value": "Educators"
+    },
+    {
+      "key": "text_127",
+      "source": "Class-level dashboards showing aggregate competence data, supporting lesson planning, CPD decisions, and early identification of students needing targeted support.",
+      "value": "Class-level dashboards showing aggregate competence data, supporting lesson planning, CPD decisions, and early identification of students needing targeted support."
+    },
+    {
+      "key": "text_128",
+      "source": "Institutions",
+      "value": "Institutions"
+    },
+    {
+      "key": "text_129",
+      "source": "School and VET-centre level reporting enabling institutional leaders to benchmark digital competence levels, demonstrate progress, and plan strategic interventions.",
+      "value": "School and VET-centre level reporting enabling institutional leaders to benchmark digital competence levels, demonstrate progress, and plan strategic interventions."
+    },
+    {
+      "key": "text_130",
+      "source": "Policymakers",
+      "value": "Policymakers"
+    },
+    {
+      "key": "text_131",
+      "source": "System-level, cross-country aggregated data and evidence-based policy briefs to inform national digital education strategies and EU-level digital competence policy.",
+      "value": "System-level, cross-country aggregated data and evidence-based policy briefs to inform national digital education strategies and EU-level digital competence policy."
+    },
+    {
+      "key": "text_132",
+      "source": "Get Involved",
+      "value": "Get Involved"
+    },
+    {
+      "key": "text_133",
+      "source": "Want to Know More or Participate?",
+      "value": "Want to Know More or Participate?"
+    },
+    {
+      "key": "text_134",
+      "source": "Whether you represent a school, VET provider, research institution, or education authority — we want to hear from you. Contact us to learn about pilot participation, research collaboration, or staying updated on project progress.",
+      "value": "Whether you represent a school, VET provider, research institution, or education authority — we want to hear from you. Contact us to learn about pilot participation, research collaboration, or staying updated on project progress."
+    },
+    {
+      "key": "text_135",
+      "source": "Contact Us",
+      "value": "Contact Us"
+    },
+    {
+      "key": "text_136",
+      "source": "Meet the Partners",
+      "value": "Meet the Partners"
+    },
+    {
+      "key": "text_137",
+      "source": "Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project translating DigComp 2.2 into actionable, trustworthy educational testing.",
+      "value": "Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project translating DigComp 2.2 into actionable, trustworthy educational testing."
+    },
+    {
+      "key": "text_138",
+      "source": "Quick Links",
+      "value": "Quick Links"
+    },
+    {
+      "key": "text_139",
+      "source": "About the Project",
+      "value": "About the Project"
+    },
+    {
+      "key": "text_140",
+      "source": "Consortium Partners",
+      "value": "Consortium Partners"
+    },
+    {
+      "key": "text_141",
+      "source": "Outputs & Resources",
+      "value": "Outputs & Resources"
+    },
+    {
+      "key": "text_142",
+      "source": "Events & Webinars",
+      "value": "Events & Webinars"
+    },
+    {
+      "key": "text_143",
+      "source": "Platform Access",
+      "value": "Platform Access"
+    },
+    {
+      "key": "text_144",
+      "source": "News & Updates",
+      "value": "News & Updates"
+    },
+    {
+      "key": "text_145",
+      "source": "Contact Us",
+      "value": "Contact Us"
+    },
+    {
+      "key": "text_146",
+      "source": "This Website",
+      "value": "This Website"
+    },
+    {
+      "key": "text_147",
+      "source": "This website is designed, hosted, and operated by Outside Media & Knowledge (Germany).",
+      "value": "This website is designed, hosted, and operated by Outside Media & Knowledge (Germany)."
+    },
+    {
+      "key": "text_148",
+      "source": "Germany",
+      "value": "Germany"
+    },
+    {
+      "key": "text_149",
+      "source": "Outside Media & Knowledge",
+      "value": "Outside Media & Knowledge"
+    },
+    {
+      "key": "text_150",
+      "source": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)",
+      "value": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)"
+    },
+    {
+      "key": "text_151",
+      "source": "© 2026 DIGI-METER Consortium. All rights reserved.",
+      "value": "© 2026 DIGI-METER Consortium. All rights reserved."
+    },
+    {
+      "key": "text_152",
+      "source": "Privacy Policy",
+      "value": "Privacy Policy"
+    },
+    {
+      "key": "text_153",
+      "source": "Cookie Policy",
+      "value": "Cookie Policy"
+    },
+    {
+      "key": "text_154",
+      "source": "Impressum",
+      "value": "Impressum"
+    }
+  ],
+  "attributes": [
+    {
+      "index": 0,
+      "attribute": "aria-label",
+      "source": "Co-funded by the European Union logo",
+      "value": "Co-funded by the European Union logo"
+    },
+    {
+      "index": 1,
+      "attribute": "aria-label",
+      "source": "Accessibility controls",
+      "value": "Accessibility controls"
+    },
+    {
+      "index": 2,
+      "attribute": "aria-label",
+      "source": "Decrease text size",
+      "value": "Decrease text size"
+    },
+    {
+      "index": 3,
+      "attribute": "aria-label",
+      "source": "Increase text size",
+      "value": "Increase text size"
+    },
+    {
+      "index": 4,
+      "attribute": "aria-label",
+      "source": "Select language",
+      "value": "Select language"
+    },
+    {
+      "index": 5,
+      "attribute": "aria-label",
+      "source": "Search content",
+      "value": "Search content"
+    },
+    {
+      "index": 6,
+      "attribute": "aria-label",
+      "source": "Submit search",
+      "value": "Submit search"
+    },
+    {
+      "index": 7,
+      "attribute": "aria-label",
+      "source": "DIGI-METER homepage link",
+      "value": "DIGI-METER homepage link"
+    },
+    {
+      "index": 8,
+      "attribute": "aria-label",
+      "source": "Main site navigation",
+      "value": "Main site navigation"
+    },
+    {
+      "index": 9,
+      "attribute": "aria-label",
+      "source": "Toggle mobile menu",
+      "value": "Toggle mobile menu"
+    },
+    {
+      "index": 10,
+      "attribute": "aria-label",
+      "source": "Close navigation menu",
+      "value": "Close navigation menu"
+    },
+    {
+      "index": 11,
+      "attribute": "aria-label",
+      "source": "Breadcrumb",
+      "value": "Breadcrumb"
+    },
+    {
+      "index": 0,
+      "attribute": "title",
+      "source": "Toggle High Contrast Theme",
+      "value": "Toggle High Contrast Theme"
+    },
+    {
+      "index": 1,
+      "attribute": "title",
+      "source": "Decrease Text Size",
+      "value": "Decrease Text Size"
+    },
+    {
+      "index": 2,
+      "attribute": "title",
+      "source": "Increase Text Size",
+      "value": "Increase Text Size"
+    },
+    {
+      "index": 0,
+      "attribute": "placeholder",
+      "source": "Search site...",
+      "value": "Search site..."
+    },
+    {
+      "index": 0,
+      "attribute": "alt",
+      "source": "DIGI-METER Logo",
+      "value": "DIGI-METER Logo"
+    },
+    {
+      "index": 1,
+      "attribute": "alt",
+      "source": "Students using tablets in a bright modern classroom",
+      "value": "Students using tablets in a bright modern classroom"
+    },
+    {
+      "index": 2,
+      "attribute": "alt",
+      "source": "Professor explaining technology interface to students",
+      "value": "Professor explaining technology interface to students"
+    },
+    {
+      "index": 3,
+      "attribute": "alt",
+      "source": "Diverse group of students working together in a library",
+      "value": "Diverse group of students working together in a library"
+    },
+    {
+      "index": 4,
+      "attribute": "alt",
+      "source": "DIGI-METER Logo Footer",
+      "value": "DIGI-METER Logo Footer"
+    }
+  ]
+}

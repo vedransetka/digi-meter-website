@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News &amp; Updates — DIGI-METER</title>
+  <meta name="description" content="Latest news, field stories, and technical updates from the DIGI-METER Erasmus+ project — covering research progress, pilot activities, and digital competence insights.">
+  <link rel="icon" type="image/png" href="assets/logo-digimeter.png">
+  <link rel="stylesheet" href="css/style.css?v=20260612l">
+  <style>
+    .page-hero {
+      background-color: var(--c-charcoal);
+      background-image:
+        radial-gradient(ellipse 60% 70% at 100% 0%, rgba(83,200,234,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 50% at 0% 100%, rgba(115,64,153,0.10) 0%, transparent 60%),
+        linear-gradient(to right, rgba(13,24,43,0.97) 0%, rgba(13,24,43,0.85) 45%, rgba(13,24,43,0.28) 100%),
+        url(assets/photos/multiracial-students-using-laptop.jpg);
+      background-size: auto, auto, auto, cover;
+      background-position: 0 0, 0 0, 0 0, center right;
+      padding: clamp(60px, 8vw, 110px) 0 clamp(40px, 5vw, 70px);
+    }
+    .page-hero-eyebrow { font-family: var(--ff-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--c-sky); font-weight: 700; display: block; margin-bottom: 16px; }
+    .page-hero h1 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; color: #fff; line-height: 1.15; margin: 0 0 16px; }
+    .page-hero p { font-size: clamp(0.95rem, 1.5vw, 1.1rem); color: rgba(255,255,255,0.65); max-width: 660px; line-height: 1.6; }
+    .page-breadcrumb { font-family: var(--ff-mono); font-size: 0.68rem; color: rgba(255,255,255,0.68); margin-bottom: 24px; display: flex; gap: 8px; align-items: center; }
+    .page-breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .page-breadcrumb a:hover { color: var(--c-sky); }
+    .page-breadcrumb span { color: rgba(255,255,255,0.6); }
+
+    /* News grid */
+    .news-page-grid { display: grid; grid-template-columns: 1fr; gap: 28px; }
+    @media (min-width: 768px) { .news-page-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 1100px) { .news-page-grid { grid-template-columns: 1fr 1fr 1fr; } }
+
+    /* Featured post */
+    .news-featured { display: grid; grid-template-columns: 1fr; gap: 28px; margin-bottom: var(--space-xl); }
+    @media (min-width: 768px) { .news-featured { grid-template-columns: 1.6fr 1fr; } }
+    .news-featured-card { background: #fff; border: 1px solid rgba(13,24,43,0.07); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; }
+    .news-featured-card .nfc-img { height: 260px; overflow: hidden; }
+    .news-featured-card .nfc-img img { width: 100%; height: 100%; object-fit: cover; }
+    .news-featured-card .nfc-body { padding: 28px; flex: 1; display: flex; flex-direction: column; gap: 12px; }
+    .news-featured-card .nfc-tag { font-family: var(--ff-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.12em; padding: 3px 10px; border-radius: 20px; font-weight: 700; display: inline-block; }
+    .nfc-tag.featured { background: rgba(83,200,234,0.1); border: 1px solid rgba(83,200,234,0.25); color: var(--c-charcoal); }
+    .nfc-tag.technical { background: rgba(115,64,153,0.1); border: 1px solid rgba(115,64,153,0.2); color: var(--c-purple); }
+    .nfc-tag.field { background: rgba(40,180,100,0.1); border: 1px solid rgba(40,180,100,0.22); color: #1a7a40; }
+    .nfc-tag.policy { background: rgba(13,24,43,0.07); border: 1px solid rgba(13,24,43,0.15); color: var(--c-slate); }
+    .news-featured-card h2 { font-size: 1.2rem; font-weight: 700; color: var(--c-charcoal); margin: 0; line-height: 1.35; }
+    .news-featured-card h3 { font-size: 1rem; font-weight: 700; color: var(--c-charcoal); margin: 0; line-height: 1.35; }
+    .news-featured-card p { font-size: 1rem; color: var(--c-slate); line-height: 1.6; margin: 0; flex: 1; }
+    .nfc-meta { display: flex; justify-content: space-between; align-items: center; font-size: 1rem; color: var(--c-slate); }
+    .nfc-read-link { color: var(--c-sky); font-weight: 600; font-size: 1rem; text-decoration: none; }
+    .nfc-read-link:hover { color: var(--c-charcoal); }
+
+    /* Sidebar articles */
+    .news-sidebar { display: flex; flex-direction: column; gap: 20px; }
+    .news-sidebar-item { background: #fff; border: 1px solid rgba(13,24,43,0.07); border-radius: 12px; padding: 20px; display: flex; flex-direction: column; gap: 8px; }
+    .news-sidebar-item h3 { font-size: 1rem; font-weight: 700; color: var(--c-charcoal); margin: 0; line-height: 1.35; }
+    .news-sidebar-item p { font-size: 1rem; color: var(--c-slate); margin: 0; line-height: 1.5; flex: 1; }
+    .news-sidebar-item .ns-meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.72rem; color: var(--c-slate); }
+
+    /* HC: news cards stay white "content cards" with BLACK text everywhere (heading, tag, body, date, read link) */
+    html.high-contrast .news-featured-card,
+    html.high-contrast .news-sidebar-item,
+    html.high-contrast .news-page-grid .card-news { background: #ffffff !important; border: 2px solid #ffffff !important; }
+    html.high-contrast .news-featured-card *,
+    html.high-contrast .news-sidebar-item *,
+    html.high-contrast .news-page-grid .card-news * { color: #000000 !important; }
+    /* keep the category-tag pills legible: black text on their light tint */
+    html.high-contrast .nfc-tag,
+    html.high-contrast .news-card-tag { border-color: rgba(0,0,0,0.3) !important; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <div class="top-bar" id="top-utility-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <div class="eu-badge-header" role="img" aria-label="Co-funded by the European Union logo">
+          <svg class="eu-flag-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" aria-hidden="true" focusable="false"><rect width="36" height="24" fill="#003399"/><g fill="#FFCC00"><polygon transform="translate(18,4)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(26,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(18,20)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(10,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/></g></svg>
+          <span class="eu-text">Co-funded by the<br>European Union</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="a11y-widget" aria-label="Accessibility controls">
+          <button class="a11y-btn" id="contrast-toggle" aria-pressed="false" title="Toggle High Contrast Theme">High Contrast</button>
+          <button class="a11y-btn" id="size-decrease" aria-label="Decrease text size">A-</button>
+          <button class="a11y-btn" id="size-increase" aria-label="Increase text size">A+</button>
+        </div>
+        <!-- Language Selector (project languages — confirm final list with consortium) -->
+        <div class="language-selector">
+          <label for="lang-select" class="sr-only">Select language</label>
+          <select id="lang-select" aria-label="Select language">
+            <option value="en" selected>EN — English</option>
+            <option value="el">EL — Ελληνικά</option>
+            <option value="de">DE — Deutsch</option>
+            <option value="fr">FR — Français</option>
+            <option value="it">IT — Italiano</option>
+            <option value="pt">PT — Português</option>
+            <option value="nl">NL — Nederlands</option>
+          </select>
+        </div>
+
+        <form class="search-box" role="search" onsubmit="event.preventDefault(); showToast(\'Site search will be available at launch.\', \'info\');">
+          <input type="search" class="search-input" placeholder="Search site..." aria-label="Search content">
+          <button type="submit" class="search-btn" aria-label="Submit search">🔍</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo"><img src="assets/logo-digimeter.png" alt="DIGI-METER Logo"></a>
+      <nav class="main-nav" aria-label="Main site navigation">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="news.html" class="nav-link active">News</a>
+        <a href="outputs.html" class="nav-link">Outputs</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="partners.html" class="nav-link">Partners</a>
+        <a href="platform.html" class="nav-link">Platform</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-cta"><a href="contact.html" class="btn btn-primary" style="padding: 0.58rem 1.4rem; font-size: 1rem;">Subscribe</a></div>
+      <button class="burger-menu" id="burger-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav-panel">
+        <span class="burger-bar" style="background-color: #fff;"></span><span class="burger-bar" style="background-color: #fff;"></span><span class="burger-bar" style="background-color: #fff;"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav-panel" id="mobile-nav-panel">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <ul class="mobile-menu">
+      <li><a href="about.html" class="mobile-link">About the Project</a></li>
+      <li><a href="outputs.html" class="mobile-link">Outputs &amp; Resources</a></li>
+      <li><a href="events.html" class="mobile-link">Events &amp; Webinars</a></li>
+      <li><a href="partners.html" class="mobile-link">Consortium Partners</a></li>
+      <li><a href="platform.html" class="mobile-link">Platform Access</a></li>
+      <li><a href="news.html" class="mobile-link">News &amp; Updates</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+    <div class="mobile-cta"><a href="contact.html" class="btn btn-primary" style="width:100%; text-align:center;">Subscribe</a></div>
+  </div>
+
+  <main id="main-content">
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="page-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span>›</span><span>News &amp; Updates</span>
+        </nav>
+        <span class="page-hero-eyebrow">Project Stories · Field Reports · Technical Blog</span>
+        <h1>News &amp;<br>Updates</h1>
+        <p>Follow the latest from the DIGI-METER consortium — research insights, field stories from pilot schools, technical developments, and project milestones.</p>
+      </div>
+    </section>
+
+    <section class="section section-pad section-light">
+      <div class="container">
+
+        <!-- Featured + sidebar layout -->
+        <div class="news-featured">
+          <!-- Featured article -->
+          <article class="news-featured-card">
+            <div class="nfc-img">
+              <img src="assets/photos/four-smiling-multiethnic-students.jpg" alt="Four smiling multiethnic students using laptop and tablet together">
+            </div>
+            <div class="nfc-body">
+              <span class="nfc-tag featured">Project News</span>
+              <h2>[Featured article title — to be provided]</h2>
+              <p>[Short description — to be provided before publication]</p>
+              <div class="nfc-meta">
+                <span>[Date TBC]</span>
+                <a href="#" onclick="event.preventDefault(); showToast('Full article will be published soon.', 'info')" class="nfc-read-link">Read Full Story →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sidebar articles -->
+          <div class="news-sidebar">
+            <article class="news-sidebar-item">
+              <span class="nfc-tag technical" style="align-self: flex-start;">Technical Blog</span>
+              <h3>[Article title — to be provided]</h3>
+              <p>[Short description — to be provided before publication]</p>
+              <div class="ns-meta">
+                <span>[Date TBC]</span>
+                <a href="#" onclick="event.preventDefault(); showToast('Full article will be published soon.', 'info')" class="nfc-read-link">Read →</a>
+              </div>
+            </article>
+            <article class="news-sidebar-item">
+              <span class="nfc-tag field" style="align-self: flex-start;">Field Story</span>
+              <h3>[Article title — to be provided]</h3>
+              <p>[Short description — to be provided before publication]</p>
+              <div class="ns-meta">
+                <span>[Date TBC]</span>
+                <a href="#" onclick="event.preventDefault(); showToast('Full article will be published soon.', 'info')" class="nfc-read-link">Read →</a>
+              </div>
+            </article>
+            <article class="news-sidebar-item">
+              <span class="nfc-tag policy" style="align-self: flex-start;">Policy Insight</span>
+              <h3>[Article title — to be provided]</h3>
+              <p>[Short description — to be provided before publication]</p>
+              <div class="ns-meta">
+                <span>[Date TBC]</span>
+                <a href="#" onclick="event.preventDefault(); showToast('Full article will be published soon.', 'info')" class="nfc-read-link">Read →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- All recent posts grid -->
+        <div class="block" style="margin-top: var(--space-xl);">
+          <span class="eyebrow">All Stories</span>
+          <h2>More from the Project</h2>
+        </div>
+
+        <div class="news-page-grid" style="margin-top: var(--space-m);">
+
+          <article class="card-news">
+            <div class="news-thumb">
+              <img src="assets/photos/university-students-in-classroom.jpg" alt="University students in a classroom setting with laptops">
+            </div>
+            <div class="news-card-content">
+              <span class="news-card-tag">Research Update</span>
+              <h3 class="news-card-title">[Article title — to be provided]</h3>
+              <p class="news-card-excerpt">[Short description — to be provided before publication]</p>
+              <div class="news-card-meta">
+                <span>[Date TBC]</span>
+                <a href="#" onclick="event.preventDefault(); showToast('Full article coming soon.', 'info')" class="news-card-link">Read More ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-news">
+            <div class="news-thumb">
+              <img src="assets/photos/professional-woman-in-front.jpg" alt="Professional woman in front of an AI display interface">
+            </div>
+            <div class="news-card-content">
+              <span class="news-card-tag">Technical Blog</span>
+              <h3 class="news-card-title">[Article title — to be provided]</h3>
+              <p class="news-card-excerpt">[Short description — to be provided before publication]</p>
+              <div class="news-card-meta">
+                <span>[Date TBC]</span>
+                <a href="#" onclick="event.preventDefault(); showToast('Full article coming soon.', 'info')" class="news-card-link">Read More ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-news">
+            <div class="news-thumb">
+              <img src="assets/photos/young-high-school-teacher.jpg" alt="Young high school teacher giving a lesson to students">
+            </div>
+            <div class="news-card-content">
+              <span class="news-card-tag">Field Story</span>
+              <h3 class="news-card-title">[Article title — to be provided]</h3>
+              <p class="news-card-excerpt">[Short description — to be provided before publication]</p>
+              <div class="news-card-meta">
+                <span>[Date TBC]</span>
+                <a href="#" onclick="event.preventDefault(); showToast('Full article coming soon.', 'info')" class="news-card-link">Read More ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-news">
+            <div class="news-thumb">
+              <img src="assets/photos/creative-teamwork-in-modern.jpg" alt="Creative team using VR and modern technology in an office">
+            </div>
+            <div class="news-card-content">
+              <span class="news-card-tag">Partner Spotlight</span>
+              <h3 class="news-card-title">[Article title — to be provided]</h3>
+              <p class="news-card-excerpt">[Short description — to be provided before publication]</p>
+              <div class="news-card-meta">
+                <span>[Date TBC]</span>
+                <a href="#" onclick="event.preventDefault(); showToast('Full article coming soon.', 'info')" class="news-card-link">Read More ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-news">
+            <div class="news-thumb">
+              <img src="assets/photos/collaborative-colleagues-brainstorming-together.jpg" alt="Colleagues brainstorming together in a modern office">
+            </div>
+            <div class="news-card-content">
+              <span class="news-card-tag">Project News</span>
+              <h3 class="news-card-title">[Article title — to be provided]</h3>
+              <p class="news-card-excerpt">[Short description — to be provided before publication]</p>
+              <div class="news-card-meta">
+                <span>[Date TBC]</span>
+                <a href="#" onclick="event.preventDefault(); showToast('Full article coming soon.', 'info')" class="news-card-link">Read More ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-news">
+            <div class="news-thumb">
+              <img src="assets/photos/professional-analyzing-charts-and.jpg" alt="Professional analyzing charts and data at a desk">
+            </div>
+            <div class="news-card-content">
+              <span class="news-card-tag">Research Update</span>
+              <h3 class="news-card-title">[Article title — to be provided]</h3>
+              <p class="news-card-excerpt">[Short description — to be provided before publication]</p>
+              <div class="news-card-meta">
+                <span>[Date TBC]</span>
+                <a href="#" onclick="event.preventDefault(); showToast('Full article coming soon.', 'info')" class="news-card-link">Read More ↗</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Newsletter CTA -->
+        <div style="margin-top: var(--space-2xl); background: var(--c-charcoal); border-radius: 16px; padding: clamp(32px, 4vw, 52px); display: flex; gap: var(--space-m); flex-wrap: wrap; align-items: center; justify-content: space-between;">
+          <div>
+            <div style="font-family: var(--ff-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--c-sky); margin-bottom: 8px;">Never Miss a Story</div>
+            <h3 style="color: #fff; font-size: 1.2rem; font-weight: 700; margin: 0 0 6px;">Subscribe to the DIGI-METER Newsletter</h3>
+            <p style="color: rgba(255,255,255,0.7); font-size: 1rem; margin: 0;">Monthly updates with research progress, field stories, and event announcements.</p>
+          </div>
+          <a href="contact.html" class="btn btn-primary" style="white-space: nowrap;">Subscribe Now</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="section site-footer section-pad-sm" id="site-footer">
+    <div class="container block" style="gap: var(--space-m);">
+      <div class="footer-top-row">
+        <div class="footer-brand-col block">
+          <div class="footer-brand-logo"><img src="assets/logo-digimeter.png" alt="DIGI-METER Logo Footer"></div>
+          <p class="footer-p">Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project.</p>
+          <!-- Project social media links to be added once channels are confirmed by the consortium -->
+        </div>
+        <div class="footer-nav-col block" style="gap:12px;">
+          <h3 class="text-white" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em;">Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="about.html">About the Project</a></li>
+            <li><a href="partners.html">Consortium Partners</a></li>
+            <li><a href="outputs.html">Outputs &amp; Resources</a></li>
+            <li><a href="events.html">Events &amp; Webinars</a></li>
+            <li><a href="platform.html">Platform Access</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter-col block" style="gap:12px;">
+          <h3 class="text-white" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em;">This Website</h3>
+          <p class="footer-p" style="font-size: 1rem;">This website is designed, hosted, and operated by Outside Media &amp; Knowledge (Germany).</p>
+          <div style="font-size:0.75rem;"><strong><a href="https://outsidemedia.eu/" style="color:inherit; text-decoration:none;">Outside Media &amp; Knowledge</a></strong></div>
+        </div>
+      </div>
+      <div class="footer-disclaimer-box">
+        <div class="footer-disclaimer-flag"><svg class="eu-flag-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" aria-hidden="true"><rect width="36" height="24" fill="#003399"/><g fill="#FFCC00"><polygon transform="translate(18,4)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(26,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(18,20)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(10,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/></g></svg></div>
+        <div class="footer-disclaimer-text">Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)</div>
+      </div>
+      <div class="footer-bottom-row">
+        <span>© 2026 DIGI-METER Consortium. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="cookies.html">Cookie Policy</a>
+          <a href="impressum.html">Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=20260612l"></script>
+</body>
+</html>

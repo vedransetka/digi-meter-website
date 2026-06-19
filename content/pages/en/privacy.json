@@ -1,0 +1,895 @@
+{
+  "page": "privacy",
+  "title": "Privacy Policy — DIGI-METER",
+  "description": "DIGI-METER Privacy Policy — how we collect, use, and protect your personal data in accordance with GDPR.",
+  "translation_status": "source",
+  "strings": [
+    {
+      "key": "text_0",
+      "source": "Skip to main content",
+      "value": "Skip to main content"
+    },
+    {
+      "key": "text_1",
+      "source": "Co-funded by the",
+      "value": "Co-funded by the"
+    },
+    {
+      "key": "text_2",
+      "source": "European Union",
+      "value": "European Union"
+    },
+    {
+      "key": "text_3",
+      "source": "High Contrast",
+      "value": "High Contrast"
+    },
+    {
+      "key": "text_4",
+      "source": "A-",
+      "value": "A-"
+    },
+    {
+      "key": "text_5",
+      "source": "A+",
+      "value": "A+"
+    },
+    {
+      "key": "text_6",
+      "source": "Select language",
+      "value": "Select language"
+    },
+    {
+      "key": "text_7",
+      "source": "EN — English",
+      "value": "EN — English"
+    },
+    {
+      "key": "text_8",
+      "source": "EL — Ελληνικά",
+      "value": "EL — Ελληνικά"
+    },
+    {
+      "key": "text_9",
+      "source": "DE — Deutsch",
+      "value": "DE — Deutsch"
+    },
+    {
+      "key": "text_10",
+      "source": "FR — Français",
+      "value": "FR — Français"
+    },
+    {
+      "key": "text_11",
+      "source": "IT — Italiano",
+      "value": "IT — Italiano"
+    },
+    {
+      "key": "text_12",
+      "source": "PT — Português",
+      "value": "PT — Português"
+    },
+    {
+      "key": "text_13",
+      "source": "NL — Nederlands",
+      "value": "NL — Nederlands"
+    },
+    {
+      "key": "text_14",
+      "source": "🔍",
+      "value": "🔍"
+    },
+    {
+      "key": "text_15",
+      "source": "About",
+      "value": "About"
+    },
+    {
+      "key": "text_16",
+      "source": "News",
+      "value": "News"
+    },
+    {
+      "key": "text_17",
+      "source": "Outputs",
+      "value": "Outputs"
+    },
+    {
+      "key": "text_18",
+      "source": "Events",
+      "value": "Events"
+    },
+    {
+      "key": "text_19",
+      "source": "Partners",
+      "value": "Partners"
+    },
+    {
+      "key": "text_20",
+      "source": "Platform",
+      "value": "Platform"
+    },
+    {
+      "key": "text_21",
+      "source": "Contact",
+      "value": "Contact"
+    },
+    {
+      "key": "text_22",
+      "source": "Subscribe",
+      "value": "Subscribe"
+    },
+    {
+      "key": "text_23",
+      "source": "About the Project",
+      "value": "About the Project"
+    },
+    {
+      "key": "text_24",
+      "source": "Outputs & Resources",
+      "value": "Outputs & Resources"
+    },
+    {
+      "key": "text_25",
+      "source": "Events & Webinars",
+      "value": "Events & Webinars"
+    },
+    {
+      "key": "text_26",
+      "source": "Consortium Partners",
+      "value": "Consortium Partners"
+    },
+    {
+      "key": "text_27",
+      "source": "Platform Access",
+      "value": "Platform Access"
+    },
+    {
+      "key": "text_28",
+      "source": "News & Updates",
+      "value": "News & Updates"
+    },
+    {
+      "key": "text_29",
+      "source": "Contact Us",
+      "value": "Contact Us"
+    },
+    {
+      "key": "text_30",
+      "source": "Subscribe",
+      "value": "Subscribe"
+    },
+    {
+      "key": "text_31",
+      "source": "Home",
+      "value": "Home"
+    },
+    {
+      "key": "text_32",
+      "source": "›",
+      "value": "›"
+    },
+    {
+      "key": "text_33",
+      "source": "Privacy Policy",
+      "value": "Privacy Policy"
+    },
+    {
+      "key": "text_34",
+      "source": "GDPR Compliant · Last Updated May 2026",
+      "value": "GDPR Compliant · Last Updated May 2026"
+    },
+    {
+      "key": "text_35",
+      "source": "Privacy",
+      "value": "Privacy"
+    },
+    {
+      "key": "text_36",
+      "source": "Policy",
+      "value": "Policy"
+    },
+    {
+      "key": "text_37",
+      "source": "How DIGI-METER collects, uses, and protects your personal data — and how to exercise your rights under GDPR.",
+      "value": "How DIGI-METER collects, uses, and protects your personal data — and how to exercise your rights under GDPR."
+    },
+    {
+      "key": "text_38",
+      "source": "Last updated: 28 May 2026 · Version 1.0",
+      "value": "Last updated: 28 May 2026 · Version 1.0"
+    },
+    {
+      "key": "text_39",
+      "source": "1. Who We Are",
+      "value": "1. Who We Are"
+    },
+    {
+      "key": "text_40",
+      "source": "The DIGI-METER project is an Erasmus+ Forward-Looking project co-funded by the European Union under Grant Agreement No. 101259860. The data controller responsible for this website and its data processing activities is:",
+      "value": "The DIGI-METER project is an Erasmus+ Forward-Looking project co-funded by the European Union under Grant Agreement No. 101259860. The data controller responsible for this website and its data processing activities is:"
+    },
+    {
+      "key": "text_41",
+      "source": "Project lead for communication and dissemination",
+      "value": "Project lead for communication and dissemination"
+    },
+    {
+      "key": "text_42",
+      "source": "Email:",
+      "value": "Email:"
+    },
+    {
+      "key": "text_43",
+      "source": "Germany",
+      "value": "Germany"
+    },
+    {
+      "key": "text_44",
+      "source": "Outside Media & Knowledge",
+      "value": "Outside Media & Knowledge"
+    },
+    {
+      "key": "text_45",
+      "source": "info@outsidemedia.eu",
+      "value": "info@outsidemedia.eu"
+    },
+    {
+      "key": "text_46",
+      "source": "Responsibility for learner assessment data on the DIGI-METER platform (once launched) will be described in a separate, detailed privacy notice published together with the platform.",
+      "value": "Responsibility for learner assessment data on the DIGI-METER platform (once launched) will be described in a separate, detailed privacy notice published together with the platform."
+    },
+    {
+      "key": "text_47",
+      "source": "2. What Data We Collect",
+      "value": "2. What Data We Collect"
+    },
+    {
+      "key": "text_48",
+      "source": "2.1 Contact and Newsletter Forms",
+      "value": "2.1 Contact and Newsletter Forms"
+    },
+    {
+      "key": "text_49",
+      "source": "When you use the contact form or subscribe to our newsletter, we collect:",
+      "value": "When you use the contact form or subscribe to our newsletter, we collect:"
+    },
+    {
+      "key": "text_50",
+      "source": "— to address you appropriately",
+      "value": "— to address you appropriately"
+    },
+    {
+      "key": "text_51",
+      "source": "Full name",
+      "value": "Full name"
+    },
+    {
+      "key": "text_52",
+      "source": "— to respond to your message or send newsletter updates",
+      "value": "— to respond to your message or send newsletter updates"
+    },
+    {
+      "key": "text_53",
+      "source": "Email address",
+      "value": "Email address"
+    },
+    {
+      "key": "text_54",
+      "source": "— optional, to understand your professional context",
+      "value": "— optional, to understand your professional context"
+    },
+    {
+      "key": "text_55",
+      "source": "Organisation name",
+      "value": "Organisation name"
+    },
+    {
+      "key": "text_56",
+      "source": "— the content of your enquiry",
+      "value": "— the content of your enquiry"
+    },
+    {
+      "key": "text_57",
+      "source": "Message content",
+      "value": "Message content"
+    },
+    {
+      "key": "text_58",
+      "source": "— optional, to route your request to the right partner",
+      "value": "— optional, to route your request to the right partner"
+    },
+    {
+      "key": "text_59",
+      "source": "Country",
+      "value": "Country"
+    },
+    {
+      "key": "text_60",
+      "source": "2.2 Platform Assessment Data (Future)",
+      "value": "2.2 Platform Assessment Data (Future)"
+    },
+    {
+      "key": "text_61",
+      "source": "When the DIGI-METER assessment platform launches, it will collect:",
+      "value": "When the DIGI-METER assessment platform launches, it will collect:"
+    },
+    {
+      "key": "text_62",
+      "source": "Assessment responses and competence profile data",
+      "value": "Assessment responses and competence profile data"
+    },
+    {
+      "key": "text_63",
+      "source": "Pseudonymised learner identifiers (no real names stored at platform level)",
+      "value": "Pseudonymised learner identifiers (no real names stored at platform level)"
+    },
+    {
+      "key": "text_64",
+      "source": "Aggregated class-level data visible to educators",
+      "value": "Aggregated class-level data visible to educators"
+    },
+    {
+      "key": "text_65",
+      "source": "All platform data will be processed under a separate, detailed privacy notice presented at registration time.",
+      "value": "All platform data will be processed under a separate, detailed privacy notice presented at registration time."
+    },
+    {
+      "key": "text_66",
+      "source": "2.3 Technical and Usage Data",
+      "value": "2.3 Technical and Usage Data"
+    },
+    {
+      "key": "text_67",
+      "source": "This website does not use analytics tracking or advertising cookies. Your browser preferences (high-contrast mode, font size) are stored locally in your browser's",
+      "value": "This website does not use analytics tracking or advertising cookies. Your browser preferences (high-contrast mode, font size) are stored locally in your browser's"
+    },
+    {
+      "key": "text_68",
+      "source": "and are never transmitted to our servers.",
+      "value": "and are never transmitted to our servers."
+    },
+    {
+      "key": "text_69",
+      "source": "localStorage",
+      "value": "localStorage"
+    },
+    {
+      "key": "text_70",
+      "source": "3. Legal Basis for Processing",
+      "value": "3. Legal Basis for Processing"
+    },
+    {
+      "key": "text_71",
+      "source": "We process your personal data under the following legal bases (GDPR Article 6):",
+      "value": "We process your personal data under the following legal bases (GDPR Article 6):"
+    },
+    {
+      "key": "text_72",
+      "source": "— Newsletter subscriptions. You can withdraw consent at any time by contacting us.",
+      "value": "— Newsletter subscriptions. You can withdraw consent at any time by contacting us."
+    },
+    {
+      "key": "text_73",
+      "source": "Consent (Art. 6(1)(a))",
+      "value": "Consent (Art. 6(1)(a))"
+    },
+    {
+      "key": "text_74",
+      "source": "— Responding to project enquiries and protecting website security.",
+      "value": "— Responding to project enquiries and protecting website security."
+    },
+    {
+      "key": "text_75",
+      "source": "Legitimate interests (Art. 6(1)(f))",
+      "value": "Legitimate interests (Art. 6(1)(f))"
+    },
+    {
+      "key": "text_76",
+      "source": "— Compliance with Erasmus+ grant reporting requirements.",
+      "value": "— Compliance with Erasmus+ grant reporting requirements."
+    },
+    {
+      "key": "text_77",
+      "source": "Legal obligation (Art. 6(1)(c))",
+      "value": "Legal obligation (Art. 6(1)(c))"
+    },
+    {
+      "key": "text_78",
+      "source": "4. How We Use Your Data",
+      "value": "4. How We Use Your Data"
+    },
+    {
+      "key": "text_79",
+      "source": "Responding to contact form enquiries",
+      "value": "Responding to contact form enquiries"
+    },
+    {
+      "key": "text_80",
+      "source": "Sending DIGI-METER project updates (newsletter subscribers only)",
+      "value": "Sending DIGI-METER project updates (newsletter subscribers only)"
+    },
+    {
+      "key": "text_81",
+      "source": "Organising and managing pilot school participation",
+      "value": "Organising and managing pilot school participation"
+    },
+    {
+      "key": "text_82",
+      "source": "Erasmus+ grant reporting and quality assurance (anonymised/aggregated only)",
+      "value": "Erasmus+ grant reporting and quality assurance (anonymised/aggregated only)"
+    },
+    {
+      "key": "text_83",
+      "source": "Improving project outputs and dissemination",
+      "value": "Improving project outputs and dissemination"
+    },
+    {
+      "key": "text_84",
+      "source": "We will",
+      "value": "We will"
+    },
+    {
+      "key": "text_85",
+      "source": "sell, rent, or share your personal data with third parties for commercial purposes.",
+      "value": "sell, rent, or share your personal data with third parties for commercial purposes."
+    },
+    {
+      "key": "text_86",
+      "source": "never",
+      "value": "never"
+    },
+    {
+      "key": "text_87",
+      "source": "5. Data Sharing Within the Consortium",
+      "value": "5. Data Sharing Within the Consortium"
+    },
+    {
+      "key": "text_88",
+      "source": "DIGI-METER is delivered by a consortium of 11 organisations across 8 European countries. Your data may be shared internally among consortium partners solely for the purposes described above, under a signed Data Processing Agreement. The consortium partners are:",
+      "value": "DIGI-METER is delivered by a consortium of 11 organisations across 8 European countries. Your data may be shared internally among consortium partners solely for the purposes described above, under a signed Data Processing Agreement. The consortium partners are:"
+    },
+    {
+      "key": "text_89",
+      "source": "CSI — Center for Social Innovation (Cyprus, coordinator)",
+      "value": "CSI — Center for Social Innovation (Cyprus, coordinator)"
+    },
+    {
+      "key": "text_90",
+      "source": "SciCo (Greece), UBITECH (Greece), Approximar (Portugal), Lasco (Italy)",
+      "value": "SciCo (Greece), UBITECH (Greece), Approximar (Portugal), Lasco (Italy)"
+    },
+    {
+      "key": "text_91",
+      "source": "Outside Media & Knowledge (Germany), Syncnify (France), CEC (Cyprus)",
+      "value": "Outside Media & Knowledge (Germany), Syncnify (France), CEC (Cyprus)"
+    },
+    {
+      "key": "text_92",
+      "source": "AB Corporation (Belgium), Ergonact (Cyprus), Crow Group (Netherlands)",
+      "value": "AB Corporation (Belgium), Ergonact (Cyprus), Crow Group (Netherlands)"
+    },
+    {
+      "key": "text_93",
+      "source": "6. Data Retention",
+      "value": "6. Data Retention"
+    },
+    {
+      "key": "text_94",
+      "source": "Retained for up to 24 months after the end of the project, then deleted.",
+      "value": "Retained for up to 24 months after the end of the project, then deleted."
+    },
+    {
+      "key": "text_95",
+      "source": "Contact form messages:",
+      "value": "Contact form messages:"
+    },
+    {
+      "key": "text_96",
+      "source": "Until you unsubscribe or withdraw consent.",
+      "value": "Until you unsubscribe or withdraw consent."
+    },
+    {
+      "key": "text_97",
+      "source": "Newsletter subscriptions:",
+      "value": "Newsletter subscriptions:"
+    },
+    {
+      "key": "text_98",
+      "source": "Detailed retention schedule provided in the platform privacy notice at launch.",
+      "value": "Detailed retention schedule provided in the platform privacy notice at launch."
+    },
+    {
+      "key": "text_99",
+      "source": "Platform assessment data:",
+      "value": "Platform assessment data:"
+    },
+    {
+      "key": "text_100",
+      "source": "7. Your Rights Under GDPR",
+      "value": "7. Your Rights Under GDPR"
+    },
+    {
+      "key": "text_101",
+      "source": "You have the following rights regarding your personal data. To exercise any of them, contact us at",
+      "value": "You have the following rights regarding your personal data. To exercise any of them, contact us at"
+    },
+    {
+      "key": "text_102",
+      "source": ". We will respond within one month, as required by the GDPR.",
+      "value": ". We will respond within one month, as required by the GDPR."
+    },
+    {
+      "key": "text_103",
+      "source": "info@outsidemedia.eu",
+      "value": "info@outsidemedia.eu"
+    },
+    {
+      "key": "text_104",
+      "source": "Right of Access (Art. 15)",
+      "value": "Right of Access (Art. 15)"
+    },
+    {
+      "key": "text_105",
+      "source": "Request a copy of the personal data we hold about you.",
+      "value": "Request a copy of the personal data we hold about you."
+    },
+    {
+      "key": "text_106",
+      "source": "Right to Rectification (Art. 16)",
+      "value": "Right to Rectification (Art. 16)"
+    },
+    {
+      "key": "text_107",
+      "source": "Ask us to correct inaccurate or incomplete data.",
+      "value": "Ask us to correct inaccurate or incomplete data."
+    },
+    {
+      "key": "text_108",
+      "source": "Right to Erasure (Art. 17)",
+      "value": "Right to Erasure (Art. 17)"
+    },
+    {
+      "key": "text_109",
+      "source": "Ask us to delete your data where there is no compelling reason to keep it.",
+      "value": "Ask us to delete your data where there is no compelling reason to keep it."
+    },
+    {
+      "key": "text_110",
+      "source": "Right to Portability (Art. 20)",
+      "value": "Right to Portability (Art. 20)"
+    },
+    {
+      "key": "text_111",
+      "source": "Receive your data in a structured, machine-readable format.",
+      "value": "Receive your data in a structured, machine-readable format."
+    },
+    {
+      "key": "text_112",
+      "source": "Right to Restrict Processing (Art. 18)",
+      "value": "Right to Restrict Processing (Art. 18)"
+    },
+    {
+      "key": "text_113",
+      "source": "Ask us to pause processing while a dispute is resolved.",
+      "value": "Ask us to pause processing while a dispute is resolved."
+    },
+    {
+      "key": "text_114",
+      "source": "Right to Object (Art. 21)",
+      "value": "Right to Object (Art. 21)"
+    },
+    {
+      "key": "text_115",
+      "source": "Object to processing based on legitimate interests.",
+      "value": "Object to processing based on legitimate interests."
+    },
+    {
+      "key": "text_116",
+      "source": "You also have the right to lodge a complaint with your national data protection supervisory authority. In Germany:",
+      "value": "You also have the right to lodge a complaint with your national data protection supervisory authority. In Germany:"
+    },
+    {
+      "key": "text_117",
+      "source": ".",
+      "value": "."
+    },
+    {
+      "key": "text_118",
+      "source": "Bundesbeauftragter für den Datenschutz (BfDI)",
+      "value": "Bundesbeauftragter für den Datenschutz (BfDI)"
+    },
+    {
+      "key": "text_119",
+      "source": "8. Cookies and Local Storage",
+      "value": "8. Cookies and Local Storage"
+    },
+    {
+      "key": "text_120",
+      "source": "This website does not set tracking or analytics cookies. We use browser",
+      "value": "This website does not set tracking or analytics cookies. We use browser"
+    },
+    {
+      "key": "text_121",
+      "source": "only for storing your accessibility preferences (contrast mode, font size) and form draft state. These values never leave your browser. See our",
+      "value": "only for storing your accessibility preferences (contrast mode, font size) and form draft state. These values never leave your browser. See our"
+    },
+    {
+      "key": "text_122",
+      "source": "for full details.",
+      "value": "for full details."
+    },
+    {
+      "key": "text_123",
+      "source": "localStorage",
+      "value": "localStorage"
+    },
+    {
+      "key": "text_124",
+      "source": "Cookie Policy",
+      "value": "Cookie Policy"
+    },
+    {
+      "key": "text_125",
+      "source": "9. Security",
+      "value": "9. Security"
+    },
+    {
+      "key": "text_126",
+      "source": "We take appropriate technical and organisational measures to protect your personal data against unauthorised access, alteration, disclosure, or destruction. Form submissions are sent over an encrypted connection (HTTPS) and delivered by email to the project team. Access to contact form data is restricted to the project communication lead (Outside Media & Knowledge) and relevant consortium partners on a need-to-know basis.",
+      "value": "We take appropriate technical and organisational measures to protect your personal data against unauthorised access, alteration, disclosure, or destruction. Form submissions are sent over an encrypted connection (HTTPS) and delivered by email to the project team. Access to contact form data is restricted to the project communication lead (Outside Media & Knowledge) and relevant consortium partners on a need-to-know basis."
+    },
+    {
+      "key": "text_127",
+      "source": "10. Children's Data",
+      "value": "10. Children's Data"
+    },
+    {
+      "key": "text_128",
+      "source": "This public website is not directed at children under 16 and does not knowingly collect data from them. The DIGI-METER platform (when launched) will process learner data from secondary school students under appropriate institutional data processing agreements and parental/guardian consent mechanisms as required by national law.",
+      "value": "This public website is not directed at children under 16 and does not knowingly collect data from them. The DIGI-METER platform (when launched) will process learner data from secondary school students under appropriate institutional data processing agreements and parental/guardian consent mechanisms as required by national law."
+    },
+    {
+      "key": "text_129",
+      "source": "11. Changes to This Policy",
+      "value": "11. Changes to This Policy"
+    },
+    {
+      "key": "text_130",
+      "source": "We may update this Privacy Policy as the project progresses, particularly when the assessment platform launches. Material changes will be announced on this website. The version number and update date at the top of this page will reflect the latest revision.",
+      "value": "We may update this Privacy Policy as the project progresses, particularly when the assessment platform launches. Material changes will be announced on this website. The version number and update date at the top of this page will reflect the latest revision."
+    },
+    {
+      "key": "text_131",
+      "source": "12. Contact",
+      "value": "12. Contact"
+    },
+    {
+      "key": "text_132",
+      "source": "For any privacy-related questions, data subject requests, or concerns, please contact:",
+      "value": "For any privacy-related questions, data subject requests, or concerns, please contact:"
+    },
+    {
+      "key": "text_133",
+      "source": "Email:",
+      "value": "Email:"
+    },
+    {
+      "key": "text_134",
+      "source": "Subject line: \"DIGI-METER Privacy Request\"",
+      "value": "Subject line: \"DIGI-METER Privacy Request\""
+    },
+    {
+      "key": "text_135",
+      "source": "Outside Media & Knowledge",
+      "value": "Outside Media & Knowledge"
+    },
+    {
+      "key": "text_136",
+      "source": "info@outsidemedia.eu",
+      "value": "info@outsidemedia.eu"
+    },
+    {
+      "key": "text_137",
+      "source": "Related Legal Documents",
+      "value": "Related Legal Documents"
+    },
+    {
+      "key": "text_138",
+      "source": "Other Policies",
+      "value": "Other Policies"
+    },
+    {
+      "key": "text_139",
+      "source": "Review our full legal framework covering cookies, data preferences, and accessibility commitments.",
+      "value": "Review our full legal framework covering cookies, data preferences, and accessibility commitments."
+    },
+    {
+      "key": "text_140",
+      "source": "Cookie Policy",
+      "value": "Cookie Policy"
+    },
+    {
+      "key": "text_141",
+      "source": "Contact Us",
+      "value": "Contact Us"
+    },
+    {
+      "key": "text_142",
+      "source": "Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project.",
+      "value": "Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project."
+    },
+    {
+      "key": "text_143",
+      "source": "Quick Links",
+      "value": "Quick Links"
+    },
+    {
+      "key": "text_144",
+      "source": "About the Project",
+      "value": "About the Project"
+    },
+    {
+      "key": "text_145",
+      "source": "Consortium Partners",
+      "value": "Consortium Partners"
+    },
+    {
+      "key": "text_146",
+      "source": "Outputs & Resources",
+      "value": "Outputs & Resources"
+    },
+    {
+      "key": "text_147",
+      "source": "Events & Webinars",
+      "value": "Events & Webinars"
+    },
+    {
+      "key": "text_148",
+      "source": "Platform Access",
+      "value": "Platform Access"
+    },
+    {
+      "key": "text_149",
+      "source": "News & Updates",
+      "value": "News & Updates"
+    },
+    {
+      "key": "text_150",
+      "source": "Contact Us",
+      "value": "Contact Us"
+    },
+    {
+      "key": "text_151",
+      "source": "This Website",
+      "value": "This Website"
+    },
+    {
+      "key": "text_152",
+      "source": "This website is designed, hosted, and operated by Outside Media & Knowledge (Germany).",
+      "value": "This website is designed, hosted, and operated by Outside Media & Knowledge (Germany)."
+    },
+    {
+      "key": "text_153",
+      "source": "Outside Media & Knowledge",
+      "value": "Outside Media & Knowledge"
+    },
+    {
+      "key": "text_154",
+      "source": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)",
+      "value": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)"
+    },
+    {
+      "key": "text_155",
+      "source": "© 2026 DIGI-METER Consortium. All rights reserved.",
+      "value": "© 2026 DIGI-METER Consortium. All rights reserved."
+    },
+    {
+      "key": "text_156",
+      "source": "Privacy Policy",
+      "value": "Privacy Policy"
+    },
+    {
+      "key": "text_157",
+      "source": "Cookie Policy",
+      "value": "Cookie Policy"
+    },
+    {
+      "key": "text_158",
+      "source": "Impressum",
+      "value": "Impressum"
+    }
+  ],
+  "attributes": [
+    {
+      "index": 0,
+      "attribute": "aria-label",
+      "source": "Co-funded by the European Union logo",
+      "value": "Co-funded by the European Union logo"
+    },
+    {
+      "index": 1,
+      "attribute": "aria-label",
+      "source": "Accessibility controls",
+      "value": "Accessibility controls"
+    },
+    {
+      "index": 2,
+      "attribute": "aria-label",
+      "source": "Decrease text size",
+      "value": "Decrease text size"
+    },
+    {
+      "index": 3,
+      "attribute": "aria-label",
+      "source": "Increase text size",
+      "value": "Increase text size"
+    },
+    {
+      "index": 4,
+      "attribute": "aria-label",
+      "source": "Select language",
+      "value": "Select language"
+    },
+    {
+      "index": 5,
+      "attribute": "aria-label",
+      "source": "Search content",
+      "value": "Search content"
+    },
+    {
+      "index": 6,
+      "attribute": "aria-label",
+      "source": "Submit search",
+      "value": "Submit search"
+    },
+    {
+      "index": 7,
+      "attribute": "aria-label",
+      "source": "Main site navigation",
+      "value": "Main site navigation"
+    },
+    {
+      "index": 8,
+      "attribute": "aria-label",
+      "source": "Toggle mobile menu",
+      "value": "Toggle mobile menu"
+    },
+    {
+      "index": 9,
+      "attribute": "aria-label",
+      "source": "Close navigation menu",
+      "value": "Close navigation menu"
+    },
+    {
+      "index": 10,
+      "attribute": "aria-label",
+      "source": "Breadcrumb",
+      "value": "Breadcrumb"
+    },
+    {
+      "index": 0,
+      "attribute": "title",
+      "source": "Toggle High Contrast Theme",
+      "value": "Toggle High Contrast Theme"
+    },
+    {
+      "index": 0,
+      "attribute": "placeholder",
+      "source": "Search site...",
+      "value": "Search site..."
+    },
+    {
+      "index": 0,
+      "attribute": "alt",
+      "source": "DIGI-METER Logo",
+      "value": "DIGI-METER Logo"
+    },
+    {
+      "index": 1,
+      "attribute": "alt",
+      "source": "DIGI-METER Logo Footer",
+      "value": "DIGI-METER Logo Footer"
+    }
+  ]
+}

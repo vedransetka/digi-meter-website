@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outputs &amp; Resources — DIGI-METER</title>
+  <meta name="description" content="Browse DIGI-METER project outputs: indicator frameworks, VET toolkits, policy briefs, technical reports, open educational resources, and research deliverables.">
+  <link rel="icon" type="image/png" href="assets/logo-digimeter.png">
+  <link rel="stylesheet" href="css/style.css?v=20260612l">
+  <style>
+    .page-hero {
+      background-color: var(--c-charcoal);
+      background-image:
+        radial-gradient(ellipse 60% 70% at 100% 0%, rgba(83,200,234,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 50% at 0% 100%, rgba(115,64,153,0.10) 0%, transparent 60%),
+        linear-gradient(to right, rgba(13,24,43,0.97) 0%, rgba(13,24,43,0.85) 45%, rgba(13,24,43,0.28) 100%),
+        url(assets/photos/professional-analyzing-charts-and.jpg);
+      background-size: auto, auto, auto, cover;
+      background-position: 0 0, 0 0, 0 0, center right;
+      padding: clamp(60px, 8vw, 110px) 0 clamp(40px, 5vw, 70px);
+    }
+    .page-hero-eyebrow { font-family: var(--ff-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--c-sky); font-weight: 700; display: block; margin-bottom: 16px; }
+    .page-hero h1 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; color: #fff; line-height: 1.15; margin: 0 0 16px; }
+    .page-hero p { font-size: clamp(0.95rem, 1.5vw, 1.1rem); color: rgba(255,255,255,0.65); max-width: 660px; line-height: 1.6; }
+    .page-breadcrumb { font-family: var(--ff-mono); font-size: 0.68rem; color: rgba(255,255,255,0.68); margin-bottom: 24px; display: flex; gap: 8px; align-items: center; }
+    .page-breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .page-breadcrumb a:hover { color: var(--c-sky); }
+    .page-breadcrumb span { color: rgba(255,255,255,0.6); }
+
+    /* Filter bar */
+    .filter-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: var(--space-l); }
+    .filter-btn { font-family: var(--ff-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em; padding: 7px 16px; border-radius: 30px; border: 1px solid rgba(13,24,43,0.12); background: #fff; color: var(--c-slate); cursor: pointer; transition: all 0.15s; }
+    .filter-btn:hover, .filter-btn.active { background: var(--c-charcoal); color: #fff; border-color: var(--c-charcoal); }
+    .filter-btn.active { background: var(--c-charcoal); }
+
+    /* Output cards */
+    .outputs-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+    @media (min-width: 640px) { .outputs-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 1100px) { .outputs-grid { grid-template-columns: 1fr 1fr 1fr; } }
+
+    .output-card {
+      background: #fff;
+      border: 1px solid rgba(13,24,43,0.07);
+      border-radius: 14px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .output-card:hover { box-shadow: 0 10px 36px -10px rgba(13,24,43,0.14); transform: translateY(-2px); }
+    .output-card .oc-type { display: flex; align-items: center; gap: 8px; }
+    .output-card .oc-type-tag { font-family: var(--ff-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.12em; padding: 3px 10px; border-radius: 20px; font-weight: 700; }
+    .oc-type-tag.framework { background: rgba(83,200,234,0.1); border: 1px solid rgba(83,200,234,0.25); color: var(--c-charcoal); }
+    .oc-type-tag.toolkit { background: rgba(115,64,153,0.1); border: 1px solid rgba(115,64,153,0.25); color: var(--c-purple); }
+    .oc-type-tag.report { background: rgba(13,24,43,0.07); border: 1px solid rgba(13,24,43,0.15); color: var(--c-slate); }
+    .oc-type-tag.policy { background: rgba(83,200,234,0.08); border: 1px solid rgba(83,200,234,0.2); color: var(--c-charcoal); }
+    .oc-type-tag.oer { background: rgba(40,180,100,0.1); border: 1px solid rgba(40,180,100,0.25); color: #1a7a40; }
+    .output-card .oc-wp { font-family: var(--ff-mono); font-size: 0.6rem; color: var(--c-slate); }
+    .output-card h3 { font-size: 1rem; font-weight: 700; color: var(--c-charcoal); margin: 0; line-height: 1.4; }
+    .output-card p { font-size: 1rem; color: var(--c-slate); margin: 0; line-height: 1.6; flex: 1; }
+    .output-card .oc-status { display: flex; align-items: center; gap: 6px; font-family: var(--ff-mono); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--c-slate); padding-top: 12px; border-top: 1px solid rgba(13,24,43,0.06); }
+    .status-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--c-slate); flex-shrink: 0; }
+    .status-dot.planned { background: rgba(13,24,43,0.2); }
+    .status-dot.progress { background: var(--c-sky); box-shadow: 0 0 6px rgba(83,200,234,0.6); }
+    .status-dot.complete { background: #28c864; }
+    .output-card .oc-download { font-size: 1rem; color: var(--c-sky); text-decoration: none; font-weight: 600; display: flex; align-items: center; gap: 4px; }
+    .output-card .oc-download:hover { color: var(--c-charcoal); }
+
+    /* WP sections */
+    .wp-section-title { display: flex; align-items: center; gap: 14px; margin: var(--space-xl) 0 var(--space-m); }
+    .wp-section-title .wp-num { font-family: var(--ff-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--c-sky); background: rgba(83,200,234,0.1); border: 1px solid rgba(83,200,234,0.2); padding: 4px 12px; border-radius: 20px; white-space: nowrap; }
+    .wp-section-title h2 { font-size: 1.25rem; font-weight: 700; color: var(--c-charcoal); margin: 0; }
+    .wp-section-title::after { content: ''; flex: 1; height: 1px; background: rgba(13,24,43,0.08); }
+
+    html.high-contrast .filter-btn { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.7); }
+    html.high-contrast .filter-btn.active, html.high-contrast .filter-btn:hover { background: rgba(255,255,255,0.15); color: #fff; }
+    html.high-contrast .output-card { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.12); }
+    html.high-contrast .output-card h3 { color: #fff; }
+    html.high-contrast .output-card .oc-status { border-top-color: rgba(255,255,255,0.1); }
+    html.high-contrast .wp-section-title h2 { color: #fff; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Top Utility Bar -->
+  <div class="top-bar" id="top-utility-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <div class="eu-badge-header" role="img" aria-label="Co-funded by the European Union logo">
+          <svg class="eu-flag-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" aria-hidden="true" focusable="false"><rect width="36" height="24" fill="#003399"/><g fill="#FFCC00"><polygon transform="translate(18,4)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(26,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(18,20)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(10,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/></g></svg>
+          <span class="eu-text">Co-funded by the<br>European Union</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="a11y-widget" aria-label="Accessibility controls">
+          <button class="a11y-btn" id="contrast-toggle" aria-pressed="false" title="Toggle High Contrast Theme">High Contrast</button>
+          <button class="a11y-btn" id="size-decrease" title="Decrease Text Size" aria-label="Decrease text size">A-</button>
+          <button class="a11y-btn" id="size-increase" title="Increase Text Size" aria-label="Increase text size">A+</button>
+        </div>
+        <!-- Language Selector (project languages — confirm final list with consortium) -->
+        <div class="language-selector">
+          <label for="lang-select" class="sr-only">Select language</label>
+          <select id="lang-select" aria-label="Select language">
+            <option value="en" selected>EN — English</option>
+            <option value="el">EL — Ελληνικά</option>
+            <option value="de">DE — Deutsch</option>
+            <option value="fr">FR — Français</option>
+            <option value="it">IT — Italiano</option>
+            <option value="pt">PT — Português</option>
+            <option value="nl">NL — Nederlands</option>
+          </select>
+        </div>
+
+        <form class="search-box" role="search" onsubmit="event.preventDefault(); showToast(\'Site search will be available at launch.\', \'info\');">
+          <input type="search" class="search-input" placeholder="Search site..." aria-label="Search content">
+          <button type="submit" class="search-btn" aria-label="Submit search">🔍</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo" aria-label="DIGI-METER homepage link"><img src="assets/logo-digimeter.png" alt="DIGI-METER Logo"></a>
+      <nav class="main-nav" aria-label="Main site navigation">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="outputs.html" class="nav-link active">Outputs</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="partners.html" class="nav-link">Partners</a>
+        <a href="platform.html" class="nav-link">Platform</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-cta"><a href="contact.html" class="btn btn-primary" style="padding: 0.58rem 1.4rem; font-size: 1rem;">Subscribe</a></div>
+      <button class="burger-menu" id="burger-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav-panel">
+        <span class="burger-bar" style="background-color: #fff;"></span>
+        <span class="burger-bar" style="background-color: #fff;"></span>
+        <span class="burger-bar" style="background-color: #fff;"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav-panel" id="mobile-nav-panel">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <ul class="mobile-menu">
+      <li><a href="about.html" class="mobile-link">About the Project</a></li>
+      <li><a href="outputs.html" class="mobile-link">Outputs &amp; Resources</a></li>
+      <li><a href="events.html" class="mobile-link">Events &amp; Webinars</a></li>
+      <li><a href="partners.html" class="mobile-link">Consortium Partners</a></li>
+      <li><a href="platform.html" class="mobile-link">Platform Access</a></li>
+      <li><a href="news.html" class="mobile-link">News &amp; Updates</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+    <div class="mobile-cta"><a href="contact.html" class="btn btn-primary" style="width:100%; text-align:center;">Subscribe</a></div>
+  </div>
+
+  <main id="main-content">
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="page-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span>›</span><span>Outputs &amp; Resources</span>
+        </nav>
+        <span class="page-hero-eyebrow">Project Deliverables · Open Access</span>
+        <h1>Outputs &amp;<br>Resources</h1>
+        <p>DIGI-METER deliverables will be published here as they are validated and approved for public release. The planned outputs below are indicative; titles and dates will be confirmed against the approved project application.</p>
+      </div>
+    </section>
+
+    <!-- Resources Content -->
+    <section class="section section-pad section-light">
+      <div class="container">
+
+        <!-- Filter Bar -->
+        <div class="filter-bar" role="group" aria-label="Filter outputs by type">
+          <button class="filter-btn active" onclick="filterOutputs('all', this)">All Outputs</button>
+          <button class="filter-btn" onclick="filterOutputs('framework', this)">Frameworks</button>
+          <button class="filter-btn" onclick="filterOutputs('toolkit', this)">Toolkits</button>
+          <button class="filter-btn" onclick="filterOutputs('report', this)">Reports</button>
+          <button class="filter-btn" onclick="filterOutputs('policy', this)">Policy Briefs</button>
+          <button class="filter-btn" onclick="filterOutputs('oer', this)">Open Resources</button>
+        </div>
+
+        <!-- WP1: Framework Design -->
+        <div class="wp-section-title">
+          <h2>Indicator Framework &amp; Methodology</h2>
+        </div>
+        <div class="outputs-grid" id="outputs-grid">
+
+          <div class="output-card" data-type="framework">
+            <div class="oc-type">
+              <span class="oc-type-tag framework">Framework</span>
+              <span class="oc-wp">Planned</span>
+            </div>
+            <h3>DigComp 2.2 Indicator Mapping Report</h3>
+            <p>A comprehensive mapping of all 21 DigComp 2.2 competences into measurable, context-specific indicators for school and VET assessment. Includes operationalisation guidelines, proficiency level descriptors, and evidence criteria.</p>
+            <div class="oc-status">
+              <div class="status-dot progress"></div>
+              [Status TBC]
+            </div>
+          </div>
+
+          <div class="output-card" data-type="framework">
+            <div class="oc-type">
+              <span class="oc-type-tag framework">Framework</span>
+              <span class="oc-wp">Planned</span>
+            </div>
+            <h3>Assessment Design Principles &amp; Validation Protocol</h3>
+            <p>Methodological guidelines for assessment item design, bias testing, cultural sensitivity review, and cross-country validation of digital competence indicators across diverse European education systems.</p>
+            <div class="oc-status">
+              <div class="status-dot planned"></div>
+              Planned — date to be confirmed
+            </div>
+          </div>
+
+          <div class="output-card" data-type="report">
+            <div class="oc-type">
+              <span class="oc-type-tag report">Research Report</span>
+              <span class="oc-wp">Planned</span>
+            </div>
+            <h3>State-of-the-Art Review: Digital Competence Assessment in Europe</h3>
+            <p>A systematic literature review of existing digital competence measurement approaches across EU member states, identifying gaps, best practices, and lessons learned to inform the DIGI-METER indicator design.</p>
+            <div class="oc-status">
+              <div class="status-dot progress"></div>
+              [Status TBC]
+            </div>
+          </div>
+
+        </div>
+
+        <div class="wp-section-title">
+          <h2>Digital Platform &amp; Technology</h2>
+        </div>
+        <div class="outputs-grid">
+
+          <div class="output-card" data-type="toolkit">
+            <div class="oc-type">
+              <span class="oc-type-tag toolkit">Platform</span>
+              <span class="oc-wp">Planned</span>
+            </div>
+            <h3>DIGI-METER Self-Assessment Platform (v1.0)</h3>
+            <p>The web-based adaptive self-assessment platform enabling learners to evaluate their digital competences across all DigComp 2.2 areas. Features personalised feedback, progress tracking, and multilingual support.</p>
+            <div class="oc-status">
+              <div class="status-dot planned"></div>
+              Planned — date to be confirmed
+            </div>
+          </div>
+
+          <div class="output-card" data-type="toolkit">
+            <div class="oc-type">
+              <span class="oc-type-tag toolkit">Platform</span>
+              <span class="oc-wp">Planned</span>
+            </div>
+            <h3>Educator Dashboard &amp; Institutional Analytics Module</h3>
+            <p>Class-level and institution-level visualisation dashboards providing educators and school leaders with anonymised aggregate digital competence data, trend analysis, and intervention recommendations.</p>
+            <div class="oc-status">
+              <div class="status-dot planned"></div>
+              Planned — date to be confirmed
+            </div>
+          </div>
+
+          <div class="output-card" data-type="report">
+            <div class="oc-type">
+              <span class="oc-type-tag report">Technical Report</span>
+              <span class="oc-wp">Planned</span>
+            </div>
+            <h3>AI Engine Architecture &amp; Ethics-by-Design Documentation</h3>
+            <p>Full technical documentation of the adaptive assessment AI engine, including model design, bias testing results, GDPR compliance architecture, explainability mechanisms, and responsible AI audit trail.</p>
+            <div class="oc-status">
+              <div class="status-dot planned"></div>
+              Planned — date to be confirmed
+            </div>
+          </div>
+
+        </div>
+
+        <div class="wp-section-title">
+          <h2>Piloting &amp; Validation</h2>
+        </div>
+        <div class="outputs-grid">
+
+          <div class="output-card" data-type="report">
+            <div class="oc-type">
+              <span class="oc-type-tag report">Research Report</span>
+              <span class="oc-wp">Planned</span>
+            </div>
+            <h3>Pilot Testing Methodology &amp; Cohort Design</h3>
+            <p>The research design for multi-country pilot testing, including school and VET partner selection criteria, data collection instruments, ethical research protocols, and comparative analysis framework.</p>
+            <div class="oc-status">
+              <div class="status-dot planned"></div>
+              Planned — date to be confirmed
+            </div>
+          </div>
+
+          <div class="output-card" data-type="report">
+            <div class="oc-type">
+              <span class="oc-type-tag report">Research Report</span>
+              <span class="oc-wp">Planned</span>
+            </div>
+            <h3>Pilot Findings Report: Learner Outcomes &amp; Platform Performance</h3>
+            <p>Analysis of pilot testing results across participating countries: learner self-assessment patterns, competence gap data, platform usability findings, educator engagement, and recommendations for platform refinement.</p>
+            <div class="oc-status">
+              <div class="status-dot planned"></div>
+              Planned — date to be confirmed
+            </div>
+          </div>
+
+          <div class="output-card" data-type="oer">
+            <div class="oc-type">
+              <span class="oc-type-tag oer">Open Resource</span>
+              <span class="oc-wp">Planned</span>
+            </div>
+            <h3>VET Teacher Digital Competence Toolkit</h3>
+            <p>A practical toolkit for VET teachers to integrate digital competence self-assessment into their regular teaching practice, including lesson guides, discussion frameworks, and CPD activity designs.</p>
+            <div class="oc-status">
+              <div class="status-dot planned"></div>
+              Planned — date to be confirmed
+            </div>
+          </div>
+
+        </div>
+
+        <div class="wp-section-title">
+          <h2>Policy Transfer &amp; Dissemination</h2>
+        </div>
+        <div class="outputs-grid">
+
+          <div class="output-card" data-type="policy">
+            <div class="oc-type">
+              <span class="oc-type-tag policy">Policy Brief</span>
+              <span class="oc-wp">Planned</span>
+            </div>
+            <h3>Digital Competence Assessment in Schools: Policy Recommendations for EU Member States</h3>
+            <p>Evidence-based policy recommendations for national ministries and EU institutions on embedding DigComp 2.2 assessment tools into national curriculum frameworks and digital education strategies.</p>
+            <div class="oc-status">
+              <div class="status-dot planned"></div>
+              Planned — date to be confirmed
+            </div>
+          </div>
+
+          <div class="output-card" data-type="policy">
+            <div class="oc-type">
+              <span class="oc-type-tag policy">Policy Brief</span>
+              <span class="oc-wp">Planned</span>
+            </div>
+            <h3>VET Sector Digital Skills Benchmark Framework</h3>
+            <p>A policy-oriented benchmark framework connecting DIGI-METER indicators to VET qualification standards, employer expectations, and national digital skills strategies across participating countries.</p>
+            <div class="oc-status">
+              <div class="status-dot planned"></div>
+              Planned — date to be confirmed
+            </div>
+          </div>
+
+          <div class="output-card" data-type="oer">
+            <div class="oc-type">
+              <span class="oc-type-tag oer">Open Resource</span>
+              <span class="oc-wp">Planned</span>
+            </div>
+            <h3>Open Educational Resource Pack: Digital Competence for Educators</h3>
+            <p>A freely available collection of learning materials, case studies, and activities supporting educator professional development around digital competence measurement and evidence-based teaching.</p>
+            <div class="oc-status">
+              <div class="status-dot planned"></div>
+              Planned — date to be confirmed
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Notification signup -->
+        <div style="margin-top: var(--space-2xl); background: var(--c-charcoal); border-radius: 16px; padding: clamp(32px, 4vw, 52px); display: flex; gap: var(--space-m); flex-wrap: wrap; align-items: center; justify-content: space-between;">
+          <div>
+            <div style="font-family: var(--ff-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--c-sky); margin-bottom: 8px;">Stay Informed</div>
+            <h3 style="color: #fff; font-size: 1.2rem; font-weight: 700; margin: 0 0 6px;">Get Notified When Resources Launch</h3>
+            <p style="color: rgba(255,255,255,0.7); font-size: 1rem; margin: 0;">Subscribe to receive alerts when new deliverables are published.</p>
+          </div>
+          <a href="contact.html" class="btn btn-primary" style="white-space: nowrap;">Subscribe to Updates</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="section site-footer section-pad-sm" id="site-footer">
+    <div class="container block" style="gap: var(--space-m);">
+      <div class="footer-top-row">
+        <div class="footer-brand-col block">
+          <div class="footer-brand-logo"><img src="assets/logo-digimeter.png" alt="DIGI-METER Logo Footer"></div>
+          <p class="footer-p">Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project translating DigComp 2.2 into actionable, trustworthy educational testing.</p>
+          <!-- Project social media links to be added once channels are confirmed by the consortium -->
+        </div>
+        <div class="footer-nav-col block" style="gap:12px;">
+          <h3 class="text-white" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em;">Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="about.html">About the Project</a></li>
+            <li><a href="partners.html">Consortium Partners</a></li>
+            <li><a href="outputs.html">Outputs &amp; Resources</a></li>
+            <li><a href="events.html">Events &amp; Webinars</a></li>
+            <li><a href="platform.html">Platform Access</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter-col block" style="gap:12px;">
+          <h3 class="text-white" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em;">This Website</h3>
+          <p class="footer-p" style="font-size: 1rem;">This website is designed, hosted, and operated by Outside Media &amp; Knowledge (Germany).</p>
+          <div style="font-size:0.75rem;"><strong><a href="https://outsidemedia.eu/" style="color:inherit; text-decoration:none;">Outside Media &amp; Knowledge</a></strong><br>Germany</div>
+        </div>
+      </div>
+      <div class="footer-disclaimer-box">
+        <div class="footer-disclaimer-flag">
+          <svg class="eu-flag-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" aria-hidden="true" focusable="false"><rect width="36" height="24" fill="#003399"/><g fill="#FFCC00"><polygon transform="translate(18,4)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(26,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(18,20)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(10,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/></g></svg>
+        </div>
+        <div class="footer-disclaimer-text">Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)</div>
+      </div>
+      <div class="footer-bottom-row">
+        <span>© 2026 DIGI-METER Consortium. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="cookies.html">Cookie Policy</a>
+          <a href="impressum.html">Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=20260612l"></script>
+  <script>
+    function filterOutputs(type, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.output-card').forEach(card => {
+        if (type === 'all' || card.dataset.type === type) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

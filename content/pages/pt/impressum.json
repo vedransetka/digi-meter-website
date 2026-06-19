@@ -1,0 +1,585 @@
+{
+  "page": "impressum",
+  "title": "Impressum (Legal Notice) — DIGI-METER",
+  "description": "Legal notice (Impressum) for the DIGI-METER website — information about the website operator as required under German law (§ 5 DDG).",
+  "translation_status": "needs_translation",
+  "strings": [
+    {
+      "key": "text_0",
+      "source": "Skip to main content",
+      "value": "Skip to main content"
+    },
+    {
+      "key": "text_1",
+      "source": "Co-funded by the",
+      "value": "Co-funded by the"
+    },
+    {
+      "key": "text_2",
+      "source": "European Union",
+      "value": "European Union"
+    },
+    {
+      "key": "text_3",
+      "source": "High Contrast",
+      "value": "High Contrast"
+    },
+    {
+      "key": "text_4",
+      "source": "A-",
+      "value": "A-"
+    },
+    {
+      "key": "text_5",
+      "source": "A+",
+      "value": "A+"
+    },
+    {
+      "key": "text_6",
+      "source": "Select language",
+      "value": "Select language"
+    },
+    {
+      "key": "text_7",
+      "source": "EN — English",
+      "value": "EN — English"
+    },
+    {
+      "key": "text_8",
+      "source": "EL — Ελληνικά",
+      "value": "EL — Ελληνικά"
+    },
+    {
+      "key": "text_9",
+      "source": "DE — Deutsch",
+      "value": "DE — Deutsch"
+    },
+    {
+      "key": "text_10",
+      "source": "FR — Français",
+      "value": "FR — Français"
+    },
+    {
+      "key": "text_11",
+      "source": "IT — Italiano",
+      "value": "IT — Italiano"
+    },
+    {
+      "key": "text_12",
+      "source": "PT — Português",
+      "value": "PT — Português"
+    },
+    {
+      "key": "text_13",
+      "source": "NL — Nederlands",
+      "value": "NL — Nederlands"
+    },
+    {
+      "key": "text_14",
+      "source": "🔍",
+      "value": "🔍"
+    },
+    {
+      "key": "text_15",
+      "source": "About",
+      "value": "About"
+    },
+    {
+      "key": "text_16",
+      "source": "News",
+      "value": "News"
+    },
+    {
+      "key": "text_17",
+      "source": "Outputs",
+      "value": "Outputs"
+    },
+    {
+      "key": "text_18",
+      "source": "Events",
+      "value": "Events"
+    },
+    {
+      "key": "text_19",
+      "source": "Partners",
+      "value": "Partners"
+    },
+    {
+      "key": "text_20",
+      "source": "Platform",
+      "value": "Platform"
+    },
+    {
+      "key": "text_21",
+      "source": "Contact",
+      "value": "Contact"
+    },
+    {
+      "key": "text_22",
+      "source": "Subscribe",
+      "value": "Subscribe"
+    },
+    {
+      "key": "text_23",
+      "source": "About the Project",
+      "value": "About the Project"
+    },
+    {
+      "key": "text_24",
+      "source": "Outputs & Resources",
+      "value": "Outputs & Resources"
+    },
+    {
+      "key": "text_25",
+      "source": "Events & Webinars",
+      "value": "Events & Webinars"
+    },
+    {
+      "key": "text_26",
+      "source": "Consortium Partners",
+      "value": "Consortium Partners"
+    },
+    {
+      "key": "text_27",
+      "source": "Platform Access",
+      "value": "Platform Access"
+    },
+    {
+      "key": "text_28",
+      "source": "News & Updates",
+      "value": "News & Updates"
+    },
+    {
+      "key": "text_29",
+      "source": "Contact Us",
+      "value": "Contact Us"
+    },
+    {
+      "key": "text_30",
+      "source": "Subscribe",
+      "value": "Subscribe"
+    },
+    {
+      "key": "text_31",
+      "source": "Home",
+      "value": "Home"
+    },
+    {
+      "key": "text_32",
+      "source": "›",
+      "value": "›"
+    },
+    {
+      "key": "text_33",
+      "source": "Impressum",
+      "value": "Impressum"
+    },
+    {
+      "key": "text_34",
+      "source": "Legal Notice · § 5 DDG · § 18 MStV",
+      "value": "Legal Notice · § 5 DDG · § 18 MStV"
+    },
+    {
+      "key": "text_35",
+      "source": "Impressum",
+      "value": "Impressum"
+    },
+    {
+      "key": "text_36",
+      "source": "Legal notice and information about the operator of this website, as required under German law (§ 5 Digitale-Dienste-Gesetz, DDG).",
+      "value": "Legal notice and information about the operator of this website, as required under German law (§ 5 Digitale-Dienste-Gesetz, DDG)."
+    },
+    {
+      "key": "text_37",
+      "source": "Last updated: June 2026",
+      "value": "Last updated: June 2026"
+    },
+    {
+      "key": "text_38",
+      "source": "Website Operator",
+      "value": "Website Operator"
+    },
+    {
+      "key": "text_39",
+      "source": "This website is designed, hosted, and operated by Outside Media & Knowledge, the lead partner for communication and dissemination in the DIGI-METER consortium.",
+      "value": "This website is designed, hosted, and operated by Outside Media & Knowledge, the lead partner for communication and dissemination in the DIGI-METER consortium."
+    },
+    {
+      "key": "text_40",
+      "source": "Outside Media & Knowledge",
+      "value": "Outside Media & Knowledge"
+    },
+    {
+      "key": "text_41",
+      "source": "Germany",
+      "value": "Germany"
+    },
+    {
+      "key": "text_42",
+      "source": "Outside Media & Knowledge",
+      "value": "Outside Media & Knowledge"
+    },
+    {
+      "key": "text_43",
+      "source": "[Street address]",
+      "value": "[Street address]"
+    },
+    {
+      "key": "text_44",
+      "source": "[Postal code] [City]",
+      "value": "[Postal code] [City]"
+    },
+    {
+      "key": "text_45",
+      "source": "Website:",
+      "value": "Website:"
+    },
+    {
+      "key": "text_46",
+      "source": "outsidemedia.eu",
+      "value": "outsidemedia.eu"
+    },
+    {
+      "key": "text_47",
+      "source": "Responsible for Content",
+      "value": "Responsible for Content"
+    },
+    {
+      "key": "text_48",
+      "source": "Person responsible for editorial content in accordance with § 18 Abs. 2 Medienstaatsvertrag (MStV):",
+      "value": "Person responsible for editorial content in accordance with § 18 Abs. 2 Medienstaatsvertrag (MStV):"
+    },
+    {
+      "key": "text_49",
+      "source": "Editorial Responsibility",
+      "value": "Editorial Responsibility"
+    },
+    {
+      "key": "text_50",
+      "source": "Outside Media & Knowledge",
+      "value": "Outside Media & Knowledge"
+    },
+    {
+      "key": "text_51",
+      "source": "Germany",
+      "value": "Germany"
+    },
+    {
+      "key": "text_52",
+      "source": "[Name of responsible person]",
+      "value": "[Name of responsible person]"
+    },
+    {
+      "key": "text_53",
+      "source": "[Street address]",
+      "value": "[Street address]"
+    },
+    {
+      "key": "text_54",
+      "source": "[Postal code] [City]",
+      "value": "[Postal code] [City]"
+    },
+    {
+      "key": "text_55",
+      "source": "Project Coordinator",
+      "value": "Project Coordinator"
+    },
+    {
+      "key": "text_56",
+      "source": "DIGI-METER is an Erasmus+ Forward-Looking project (Grant Agreement No. 101259860) coordinated by:",
+      "value": "DIGI-METER is an Erasmus+ Forward-Looking project (Grant Agreement No. 101259860) coordinated by:"
+    },
+    {
+      "key": "text_57",
+      "source": "Center for Social Innovation (CSI)",
+      "value": "Center for Social Innovation (CSI)"
+    },
+    {
+      "key": "text_58",
+      "source": "Cyprus",
+      "value": "Cyprus"
+    },
+    {
+      "key": "text_59",
+      "source": "Website:",
+      "value": "Website:"
+    },
+    {
+      "key": "text_60",
+      "source": "Center for Social Innovation (CSI)",
+      "value": "Center for Social Innovation (CSI)"
+    },
+    {
+      "key": "text_61",
+      "source": "[Street address]",
+      "value": "[Street address]"
+    },
+    {
+      "key": "text_62",
+      "source": "[Postal code] Nicosia",
+      "value": "[Postal code] Nicosia"
+    },
+    {
+      "key": "text_63",
+      "source": "csicy.com",
+      "value": "csicy.com"
+    },
+    {
+      "key": "text_64",
+      "source": "EU Funding Disclaimer",
+      "value": "EU Funding Disclaimer"
+    },
+    {
+      "key": "text_65",
+      "source": "The DIGI-METER project is co-funded by the European Union under the Erasmus+ programme, Grant Agreement No. 101259860.",
+      "value": "The DIGI-METER project is co-funded by the European Union under the Erasmus+ programme, Grant Agreement No. 101259860."
+    },
+    {
+      "key": "text_66",
+      "source": "Co-funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor the granting authority can be held responsible for them.",
+      "value": "Co-funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor the granting authority can be held responsible for them."
+    },
+    {
+      "key": "text_67",
+      "source": "Disclaimer",
+      "value": "Disclaimer"
+    },
+    {
+      "key": "text_68",
+      "source": "Liability for Content",
+      "value": "Liability for Content"
+    },
+    {
+      "key": "text_69",
+      "source": "The content of this website has been created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content. As a service provider we are responsible for our own content on this website in accordance with general legislation (Digitale-Dienste-Gesetz, DDG). We are, however, not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.",
+      "value": "The content of this website has been created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content. As a service provider we are responsible for our own content on this website in accordance with general legislation (Digitale-Dienste-Gesetz, DDG). We are, however, not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity."
+    },
+    {
+      "key": "text_70",
+      "source": "Liability for Links",
+      "value": "Liability for Links"
+    },
+    {
+      "key": "text_71",
+      "source": "This website contains links to external websites over which we have no control. Therefore, we cannot accept any liability for these external contents. The respective provider or operator of the linked pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognisable at the time of linking.",
+      "value": "This website contains links to external websites over which we have no control. Therefore, we cannot accept any liability for these external contents. The respective provider or operator of the linked pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognisable at the time of linking."
+    },
+    {
+      "key": "text_72",
+      "source": "Copyright",
+      "value": "Copyright"
+    },
+    {
+      "key": "text_73",
+      "source": "The content and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution, or any form of commercialisation of such material beyond the scope of the copyright law requires the prior written consent of its respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use.",
+      "value": "The content and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution, or any form of commercialisation of such material beyond the scope of the copyright law requires the prior written consent of its respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use."
+    },
+    {
+      "key": "text_74",
+      "source": "Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is marked as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. If we become aware of any infringements, we will remove such content immediately.",
+      "value": "Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is marked as such. Should you nevertheless become aware of a copyright infringement, please inform us accordingly. If we become aware of any infringements, we will remove such content immediately."
+    },
+    {
+      "key": "text_75",
+      "source": "Online Dispute Resolution",
+      "value": "Online Dispute Resolution"
+    },
+    {
+      "key": "text_76",
+      "source": "The European Commission provides a platform for online dispute resolution (ODR):",
+      "value": "The European Commission provides a platform for online dispute resolution (ODR):"
+    },
+    {
+      "key": "text_77",
+      "source": ". We are not obliged to participate in online dispute resolution proceedings before a consumer arbitration board and do not do so.",
+      "value": ". We are not obliged to participate in online dispute resolution proceedings before a consumer arbitration board and do not do so."
+    },
+    {
+      "key": "text_78",
+      "source": "ec.europa.eu/consumers/odr",
+      "value": "ec.europa.eu/consumers/odr"
+    },
+    {
+      "key": "text_79",
+      "source": "Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project translating DigComp 2.2 into actionable, trustworthy educational testing.",
+      "value": "Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project translating DigComp 2.2 into actionable, trustworthy educational testing."
+    },
+    {
+      "key": "text_80",
+      "source": "Quick Links",
+      "value": "Quick Links"
+    },
+    {
+      "key": "text_81",
+      "source": "About the Project",
+      "value": "About the Project"
+    },
+    {
+      "key": "text_82",
+      "source": "Consortium Partners",
+      "value": "Consortium Partners"
+    },
+    {
+      "key": "text_83",
+      "source": "Outputs & Resources",
+      "value": "Outputs & Resources"
+    },
+    {
+      "key": "text_84",
+      "source": "Events & Webinars",
+      "value": "Events & Webinars"
+    },
+    {
+      "key": "text_85",
+      "source": "Platform Access",
+      "value": "Platform Access"
+    },
+    {
+      "key": "text_86",
+      "source": "News & Updates",
+      "value": "News & Updates"
+    },
+    {
+      "key": "text_87",
+      "source": "Contact Us",
+      "value": "Contact Us"
+    },
+    {
+      "key": "text_88",
+      "source": "This Website",
+      "value": "This Website"
+    },
+    {
+      "key": "text_89",
+      "source": "This website is designed, hosted, and operated by Outside Media & Knowledge (Germany).",
+      "value": "This website is designed, hosted, and operated by Outside Media & Knowledge (Germany)."
+    },
+    {
+      "key": "text_90",
+      "source": "Germany",
+      "value": "Germany"
+    },
+    {
+      "key": "text_91",
+      "source": "Outside Media & Knowledge",
+      "value": "Outside Media & Knowledge"
+    },
+    {
+      "key": "text_92",
+      "source": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)",
+      "value": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)"
+    },
+    {
+      "key": "text_93",
+      "source": "© 2026 DIGI-METER Consortium. All rights reserved.",
+      "value": "© 2026 DIGI-METER Consortium. All rights reserved."
+    },
+    {
+      "key": "text_94",
+      "source": "Privacy Policy",
+      "value": "Privacy Policy"
+    },
+    {
+      "key": "text_95",
+      "source": "Cookie Policy",
+      "value": "Cookie Policy"
+    },
+    {
+      "key": "text_96",
+      "source": "Impressum",
+      "value": "Impressum"
+    }
+  ],
+  "attributes": [
+    {
+      "index": 0,
+      "attribute": "aria-label",
+      "source": "Co-funded by the European Union logo",
+      "value": "Co-funded by the European Union logo"
+    },
+    {
+      "index": 1,
+      "attribute": "aria-label",
+      "source": "Accessibility controls",
+      "value": "Accessibility controls"
+    },
+    {
+      "index": 2,
+      "attribute": "aria-label",
+      "source": "Decrease text size",
+      "value": "Decrease text size"
+    },
+    {
+      "index": 3,
+      "attribute": "aria-label",
+      "source": "Increase text size",
+      "value": "Increase text size"
+    },
+    {
+      "index": 4,
+      "attribute": "aria-label",
+      "source": "Select language",
+      "value": "Select language"
+    },
+    {
+      "index": 5,
+      "attribute": "aria-label",
+      "source": "Search content",
+      "value": "Search content"
+    },
+    {
+      "index": 6,
+      "attribute": "aria-label",
+      "source": "Submit search",
+      "value": "Submit search"
+    },
+    {
+      "index": 7,
+      "attribute": "aria-label",
+      "source": "Main site navigation",
+      "value": "Main site navigation"
+    },
+    {
+      "index": 8,
+      "attribute": "aria-label",
+      "source": "Toggle mobile menu",
+      "value": "Toggle mobile menu"
+    },
+    {
+      "index": 9,
+      "attribute": "aria-label",
+      "source": "Close navigation menu",
+      "value": "Close navigation menu"
+    },
+    {
+      "index": 10,
+      "attribute": "aria-label",
+      "source": "Breadcrumb",
+      "value": "Breadcrumb"
+    },
+    {
+      "index": 0,
+      "attribute": "title",
+      "source": "Toggle High Contrast Theme",
+      "value": "Toggle High Contrast Theme"
+    },
+    {
+      "index": 0,
+      "attribute": "placeholder",
+      "source": "Search site...",
+      "value": "Search site..."
+    },
+    {
+      "index": 0,
+      "attribute": "alt",
+      "source": "DIGI-METER Logo",
+      "value": "DIGI-METER Logo"
+    },
+    {
+      "index": 1,
+      "attribute": "alt",
+      "source": "DIGI-METER Logo Footer",
+      "value": "DIGI-METER Logo Footer"
+    }
+  ]
+}

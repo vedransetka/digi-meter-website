@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About the Project — DIGI-METER</title>
+  <meta name="description" content="Learn about DIGI-METER — an Erasmus+ Forward-Looking project that translates DigComp 2.2 into practical, AI-supported digital competence assessment tools for schools and VET providers.">
+  <link rel="icon" type="image/png" href="assets/logo-digimeter.png">
+  <link rel="stylesheet" href="css/style.css?v=20260612l">
+  <style>
+    .page-hero {
+      background-color: var(--c-charcoal);
+      background-image:
+        radial-gradient(ellipse 60% 70% at 100% 0%, rgba(83,200,234,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 50% at 0% 100%, rgba(115,64,153,0.10) 0%, transparent 60%),
+        linear-gradient(to right, rgba(13,24,43,0.97) 0%, rgba(13,24,43,0.85) 45%, rgba(13,24,43,0.28) 100%),
+        url(assets/photos/group-of-diverse-students.jpg);
+      background-size: auto, auto, auto, cover;
+      background-position: 0 0, 0 0, 0 0, 65% 30%;
+      padding: clamp(60px, 8vw, 110px) 0 clamp(40px, 5vw, 70px);
+    }
+    .page-hero-eyebrow { font-family: var(--ff-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--c-sky); font-weight: 700; display: block; margin-bottom: 16px; }
+    .page-hero h1 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; color: #fff; line-height: 1.15; margin: 0 0 16px; }
+    .page-hero p { font-size: clamp(0.95rem, 1.5vw, 1.1rem); color: rgba(255,255,255,0.65); max-width: 660px; line-height: 1.6; }
+    .page-breadcrumb { font-family: var(--ff-mono); font-size: 0.68rem; color: rgba(255,255,255,0.68); margin-bottom: 24px; display: flex; gap: 8px; align-items: center; }
+    .page-breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .page-breadcrumb a:hover { color: var(--c-sky); }
+    .page-breadcrumb span { color: rgba(255,255,255,0.6); }
+
+    /* Objectives grid */
+    .objectives-grid { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: var(--space-l); }
+    @media (min-width: 640px) { .objectives-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 1024px) { .objectives-grid { grid-template-columns: 1fr 1fr 1fr; } }
+    .obj-card { background: #fff; border: 1px solid rgba(13,24,43,0.07); border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px; }
+    .obj-card .obj-num { font-family: var(--ff-mono); font-size: 1.8rem; font-weight: 800; color: rgba(83,200,234,0.3); line-height: 1; }
+    .obj-card h3 { font-size: 1rem; font-weight: 700; color: var(--c-charcoal); margin: 0; line-height: 1.4; }
+    .obj-card p { font-size: 1rem; color: var(--c-slate); margin: 0; line-height: 1.6; flex: 1; }
+
+    /* DigComp table */
+    .digcomp-table { width: 100%; border-collapse: collapse; margin-top: var(--space-m); font-size: 1rem; }
+    .digcomp-table th { background: var(--c-charcoal); color: #fff; text-align: left; padding: 12px 16px; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
+    .digcomp-table td { padding: 12px 16px; border-bottom: 1px solid rgba(13,24,43,0.06); vertical-align: top; }
+    .digcomp-table tr:nth-child(even) td { background: rgba(83,200,234,0.04); }
+    .digcomp-table .area-tag { display: inline-block; background: rgba(115,64,153,0.1); border: 1px solid rgba(115,64,153,0.2); color: var(--c-purple); font-family: var(--ff-mono); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.08em; padding: 2px 8px; border-radius: 20px; white-space: nowrap; }
+
+    /* Timeline */
+    .timeline { margin: var(--space-l) 0; display: flex; flex-direction: column; gap: 0; }
+    .timeline-item { display: flex; gap: 24px; padding-bottom: var(--space-m); position: relative; }
+    .timeline-item:not(:last-child)::before { content: ''; position: absolute; left: 19px; top: 42px; bottom: 0; width: 2px; background: rgba(83,200,234,0.2); }
+    .timeline-dot { width: 40px; height: 40px; border-radius: 50%; background: var(--c-charcoal); border: 2px solid rgba(83,200,234,0.4); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-family: var(--ff-mono); font-size: 0.68rem; font-weight: 700; color: var(--c-sky); }
+    .timeline-content h4 { font-size: 1rem; font-weight: 700; color: var(--c-charcoal); margin: 0 0 4px; }
+    .timeline-content p { font-size: 1rem; color: var(--c-slate); margin: 0; line-height: 1.5; }
+    .timeline-content .tl-period { font-family: var(--ff-mono); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--c-sky); margin-bottom: 4px; display: block; }
+
+    /* HC overrides */
+    html.high-contrast .obj-card { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.15); }
+    html.high-contrast .obj-card h3 { color: #fff; }
+    /* DigComp table: keep it a white data-card with BLACK text in HC (overrides the global inline-style catch-alls) */
+    html.high-contrast .digcomp-card { background: #ffffff !important; border: 2px solid #ffffff !important; }
+    html.high-contrast .digcomp-table { background: #ffffff !important; }
+    html.high-contrast .digcomp-table th { background: #000000 !important; color: #ffffff !important; }
+    html.high-contrast .digcomp-table td,
+    html.high-contrast .digcomp-table td[style*="--c-charcoal"],
+    html.high-contrast .digcomp-table td[style*="--c-slate"] { background: #ffffff !important; color: #000000 !important; border-color: rgba(0,0,0,0.2) !important; }
+    html.high-contrast .digcomp-table tr:nth-child(even) td { background: #f0f0f0 !important; }
+    html.high-contrast .digcomp-table .area-tag { background: rgba(0,0,0,0.06) !important; border-color: rgba(0,0,0,0.35) !important; color: #000000 !important; }
+    html.high-contrast .timeline-content h4 { color: #fff; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Top Utility Bar -->
+  <div class="top-bar" id="top-utility-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <div class="eu-badge-header" role="img" aria-label="Co-funded by the European Union logo">
+          <svg class="eu-flag-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" aria-hidden="true" focusable="false"><rect width="36" height="24" fill="#003399"/><g fill="#FFCC00"><polygon transform="translate(18,4)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(26,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(18,20)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(10,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/></g></svg>
+          <span class="eu-text">Co-funded by the<br>European Union</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="a11y-widget" aria-label="Accessibility controls">
+          <button class="a11y-btn" id="contrast-toggle" aria-pressed="false" title="Toggle High Contrast Theme">High Contrast</button>
+          <button class="a11y-btn" id="size-decrease" title="Decrease Text Size" aria-label="Decrease text size">A-</button>
+          <button class="a11y-btn" id="size-increase" title="Increase Text Size" aria-label="Increase text size">A+</button>
+        </div>
+        <!-- Language Selector (project languages — confirm final list with consortium) -->
+        <div class="language-selector">
+          <label for="lang-select" class="sr-only">Select language</label>
+          <select id="lang-select" aria-label="Select language">
+            <option value="en" selected>EN — English</option>
+            <option value="el">EL — Ελληνικά</option>
+            <option value="de">DE — Deutsch</option>
+            <option value="fr">FR — Français</option>
+            <option value="it">IT — Italiano</option>
+            <option value="pt">PT — Português</option>
+            <option value="nl">NL — Nederlands</option>
+          </select>
+        </div>
+
+        <form class="search-box" role="search" onsubmit="event.preventDefault(); showToast(\'Site search will be available at launch.\', \'info\');">
+          <input type="search" class="search-input" placeholder="Search site..." aria-label="Search content">
+          <button type="submit" class="search-btn" aria-label="Submit search">🔍</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo" aria-label="DIGI-METER homepage link">
+        <img src="assets/logo-digimeter.png" alt="DIGI-METER Logo">
+      </a>
+      <nav class="main-nav" aria-label="Main site navigation">
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="outputs.html" class="nav-link">Outputs</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="partners.html" class="nav-link">Partners</a>
+        <a href="platform.html" class="nav-link">Platform</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a href="contact.html" class="btn btn-primary" style="padding: 0.58rem 1.4rem; font-size: 1rem; box-shadow: 0 0 20px rgba(83,200,234,0.3);">Subscribe</a>
+      </div>
+      <button class="burger-menu" id="burger-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav-panel">
+        <span class="burger-bar" style="background-color: #fff;"></span>
+        <span class="burger-bar" style="background-color: #fff;"></span>
+        <span class="burger-bar" style="background-color: #fff;"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav-panel" id="mobile-nav-panel">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <ul class="mobile-menu">
+      <li><a href="about.html" class="mobile-link">About the Project</a></li>
+      <li><a href="outputs.html" class="mobile-link">Outputs &amp; Resources</a></li>
+      <li><a href="events.html" class="mobile-link">Events &amp; Webinars</a></li>
+      <li><a href="partners.html" class="mobile-link">Consortium Partners</a></li>
+      <li><a href="platform.html" class="mobile-link">Platform Access</a></li>
+      <li><a href="news.html" class="mobile-link">News &amp; Updates</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+    <div class="mobile-cta">
+      <a href="contact.html" class="btn btn-primary" style="width:100%; text-align:center;">Subscribe</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="page-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <span>About the Project</span>
+        </nav>
+        <span class="page-hero-eyebrow">Erasmus+ Forward-Looking · Grant No. 101259860</span>
+        <h1>About<br>DIGI-METER</h1>
+        <p>An EU-funded research and development project translating the DigComp 2.2 framework into practical, evidence-based digital competence assessment tools for European schools and VET providers.</p>
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="section section-pad section-brand">
+      <div class="container">
+        <div class="row row-side about-row">
+          <div class="col-main block">
+            <span class="eyebrow">The Challenge</span>
+            <h2>Why DIGI-METER Exists</h2>
+            <p style="font-size: 1rem; color: var(--c-slate); line-height: 1.7; margin-bottom: var(--space-s);">
+              While the DigComp 2.2 framework clearly defines the digital competences citizens need in today's world, its practical use in European schools and vocational education and training remains fragmented. Schools lack reliable tools to measure where learners actually stand. Teachers struggle to connect framework descriptors to everyday classroom realities. Policymakers cannot compare performance data across institutions and borders.
+            </p>
+            <p style="font-size: 1rem; color: var(--c-slate); line-height: 1.7;">
+              DIGI-METER bridges this gap. By translating DigComp 2.2 into measurable indicators, AI-supported assessment tools, and clear dashboards, the project equips every stakeholder — learner, educator, institution, and policymaker — with actionable insight into digital competence development.
+            </p>
+          </div>
+          <div class="col-side about-media-col">
+            <div class="about-img-wrap">
+              <div class="about-img-box about-img-portrait">
+                <img src="assets/photos/students-using-tablets-in.jpg" alt="Students using tablets in a bright modern classroom">
+              </div>
+              <div class="about-stat-chip">
+                <span style="font-family: var(--ff-mono); color: var(--c-sky); font-weight: 700;">DigComp 2.2</span>&thinsp;&middot;&thinsp;EU Framework
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-side about-row" style="margin-top: var(--space-2xl); padding-top: var(--space-2xl); border-top: 1px solid rgba(13,24,43,0.07);">
+          <div class="col-side about-media-col about-media-col--left">
+            <div class="about-img-wrap">
+              <div class="about-img-box about-img-portrait">
+                <img src="assets/photos/professor-explaining-brain-computer.jpg" alt="Professor explaining technology interface to students">
+              </div>
+              <div class="about-stat-chip">
+                <span style="font-family: var(--ff-mono); color: var(--c-purple); font-weight: 700;">Ethics-First</span>&thinsp;&middot;&thinsp;AI Design
+              </div>
+            </div>
+          </div>
+          <div class="col-main block">
+            <span class="eyebrow">Our Approach</span>
+            <h2>Evidence-Based, Ethics-First</h2>
+            <p style="font-size: 1rem; color: var(--c-slate); line-height: 1.7; margin-bottom: var(--space-s);">
+              DIGI-METER develops AI-supported self-assessment tools, educator dashboards, and policy-ready indicator frameworks — all built on a foundation of rigorous research, inclusive design, and responsible AI principles. Our approach is grounded in real classrooms, validated across countries, and designed to grow alongside learners.
+            </p>
+            <div style="background: rgba(115,64,153,0.08); border-left: 3px solid var(--c-purple); padding: 18px 22px; border-radius: 0 8px 8px 0;">
+              <h3 style="font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px;">Ethics by Design</h3>
+              <p style="font-size: 1rem; color: var(--c-slate); margin: 0; line-height: 1.6;">Every DIGI-METER tool is built with transparency, fairness, GDPR compliance, and explainability as core design requirements — not afterthoughts. Learners always retain control over their data.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Objectives -->
+    <section class="section section-pad section-light">
+      <div class="container">
+        <div class="block align-center" style="margin-bottom: var(--space-m);">
+          <span class="eyebrow">Project Objectives</span>
+          <h2>What We Set Out to Achieve</h2>
+          <p class="lead-p" style="max-width: 620px; margin: 0 auto;">Five core objectives guide the DIGI-METER project. Final wording will be aligned with the approved project application.</p>
+        </div>
+        <div class="objectives-grid">
+          <div class="obj-card">
+            <div class="obj-num">01</div>
+            <h3>Translate DigComp 2.2 into Measurable Indicators</h3>
+            <p>Turn the DigComp 2.2 framework into measurable indicators and practical assessment tools for schools and vocational education and training.</p>
+          </div>
+          <div class="obj-card">
+            <div class="obj-num">02</div>
+            <h3>Develop AI-Supported Self-Assessment Tools</h3>
+            <p>Develop AI-supported self-assessment tools that give learners clear, personalised feedback on their digital competences.</p>
+          </div>
+          <div class="obj-card">
+            <div class="obj-num">03</div>
+            <h3>Create a Teacher Dashboard &amp; Open Resources</h3>
+            <p>Provide a teacher dashboard and open resources that help schools, VET providers, and policymakers understand, monitor, and improve digital skills.</p>
+          </div>
+          <div class="obj-card">
+            <div class="obj-num">04</div>
+            <h3>Embed Ethics, Inclusion &amp; Data Protection by Design</h3>
+            <p>Follow an ethics-by-design approach with attention to transparency, GDPR compliance, fairness, explainability, and user control, so that digital assessment is trustworthy, human-centred, and accessible to diverse learners.</p>
+          </div>
+          <div class="obj-card">
+            <div class="obj-num">05</div>
+            <h3>Validate Across European Contexts &amp; Inform Policy</h3>
+            <p>Test and validate the tools across European contexts, supporting learners, teachers, education providers, and policy stakeholders in strengthening digital competence across Europe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DigComp 2.2 Framework Reference -->
+    <section class="section section-pad section-dark">
+      <div class="container">
+        <div class="row row-side" style="gap: var(--space-l); align-items: flex-start;">
+          <div class="col-main block">
+            <span class="eyebrow text-sky">The EU Framework</span>
+            <h2 class="text-white">Understanding DigComp 2.2</h2>
+            <p style="color: rgba(255,255,255,0.65); font-size: 1rem; line-height: 1.7; margin-bottom: var(--space-m);">
+              DigComp 2.2 is the European Digital Competence Framework for Citizens, developed by the Joint Research Centre of the European Commission. It describes 21 digital competences across 5 areas and 8 proficiency levels — from Foundation (Level 1) to Highly Specialised (Level 8). DIGI-METER operationalises this framework into measurable, classroom-ready indicators.
+            </p>
+            <div class="digcomp-card" style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px -8px rgba(0,0,0,0.35); margin-top: var(--space-m);">
+              <div style="overflow-x: auto;">
+              <table class="digcomp-table" style="margin-top: 0;">
+                <thead>
+                  <tr>
+                    <th>Area</th>
+                    <th>Focus</th>
+                    <th>Key Competences</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="area-tag">Area 1</span></td>
+                    <td style="font-weight: 600; color: var(--c-charcoal);">Information &amp; Data Literacy</td>
+                    <td style="color: var(--c-slate);">Browsing, searching, filtering; Evaluating data; Managing data</td>
+                  </tr>
+                  <tr>
+                    <td><span class="area-tag">Area 2</span></td>
+                    <td style="font-weight: 600; color: var(--c-charcoal);">Communication &amp; Collaboration</td>
+                    <td style="color: var(--c-slate);">Interacting; Sharing; Engaging citizenship; Collaborating; Netiquette; Managing digital identity</td>
+                  </tr>
+                  <tr>
+                    <td><span class="area-tag">Area 3</span></td>
+                    <td style="font-weight: 600; color: var(--c-charcoal);">Digital Content Creation</td>
+                    <td style="color: var(--c-slate);">Developing content; Integrating and re-elaborating; Copyright and licences; Programming</td>
+                  </tr>
+                  <tr>
+                    <td><span class="area-tag">Area 4</span></td>
+                    <td style="font-weight: 600; color: var(--c-charcoal);">Safety</td>
+                    <td style="color: var(--c-slate);">Protecting devices; Protecting personal data; Protecting health and well-being; Protecting the environment</td>
+                  </tr>
+                  <tr>
+                    <td><span class="area-tag">Area 5</span></td>
+                    <td style="font-weight: 600; color: var(--c-charcoal);">Problem Solving</td>
+                    <td style="color: var(--c-slate);">Solving technical problems; Identifying needs; Creatively using digital tools; Identifying digital competence gaps</td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-side block" style="align-self: center;">
+            <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(83,200,234,0.15); border-radius: 16px; padding: 28px;">
+              <div style="font-family: var(--ff-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--c-sky); margin-bottom: 16px;">Project Facts</div>
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 14px;">
+                <li style="display: flex; flex-direction: column; gap: 2px;">
+                  <span style="font-size: 0.7rem; color: rgba(255,255,255,0.68); text-transform: uppercase; letter-spacing: 0.1em;">Programme</span>
+                  <span style="color: #fff; font-weight: 600; font-size: 1rem;">Erasmus+ Forward-Looking Projects</span>
+                </li>
+                <li style="display: flex; flex-direction: column; gap: 2px;">
+                  <span style="font-size: 0.7rem; color: rgba(255,255,255,0.68); text-transform: uppercase; letter-spacing: 0.1em;">Grant Agreement</span>
+                  <span style="color: #fff; font-weight: 600; font-size: 1rem; font-family: var(--ff-mono);">101259860</span>
+                </li>
+                <li style="display: flex; flex-direction: column; gap: 2px;">
+                  <span style="font-size: 0.7rem; color: rgba(255,255,255,0.68); text-transform: uppercase; letter-spacing: 0.1em;">Duration</span>
+                  <span style="color: #fff; font-weight: 600; font-size: 1rem;">36 months</span>
+                </li>
+                <li style="display: flex; flex-direction: column; gap: 2px;">
+                  <span style="font-size: 0.7rem; color: rgba(255,255,255,0.68); text-transform: uppercase; letter-spacing: 0.1em;">Target Groups</span>
+                  <span style="color: #fff; font-weight: 600; font-size: 1rem;">Learners, Educators, Institutions, Policymakers</span>
+                </li>
+                <li style="display: flex; flex-direction: column; gap: 2px;">
+                  <span style="font-size: 0.7rem; color: rgba(255,255,255,0.68); text-transform: uppercase; letter-spacing: 0.1em;">Framework</span>
+                  <span style="color: #fff; font-weight: 600; font-size: 1rem;">DigComp 2.2 (JRC/European Commission)</span>
+                </li>
+                <li style="display: flex; flex-direction: column; gap: 2px;">
+                  <span style="font-size: 0.7rem; color: rgba(255,255,255,0.68); text-transform: uppercase; letter-spacing: 0.1em;">Coordinator</span>
+                  <span style="color: #fff; font-weight: 600; font-size: 1rem;">Center for Social Innovation (CSI), Cyprus</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Timeline -->
+    <section class="section section-pad section-light">
+      <div class="container">
+        <div class="row row-side" style="gap: var(--space-2xl); align-items: flex-start;">
+          <div class="col-main block">
+            <span class="eyebrow">Work Packages</span>
+            <h2>Work Plan Overview</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot">WP1</div>
+                <div class="timeline-content">
+                  <h3>Work Package 1</h3>
+                  <p>[Work package title and summary — to be confirmed from the approved project application]</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot">WP2</div>
+                <div class="timeline-content">
+                  <h3>Work Package 2</h3>
+                  <p>[Work package title and summary — to be confirmed from the approved project application]</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot">WP3</div>
+                <div class="timeline-content">
+                  <h3>Work Package 3</h3>
+                  <p>[Work package title and summary — to be confirmed from the approved project application]</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot">WP4</div>
+                <div class="timeline-content">
+                  <h3>Work Package 4</h3>
+                  <p>[Work package title and summary — to be confirmed from the approved project application]</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot">WP5</div>
+                <div class="timeline-content">
+                  <h3>Communication, Dissemination &amp; Exploitation</h3>
+                  <p>Co-led by Outside Media &amp; Knowledge — project branding, website, communication and dissemination of project results.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-side">
+            <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 12px 48px -16px rgba(13,24,43,0.18); aspect-ratio: 3/4; margin-bottom: 20px;">
+              <img src="assets/photos/group-of-diverse-students.jpg" alt="Diverse group of students working together in a library" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div style="background: rgba(83,200,234,0.07); border: 1px solid rgba(83,200,234,0.18); border-radius: 12px; padding: 20px;">
+              <div style="font-family: var(--ff-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--c-sky); margin-bottom: 8px;">Current Status</div>
+              <p style="font-size: 1rem; color: var(--c-slate); margin: 0; line-height: 1.55;">Project status updates will be published in the News section as the project progresses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Target audiences -->
+    <section class="section section-pad section-brand">
+      <div class="container">
+        <div class="block align-center" style="margin-bottom: var(--space-l);">
+          <span class="eyebrow">Who Benefits</span>
+          <h2>DIGI-METER Serves Four Key Groups</h2>
+        </div>
+        <div class="grid grid-2" style="gap: var(--space-m);">
+          <div style="display: flex; gap: 20px; background: rgba(255,255,255,0.7); backdrop-filter: blur(4px); border: 1px solid rgba(13,24,43,0.07); border-radius: 14px; padding: 28px; align-items: flex-start;">
+            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(83,200,234,0.12); border: 1px solid rgba(83,200,234,0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--c-sky)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <h3 style="font-size: 1rem; font-weight: 700; margin: 0 0 8px; color: var(--c-charcoal);">Learners</h3>
+              <p style="font-size: 1rem; color: var(--c-slate); margin: 0; line-height: 1.6;">Personalised self-assessment results and feedback helping them understand where they are and what to focus on next in their digital competence journey.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 20px; background: rgba(255,255,255,0.7); backdrop-filter: blur(4px); border: 1px solid rgba(13,24,43,0.07); border-radius: 14px; padding: 28px; align-items: flex-start;">
+            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(115,64,153,0.10); border: 1px solid rgba(115,64,153,0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--c-purple)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <div>
+              <h3 style="font-size: 1rem; font-weight: 700; margin: 0 0 8px; color: var(--c-charcoal);">Educators</h3>
+              <p style="font-size: 1rem; color: var(--c-slate); margin: 0; line-height: 1.6;">Class-level dashboards showing aggregate competence data, supporting lesson planning, CPD decisions, and early identification of students needing targeted support.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 20px; background: rgba(255,255,255,0.7); backdrop-filter: blur(4px); border: 1px solid rgba(13,24,43,0.07); border-radius: 14px; padding: 28px; align-items: flex-start;">
+            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(83,200,234,0.12); border: 1px solid rgba(83,200,234,0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--c-sky)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            </div>
+            <div>
+              <h3 style="font-size: 1rem; font-weight: 700; margin: 0 0 8px; color: var(--c-charcoal);">Institutions</h3>
+              <p style="font-size: 1rem; color: var(--c-slate); margin: 0; line-height: 1.6;">School and VET-centre level reporting enabling institutional leaders to benchmark digital competence levels, demonstrate progress, and plan strategic interventions.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 20px; background: rgba(255,255,255,0.7); backdrop-filter: blur(4px); border: 1px solid rgba(13,24,43,0.07); border-radius: 14px; padding: 28px; align-items: flex-start;">
+            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(115,64,153,0.10); border: 1px solid rgba(115,64,153,0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--c-purple)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div>
+              <h3 style="font-size: 1rem; font-weight: 700; margin: 0 0 8px; color: var(--c-charcoal);">Policymakers</h3>
+              <p style="font-size: 1rem; color: var(--c-slate); margin: 0; line-height: 1.6;">System-level, cross-country aggregated data and evidence-based policy briefs to inform national digital education strategies and EU-level digital competence policy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-pad section-dark">
+      <div class="container" style="text-align: center; max-width: 640px; margin: 0 auto;">
+        <span class="eyebrow text-sky">Get Involved</span>
+        <h2 class="text-white">Want to Know More or Participate?</h2>
+        <p style="color: rgba(255,255,255,0.65); font-size: 1rem; line-height: 1.6; margin-bottom: var(--space-m);">Whether you represent a school, VET provider, research institution, or education authority — we want to hear from you. Contact us to learn about pilot participation, research collaboration, or staying updated on project progress.</p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+          <a href="partners.html" class="btn btn-ghost">Meet the Partners</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="section site-footer section-pad-sm" id="site-footer">
+    <div class="container block" style="gap: var(--space-m);">
+      <div class="footer-top-row">
+        <div class="footer-brand-col block">
+          <div class="footer-brand-logo"><img src="assets/logo-digimeter.png" alt="DIGI-METER Logo Footer"></div>
+          <p class="footer-p">Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project translating DigComp 2.2 into actionable, trustworthy educational testing.</p>
+          <!-- Project social media links to be added once channels are confirmed by the consortium -->
+        </div>
+        <div class="footer-nav-col block" style="gap:12px;">
+          <h3 class="text-white" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em;">Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="about.html">About the Project</a></li>
+            <li><a href="partners.html">Consortium Partners</a></li>
+            <li><a href="outputs.html">Outputs &amp; Resources</a></li>
+            <li><a href="events.html">Events &amp; Webinars</a></li>
+            <li><a href="platform.html">Platform Access</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter-col block" style="gap:12px;">
+          <h3 class="text-white" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em;">This Website</h3>
+          <p class="footer-p" style="font-size: 1rem;">This website is designed, hosted, and operated by Outside Media &amp; Knowledge (Germany).</p>
+          <div style="font-size:0.75rem;"><strong><a href="https://outsidemedia.eu/" style="color:inherit; text-decoration:none;">Outside Media &amp; Knowledge</a></strong><br>Germany</div>
+        </div>
+      </div>
+      <div class="footer-disclaimer-box">
+        <div class="footer-disclaimer-flag">
+          <svg class="eu-flag-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" aria-hidden="true" focusable="false"><rect width="36" height="24" fill="#003399"/><g fill="#FFCC00"><polygon transform="translate(18,4)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(26,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(18,20)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(10,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/></g></svg>
+        </div>
+        <div class="footer-disclaimer-text">Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)</div>
+      </div>
+      <div class="footer-bottom-row">
+        <span>© 2026 DIGI-METER Consortium. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="cookies.html">Cookie Policy</a>
+          <a href="impressum.html">Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=20260612l"></script>
+</body>
+</html>

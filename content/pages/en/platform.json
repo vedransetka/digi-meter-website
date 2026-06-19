@@ -1,0 +1,936 @@
+{
+  "page": "platform",
+  "title": "Platform Access — DIGI-METER",
+  "description": "DIGI-METER adaptive digital competence assessment platform — currently in development. Register your institution for early access and pilot participation.",
+  "translation_status": "source",
+  "strings": [
+    {
+      "key": "text_0",
+      "source": "Skip to main content",
+      "value": "Skip to main content"
+    },
+    {
+      "key": "text_1",
+      "source": "Co-funded by the",
+      "value": "Co-funded by the"
+    },
+    {
+      "key": "text_2",
+      "source": "European Union",
+      "value": "European Union"
+    },
+    {
+      "key": "text_3",
+      "source": "High Contrast",
+      "value": "High Contrast"
+    },
+    {
+      "key": "text_4",
+      "source": "A-",
+      "value": "A-"
+    },
+    {
+      "key": "text_5",
+      "source": "A+",
+      "value": "A+"
+    },
+    {
+      "key": "text_6",
+      "source": "Select language",
+      "value": "Select language"
+    },
+    {
+      "key": "text_7",
+      "source": "EN — English",
+      "value": "EN — English"
+    },
+    {
+      "key": "text_8",
+      "source": "EL — Ελληνικά",
+      "value": "EL — Ελληνικά"
+    },
+    {
+      "key": "text_9",
+      "source": "DE — Deutsch",
+      "value": "DE — Deutsch"
+    },
+    {
+      "key": "text_10",
+      "source": "FR — Français",
+      "value": "FR — Français"
+    },
+    {
+      "key": "text_11",
+      "source": "IT — Italiano",
+      "value": "IT — Italiano"
+    },
+    {
+      "key": "text_12",
+      "source": "PT — Português",
+      "value": "PT — Português"
+    },
+    {
+      "key": "text_13",
+      "source": "NL — Nederlands",
+      "value": "NL — Nederlands"
+    },
+    {
+      "key": "text_14",
+      "source": "🔍",
+      "value": "🔍"
+    },
+    {
+      "key": "text_15",
+      "source": "About",
+      "value": "About"
+    },
+    {
+      "key": "text_16",
+      "source": "News",
+      "value": "News"
+    },
+    {
+      "key": "text_17",
+      "source": "Outputs",
+      "value": "Outputs"
+    },
+    {
+      "key": "text_18",
+      "source": "Events",
+      "value": "Events"
+    },
+    {
+      "key": "text_19",
+      "source": "Partners",
+      "value": "Partners"
+    },
+    {
+      "key": "text_20",
+      "source": "Platform",
+      "value": "Platform"
+    },
+    {
+      "key": "text_21",
+      "source": "Contact",
+      "value": "Contact"
+    },
+    {
+      "key": "text_22",
+      "source": "Request Access",
+      "value": "Request Access"
+    },
+    {
+      "key": "text_23",
+      "source": "About the Project",
+      "value": "About the Project"
+    },
+    {
+      "key": "text_24",
+      "source": "Outputs & Resources",
+      "value": "Outputs & Resources"
+    },
+    {
+      "key": "text_25",
+      "source": "Events & Webinars",
+      "value": "Events & Webinars"
+    },
+    {
+      "key": "text_26",
+      "source": "Consortium Partners",
+      "value": "Consortium Partners"
+    },
+    {
+      "key": "text_27",
+      "source": "Platform Access",
+      "value": "Platform Access"
+    },
+    {
+      "key": "text_28",
+      "source": "News & Updates",
+      "value": "News & Updates"
+    },
+    {
+      "key": "text_29",
+      "source": "Contact Us",
+      "value": "Contact Us"
+    },
+    {
+      "key": "text_30",
+      "source": "Request Access",
+      "value": "Request Access"
+    },
+    {
+      "key": "text_31",
+      "source": "Home",
+      "value": "Home"
+    },
+    {
+      "key": "text_32",
+      "source": "›",
+      "value": "›"
+    },
+    {
+      "key": "text_33",
+      "source": "Platform Access",
+      "value": "Platform Access"
+    },
+    {
+      "key": "text_34",
+      "source": "Self-Assessment Tool · In Active Development",
+      "value": "Self-Assessment Tool · In Active Development"
+    },
+    {
+      "key": "text_35",
+      "source": "DIGI-METER",
+      "value": "DIGI-METER"
+    },
+    {
+      "key": "text_36",
+      "source": "Adaptive Platform",
+      "value": "Adaptive Platform"
+    },
+    {
+      "key": "text_37",
+      "source": "An AI-supported self-assessment platform enabling learners to measure their digital competences against the DigComp 2.2 framework — with personalised feedback, educator dashboards, and institutional analytics.",
+      "value": "An AI-supported self-assessment platform enabling learners to measure their digital competences against the DigComp 2.2 framework — with personalised feedback, educator dashboards, and institutional analytics."
+    },
+    {
+      "key": "text_38",
+      "source": "Platform Overview",
+      "value": "Platform Overview"
+    },
+    {
+      "key": "text_39",
+      "source": "A Complete Digital Competence Measurement Ecosystem",
+      "value": "A Complete Digital Competence Measurement Ecosystem"
+    },
+    {
+      "key": "text_40",
+      "source": "DIGI-METER is being built as a web-based platform that covers the full digital competence measurement cycle — from individual learner self-assessment through to class-level educator dashboards and institution-level analytics. Every layer is grounded in the DigComp 2.2 framework and designed around privacy-by-design principles.",
+      "value": "DIGI-METER is being built as a web-based platform that covers the full digital competence measurement cycle — from individual learner self-assessment through to class-level educator dashboards and institution-level analytics. Every layer is grounded in the DigComp 2.2 framework and designed around privacy-by-design principles."
+    },
+    {
+      "key": "text_41",
+      "source": "Ethics & Privacy First",
+      "value": "Ethics & Privacy First"
+    },
+    {
+      "key": "text_42",
+      "source": "All learner data is pseudonymised. Educators see only aggregated class-level data. Every component is GDPR-compliant and audited by Ergonact's ethics-by-design framework.",
+      "value": "All learner data is pseudonymised. Educators see only aggregated class-level data. Every component is GDPR-compliant and audited by Ergonact's ethics-by-design framework."
+    },
+    {
+      "key": "text_43",
+      "source": "Request Early Access",
+      "value": "Request Early Access"
+    },
+    {
+      "key": "text_44",
+      "source": "About the Project",
+      "value": "About the Project"
+    },
+    {
+      "key": "text_45",
+      "source": "platform.digi-meter.eu",
+      "value": "platform.digi-meter.eu"
+    },
+    {
+      "key": "text_46",
+      "source": "· Launch Date TBC",
+      "value": "· Launch Date TBC"
+    },
+    {
+      "key": "text_47",
+      "source": "In Development",
+      "value": "In Development"
+    },
+    {
+      "key": "text_48",
+      "source": "Platform Capabilities",
+      "value": "Platform Capabilities"
+    },
+    {
+      "key": "text_49",
+      "source": "What DIGI-METER Does",
+      "value": "What DIGI-METER Does"
+    },
+    {
+      "key": "text_50",
+      "source": "The platform covers the full digital competence measurement cycle — from individual learner assessment through to institutional-level data and policy-ready reporting.",
+      "value": "The platform covers the full digital competence measurement cycle — from individual learner assessment through to institutional-level data and policy-ready reporting."
+    },
+    {
+      "key": "text_51",
+      "source": "Learner Experience",
+      "value": "Learner Experience"
+    },
+    {
+      "key": "text_52",
+      "source": "Adaptive Self-Assessment",
+      "value": "Adaptive Self-Assessment"
+    },
+    {
+      "key": "text_53",
+      "source": "Learners complete an adaptive digital competence assessment that adjusts question difficulty and focus based on their responses. The AI engine maps answers to DigComp 2.2 proficiency levels across all five competence areas.",
+      "value": "Learners complete an adaptive digital competence assessment that adjusts question difficulty and focus based on their responses. The AI engine maps answers to DigComp 2.2 proficiency levels across all five competence areas."
+    },
+    {
+      "key": "text_54",
+      "source": "Adaptive questioning across all 21 DigComp 2.2 competences",
+      "value": "Adaptive questioning across all 21 DigComp 2.2 competences"
+    },
+    {
+      "key": "text_55",
+      "source": "✓",
+      "value": "✓"
+    },
+    {
+      "key": "text_56",
+      "source": "Personalised competence profile with proficiency level mapping",
+      "value": "Personalised competence profile with proficiency level mapping"
+    },
+    {
+      "key": "text_57",
+      "source": "✓",
+      "value": "✓"
+    },
+    {
+      "key": "text_58",
+      "source": "Actionable learning recommendations and resource suggestions",
+      "value": "Actionable learning recommendations and resource suggestions"
+    },
+    {
+      "key": "text_59",
+      "source": "✓",
+      "value": "✓"
+    },
+    {
+      "key": "text_60",
+      "source": "Progress tracking across multiple assessment sessions",
+      "value": "Progress tracking across multiple assessment sessions"
+    },
+    {
+      "key": "text_61",
+      "source": "✓",
+      "value": "✓"
+    },
+    {
+      "key": "text_62",
+      "source": "Educator Tools",
+      "value": "Educator Tools"
+    },
+    {
+      "key": "text_63",
+      "source": "Class & Cohort Dashboard",
+      "value": "Class & Cohort Dashboard"
+    },
+    {
+      "key": "text_64",
+      "source": "Educators receive an anonymised, real-time view of their class's digital competence profile — identifying where learners excel and where targeted support is needed. All data is privacy-by-design compliant.",
+      "value": "Educators receive an anonymised, real-time view of their class's digital competence profile — identifying where learners excel and where targeted support is needed. All data is privacy-by-design compliant."
+    },
+    {
+      "key": "text_65",
+      "source": "Anonymised class-level competence visualisations",
+      "value": "Anonymised class-level competence visualisations"
+    },
+    {
+      "key": "text_66",
+      "source": "✓",
+      "value": "✓"
+    },
+    {
+      "key": "text_67",
+      "source": "Competence gap identification across DigComp 2.2 areas",
+      "value": "Competence gap identification across DigComp 2.2 areas"
+    },
+    {
+      "key": "text_68",
+      "source": "✓",
+      "value": "✓"
+    },
+    {
+      "key": "text_69",
+      "source": "Exportable reports for institutional reporting and CPD planning",
+      "value": "Exportable reports for institutional reporting and CPD planning"
+    },
+    {
+      "key": "text_70",
+      "source": "✓",
+      "value": "✓"
+    },
+    {
+      "key": "text_71",
+      "source": "Tracking of learner progress over time",
+      "value": "Tracking of learner progress over time"
+    },
+    {
+      "key": "text_72",
+      "source": "✓",
+      "value": "✓"
+    },
+    {
+      "key": "text_73",
+      "source": "Who Can Use It",
+      "value": "Who Can Use It"
+    },
+    {
+      "key": "text_74",
+      "source": "Built for Everyone in the Learning Ecosystem",
+      "value": "Built for Everyone in the Learning Ecosystem"
+    },
+    {
+      "key": "text_75",
+      "source": "Students & Learners",
+      "value": "Students & Learners"
+    },
+    {
+      "key": "text_76",
+      "source": "Understand Your Digital Skills",
+      "value": "Understand Your Digital Skills"
+    },
+    {
+      "key": "text_77",
+      "source": "Take a personalised assessment to see exactly where you are across all 21 DigComp 2.2 competences. Get specific feedback and know what to work on next.",
+      "value": "Take a personalised assessment to see exactly where you are across all 21 DigComp 2.2 competences. Get specific feedback and know what to work on next."
+    },
+    {
+      "key": "text_78",
+      "source": "Teachers & Trainers",
+      "value": "Teachers & Trainers"
+    },
+    {
+      "key": "text_79",
+      "source": "See Your Class at a Glance",
+      "value": "See Your Class at a Glance"
+    },
+    {
+      "key": "text_80",
+      "source": "Access class-level dashboards showing aggregate competence data. Identify gaps early and plan targeted learning interventions grounded in real evidence.",
+      "value": "Access class-level dashboards showing aggregate competence data. Identify gaps early and plan targeted learning interventions grounded in real evidence."
+    },
+    {
+      "key": "text_81",
+      "source": "Schools & VET Centres",
+      "value": "Schools & VET Centres"
+    },
+    {
+      "key": "text_82",
+      "source": "Institutional Reporting & Planning",
+      "value": "Institutional Reporting & Planning"
+    },
+    {
+      "key": "text_83",
+      "source": "Use institution-level data to benchmark digital competence across cohorts, track year-on-year progress, and demonstrate impact to stakeholders and inspectorates.",
+      "value": "Use institution-level data to benchmark digital competence across cohorts, track year-on-year progress, and demonstrate impact to stakeholders and inspectorates."
+    },
+    {
+      "key": "text_84",
+      "source": "Researchers & Policymakers",
+      "value": "Researchers & Policymakers"
+    },
+    {
+      "key": "text_85",
+      "source": "Cross-Country Evidence Base",
+      "value": "Cross-Country Evidence Base"
+    },
+    {
+      "key": "text_86",
+      "source": "Access anonymised, aggregated research-quality data on digital competence trends across European education systems — informing evidence-based policy development.",
+      "value": "Access anonymised, aggregated research-quality data on digital competence trends across European education systems — informing evidence-based policy development."
+    },
+    {
+      "key": "text_87",
+      "source": "Early Access Registration",
+      "value": "Early Access Registration"
+    },
+    {
+      "key": "text_88",
+      "source": "Request Early Access",
+      "value": "Request Early Access"
+    },
+    {
+      "key": "text_89",
+      "source": "Register your institution to be among the first to pilot the DIGI-METER platform. We will contact you ahead of the platform launch to confirm participation and onboarding details.",
+      "value": "Register your institution to be among the first to pilot the DIGI-METER platform. We will contact you ahead of the platform launch to confirm participation and onboarding details."
+    },
+    {
+      "key": "text_90",
+      "source": "Institution Type *",
+      "value": "Institution Type *"
+    },
+    {
+      "key": "text_91",
+      "source": "Secondary School",
+      "value": "Secondary School"
+    },
+    {
+      "key": "text_92",
+      "source": "VET Provider / Training Centre",
+      "value": "VET Provider / Training Centre"
+    },
+    {
+      "key": "text_93",
+      "source": "Higher Education Institution",
+      "value": "Higher Education Institution"
+    },
+    {
+      "key": "text_94",
+      "source": "Education Authority / Ministry",
+      "value": "Education Authority / Ministry"
+    },
+    {
+      "key": "text_95",
+      "source": "Research Organisation",
+      "value": "Research Organisation"
+    },
+    {
+      "key": "text_96",
+      "source": "Other",
+      "value": "Other"
+    },
+    {
+      "key": "text_97",
+      "source": "Country *",
+      "value": "Country *"
+    },
+    {
+      "key": "text_98",
+      "source": "Austria",
+      "value": "Austria"
+    },
+    {
+      "key": "text_99",
+      "source": "Belgium",
+      "value": "Belgium"
+    },
+    {
+      "key": "text_100",
+      "source": "Croatia",
+      "value": "Croatia"
+    },
+    {
+      "key": "text_101",
+      "source": "Cyprus",
+      "value": "Cyprus"
+    },
+    {
+      "key": "text_102",
+      "source": "Czech Republic",
+      "value": "Czech Republic"
+    },
+    {
+      "key": "text_103",
+      "source": "Denmark",
+      "value": "Denmark"
+    },
+    {
+      "key": "text_104",
+      "source": "Estonia",
+      "value": "Estonia"
+    },
+    {
+      "key": "text_105",
+      "source": "Finland",
+      "value": "Finland"
+    },
+    {
+      "key": "text_106",
+      "source": "France",
+      "value": "France"
+    },
+    {
+      "key": "text_107",
+      "source": "Germany",
+      "value": "Germany"
+    },
+    {
+      "key": "text_108",
+      "source": "Greece",
+      "value": "Greece"
+    },
+    {
+      "key": "text_109",
+      "source": "Hungary",
+      "value": "Hungary"
+    },
+    {
+      "key": "text_110",
+      "source": "Ireland",
+      "value": "Ireland"
+    },
+    {
+      "key": "text_111",
+      "source": "Italy",
+      "value": "Italy"
+    },
+    {
+      "key": "text_112",
+      "source": "Latvia",
+      "value": "Latvia"
+    },
+    {
+      "key": "text_113",
+      "source": "Lithuania",
+      "value": "Lithuania"
+    },
+    {
+      "key": "text_114",
+      "source": "Luxembourg",
+      "value": "Luxembourg"
+    },
+    {
+      "key": "text_115",
+      "source": "Malta",
+      "value": "Malta"
+    },
+    {
+      "key": "text_116",
+      "source": "Netherlands",
+      "value": "Netherlands"
+    },
+    {
+      "key": "text_117",
+      "source": "Poland",
+      "value": "Poland"
+    },
+    {
+      "key": "text_118",
+      "source": "Portugal",
+      "value": "Portugal"
+    },
+    {
+      "key": "text_119",
+      "source": "Romania",
+      "value": "Romania"
+    },
+    {
+      "key": "text_120",
+      "source": "Slovakia",
+      "value": "Slovakia"
+    },
+    {
+      "key": "text_121",
+      "source": "Slovenia",
+      "value": "Slovenia"
+    },
+    {
+      "key": "text_122",
+      "source": "Spain",
+      "value": "Spain"
+    },
+    {
+      "key": "text_123",
+      "source": "Sweden",
+      "value": "Sweden"
+    },
+    {
+      "key": "text_124",
+      "source": "Other",
+      "value": "Other"
+    },
+    {
+      "key": "text_125",
+      "source": "I agree to be contacted by the DIGI-METER consortium regarding platform access and agree to GDPR-compliant data processing. *",
+      "value": "I agree to be contacted by the DIGI-METER consortium regarding platform access and agree to GDPR-compliant data processing. *"
+    },
+    {
+      "key": "text_126",
+      "source": "Submit Access Request",
+      "value": "Submit Access Request"
+    },
+    {
+      "key": "text_127",
+      "source": "What Happens Next",
+      "value": "What Happens Next"
+    },
+    {
+      "key": "text_128",
+      "source": "1",
+      "value": "1"
+    },
+    {
+      "key": "text_129",
+      "source": "We Review Your Request",
+      "value": "We Review Your Request"
+    },
+    {
+      "key": "text_130",
+      "source": "Our team reviews registrations and confirms eligibility based on institution type and geographic fit with pilot cohort design.",
+      "value": "Our team reviews registrations and confirms eligibility based on institution type and geographic fit with pilot cohort design."
+    },
+    {
+      "key": "text_131",
+      "source": "2",
+      "value": "2"
+    },
+    {
+      "key": "text_132",
+      "source": "Onboarding & Training",
+      "value": "Onboarding & Training"
+    },
+    {
+      "key": "text_133",
+      "source": "Selected institutions receive onboarding support, training materials, and dedicated contact from the piloting team ahead of the platform launch.",
+      "value": "Selected institutions receive onboarding support, training materials, and dedicated contact from the piloting team ahead of the platform launch."
+    },
+    {
+      "key": "text_134",
+      "source": "3",
+      "value": "3"
+    },
+    {
+      "key": "text_135",
+      "source": "Platform Access",
+      "value": "Platform Access"
+    },
+    {
+      "key": "text_136",
+      "source": "Your institution gains access to the full DIGI-METER platform for pilot testing, with dedicated support throughout the pilot period.",
+      "value": "Your institution gains access to the full DIGI-METER platform for pilot testing, with dedicated support throughout the pilot period."
+    },
+    {
+      "key": "text_137",
+      "source": "Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project.",
+      "value": "Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project."
+    },
+    {
+      "key": "text_138",
+      "source": "Quick Links",
+      "value": "Quick Links"
+    },
+    {
+      "key": "text_139",
+      "source": "About the Project",
+      "value": "About the Project"
+    },
+    {
+      "key": "text_140",
+      "source": "Consortium Partners",
+      "value": "Consortium Partners"
+    },
+    {
+      "key": "text_141",
+      "source": "Outputs & Resources",
+      "value": "Outputs & Resources"
+    },
+    {
+      "key": "text_142",
+      "source": "Events & Webinars",
+      "value": "Events & Webinars"
+    },
+    {
+      "key": "text_143",
+      "source": "Platform Access",
+      "value": "Platform Access"
+    },
+    {
+      "key": "text_144",
+      "source": "News & Updates",
+      "value": "News & Updates"
+    },
+    {
+      "key": "text_145",
+      "source": "Contact Us",
+      "value": "Contact Us"
+    },
+    {
+      "key": "text_146",
+      "source": "This Website",
+      "value": "This Website"
+    },
+    {
+      "key": "text_147",
+      "source": "This website is designed, hosted, and operated by Outside Media & Knowledge (Germany).",
+      "value": "This website is designed, hosted, and operated by Outside Media & Knowledge (Germany)."
+    },
+    {
+      "key": "text_148",
+      "source": "Outside Media & Knowledge",
+      "value": "Outside Media & Knowledge"
+    },
+    {
+      "key": "text_149",
+      "source": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)",
+      "value": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)"
+    },
+    {
+      "key": "text_150",
+      "source": "© 2026 DIGI-METER Consortium. All rights reserved.",
+      "value": "© 2026 DIGI-METER Consortium. All rights reserved."
+    },
+    {
+      "key": "text_151",
+      "source": "Privacy Policy",
+      "value": "Privacy Policy"
+    },
+    {
+      "key": "text_152",
+      "source": "Cookie Policy",
+      "value": "Cookie Policy"
+    },
+    {
+      "key": "text_153",
+      "source": "Impressum",
+      "value": "Impressum"
+    }
+  ],
+  "attributes": [
+    {
+      "index": 0,
+      "attribute": "aria-label",
+      "source": "Co-funded by the European Union logo",
+      "value": "Co-funded by the European Union logo"
+    },
+    {
+      "index": 1,
+      "attribute": "aria-label",
+      "source": "Accessibility controls",
+      "value": "Accessibility controls"
+    },
+    {
+      "index": 2,
+      "attribute": "aria-label",
+      "source": "Decrease text size",
+      "value": "Decrease text size"
+    },
+    {
+      "index": 3,
+      "attribute": "aria-label",
+      "source": "Increase text size",
+      "value": "Increase text size"
+    },
+    {
+      "index": 4,
+      "attribute": "aria-label",
+      "source": "Select language",
+      "value": "Select language"
+    },
+    {
+      "index": 5,
+      "attribute": "aria-label",
+      "source": "Search content",
+      "value": "Search content"
+    },
+    {
+      "index": 6,
+      "attribute": "aria-label",
+      "source": "Submit search",
+      "value": "Submit search"
+    },
+    {
+      "index": 7,
+      "attribute": "aria-label",
+      "source": "Main site navigation",
+      "value": "Main site navigation"
+    },
+    {
+      "index": 8,
+      "attribute": "aria-label",
+      "source": "Toggle mobile menu",
+      "value": "Toggle mobile menu"
+    },
+    {
+      "index": 9,
+      "attribute": "aria-label",
+      "source": "Close navigation menu",
+      "value": "Close navigation menu"
+    },
+    {
+      "index": 10,
+      "attribute": "aria-label",
+      "source": "Breadcrumb",
+      "value": "Breadcrumb"
+    },
+    {
+      "index": 11,
+      "attribute": "aria-label",
+      "source": "Institution name",
+      "value": "Institution name"
+    },
+    {
+      "index": 12,
+      "attribute": "aria-label",
+      "source": "Institution email address",
+      "value": "Institution email address"
+    },
+    {
+      "index": 13,
+      "attribute": "aria-label",
+      "source": "Contact person name",
+      "value": "Contact person name"
+    },
+    {
+      "index": 14,
+      "attribute": "aria-label",
+      "source": "Institution type",
+      "value": "Institution type"
+    },
+    {
+      "index": 15,
+      "attribute": "aria-label",
+      "source": "Country",
+      "value": "Country"
+    },
+    {
+      "index": 0,
+      "attribute": "title",
+      "source": "Toggle High Contrast Theme",
+      "value": "Toggle High Contrast Theme"
+    },
+    {
+      "index": 0,
+      "attribute": "placeholder",
+      "source": "Search site...",
+      "value": "Search site..."
+    },
+    {
+      "index": 1,
+      "attribute": "placeholder",
+      "source": "Institution Name *",
+      "value": "Institution Name *"
+    },
+    {
+      "index": 2,
+      "attribute": "placeholder",
+      "source": "Official Institution Email *",
+      "value": "Official Institution Email *"
+    },
+    {
+      "index": 3,
+      "attribute": "placeholder",
+      "source": "Contact Name *",
+      "value": "Contact Name *"
+    },
+    {
+      "index": 0,
+      "attribute": "alt",
+      "source": "DIGI-METER Logo",
+      "value": "DIGI-METER Logo"
+    },
+    {
+      "index": 1,
+      "attribute": "alt",
+      "source": "DIGI-METER platform preview showing assessment data dashboard",
+      "value": "DIGI-METER platform preview showing assessment data dashboard"
+    },
+    {
+      "index": 2,
+      "attribute": "alt",
+      "source": "Student using laptop for online learning and self-assessment",
+      "value": "Student using laptop for online learning and self-assessment"
+    },
+    {
+      "index": 3,
+      "attribute": "alt",
+      "source": "Professional analyzing data graphs and business charts on a tablet",
+      "value": "Professional analyzing data graphs and business charts on a tablet"
+    },
+    {
+      "index": 4,
+      "attribute": "alt",
+      "source": "DIGI-METER Logo Footer",
+      "value": "DIGI-METER Logo Footer"
+    }
+  ]
+}

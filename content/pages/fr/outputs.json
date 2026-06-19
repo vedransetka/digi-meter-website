@@ -1,0 +1,774 @@
+{
+  "page": "outputs",
+  "title": "Outputs & Resources — DIGI-METER",
+  "description": "Browse DIGI-METER project outputs: indicator frameworks, VET toolkits, policy briefs, technical reports, open educational resources, and research deliverables.",
+  "translation_status": "needs_translation",
+  "strings": [
+    {
+      "key": "text_0",
+      "source": "Skip to main content",
+      "value": "Skip to main content"
+    },
+    {
+      "key": "text_1",
+      "source": "Co-funded by the",
+      "value": "Co-funded by the"
+    },
+    {
+      "key": "text_2",
+      "source": "European Union",
+      "value": "European Union"
+    },
+    {
+      "key": "text_3",
+      "source": "High Contrast",
+      "value": "High Contrast"
+    },
+    {
+      "key": "text_4",
+      "source": "A-",
+      "value": "A-"
+    },
+    {
+      "key": "text_5",
+      "source": "A+",
+      "value": "A+"
+    },
+    {
+      "key": "text_6",
+      "source": "Select language",
+      "value": "Select language"
+    },
+    {
+      "key": "text_7",
+      "source": "EN — English",
+      "value": "EN — English"
+    },
+    {
+      "key": "text_8",
+      "source": "EL — Ελληνικά",
+      "value": "EL — Ελληνικά"
+    },
+    {
+      "key": "text_9",
+      "source": "DE — Deutsch",
+      "value": "DE — Deutsch"
+    },
+    {
+      "key": "text_10",
+      "source": "FR — Français",
+      "value": "FR — Français"
+    },
+    {
+      "key": "text_11",
+      "source": "IT — Italiano",
+      "value": "IT — Italiano"
+    },
+    {
+      "key": "text_12",
+      "source": "PT — Português",
+      "value": "PT — Português"
+    },
+    {
+      "key": "text_13",
+      "source": "NL — Nederlands",
+      "value": "NL — Nederlands"
+    },
+    {
+      "key": "text_14",
+      "source": "🔍",
+      "value": "🔍"
+    },
+    {
+      "key": "text_15",
+      "source": "About",
+      "value": "About"
+    },
+    {
+      "key": "text_16",
+      "source": "News",
+      "value": "News"
+    },
+    {
+      "key": "text_17",
+      "source": "Outputs",
+      "value": "Outputs"
+    },
+    {
+      "key": "text_18",
+      "source": "Events",
+      "value": "Events"
+    },
+    {
+      "key": "text_19",
+      "source": "Partners",
+      "value": "Partners"
+    },
+    {
+      "key": "text_20",
+      "source": "Platform",
+      "value": "Platform"
+    },
+    {
+      "key": "text_21",
+      "source": "Contact",
+      "value": "Contact"
+    },
+    {
+      "key": "text_22",
+      "source": "Subscribe",
+      "value": "Subscribe"
+    },
+    {
+      "key": "text_23",
+      "source": "About the Project",
+      "value": "About the Project"
+    },
+    {
+      "key": "text_24",
+      "source": "Outputs & Resources",
+      "value": "Outputs & Resources"
+    },
+    {
+      "key": "text_25",
+      "source": "Events & Webinars",
+      "value": "Events & Webinars"
+    },
+    {
+      "key": "text_26",
+      "source": "Consortium Partners",
+      "value": "Consortium Partners"
+    },
+    {
+      "key": "text_27",
+      "source": "Platform Access",
+      "value": "Platform Access"
+    },
+    {
+      "key": "text_28",
+      "source": "News & Updates",
+      "value": "News & Updates"
+    },
+    {
+      "key": "text_29",
+      "source": "Contact Us",
+      "value": "Contact Us"
+    },
+    {
+      "key": "text_30",
+      "source": "Subscribe",
+      "value": "Subscribe"
+    },
+    {
+      "key": "text_31",
+      "source": "Home",
+      "value": "Home"
+    },
+    {
+      "key": "text_32",
+      "source": "›",
+      "value": "›"
+    },
+    {
+      "key": "text_33",
+      "source": "Outputs & Resources",
+      "value": "Outputs & Resources"
+    },
+    {
+      "key": "text_34",
+      "source": "Project Deliverables · Open Access",
+      "value": "Project Deliverables · Open Access"
+    },
+    {
+      "key": "text_35",
+      "source": "Outputs &",
+      "value": "Outputs &"
+    },
+    {
+      "key": "text_36",
+      "source": "Resources",
+      "value": "Resources"
+    },
+    {
+      "key": "text_37",
+      "source": "DIGI-METER deliverables will be published here as they are validated and approved for public release. The planned outputs below are indicative; titles and dates will be confirmed against the approved project application.",
+      "value": "DIGI-METER deliverables will be published here as they are validated and approved for public release. The planned outputs below are indicative; titles and dates will be confirmed against the approved project application."
+    },
+    {
+      "key": "text_38",
+      "source": "All Outputs",
+      "value": "All Outputs"
+    },
+    {
+      "key": "text_39",
+      "source": "Frameworks",
+      "value": "Frameworks"
+    },
+    {
+      "key": "text_40",
+      "source": "Toolkits",
+      "value": "Toolkits"
+    },
+    {
+      "key": "text_41",
+      "source": "Reports",
+      "value": "Reports"
+    },
+    {
+      "key": "text_42",
+      "source": "Policy Briefs",
+      "value": "Policy Briefs"
+    },
+    {
+      "key": "text_43",
+      "source": "Open Resources",
+      "value": "Open Resources"
+    },
+    {
+      "key": "text_44",
+      "source": "Indicator Framework & Methodology",
+      "value": "Indicator Framework & Methodology"
+    },
+    {
+      "key": "text_45",
+      "source": "Framework",
+      "value": "Framework"
+    },
+    {
+      "key": "text_46",
+      "source": "Planned",
+      "value": "Planned"
+    },
+    {
+      "key": "text_47",
+      "source": "DigComp 2.2 Indicator Mapping Report",
+      "value": "DigComp 2.2 Indicator Mapping Report"
+    },
+    {
+      "key": "text_48",
+      "source": "A comprehensive mapping of all 21 DigComp 2.2 competences into measurable, context-specific indicators for school and VET assessment. Includes operationalisation guidelines, proficiency level descriptors, and evidence criteria.",
+      "value": "A comprehensive mapping of all 21 DigComp 2.2 competences into measurable, context-specific indicators for school and VET assessment. Includes operationalisation guidelines, proficiency level descriptors, and evidence criteria."
+    },
+    {
+      "key": "text_49",
+      "source": "[Status TBC]",
+      "value": "[Status TBC]"
+    },
+    {
+      "key": "text_50",
+      "source": "Framework",
+      "value": "Framework"
+    },
+    {
+      "key": "text_51",
+      "source": "Planned",
+      "value": "Planned"
+    },
+    {
+      "key": "text_52",
+      "source": "Assessment Design Principles & Validation Protocol",
+      "value": "Assessment Design Principles & Validation Protocol"
+    },
+    {
+      "key": "text_53",
+      "source": "Methodological guidelines for assessment item design, bias testing, cultural sensitivity review, and cross-country validation of digital competence indicators across diverse European education systems.",
+      "value": "Methodological guidelines for assessment item design, bias testing, cultural sensitivity review, and cross-country validation of digital competence indicators across diverse European education systems."
+    },
+    {
+      "key": "text_54",
+      "source": "Planned — date to be confirmed",
+      "value": "Planned — date to be confirmed"
+    },
+    {
+      "key": "text_55",
+      "source": "Research Report",
+      "value": "Research Report"
+    },
+    {
+      "key": "text_56",
+      "source": "Planned",
+      "value": "Planned"
+    },
+    {
+      "key": "text_57",
+      "source": "State-of-the-Art Review: Digital Competence Assessment in Europe",
+      "value": "State-of-the-Art Review: Digital Competence Assessment in Europe"
+    },
+    {
+      "key": "text_58",
+      "source": "A systematic literature review of existing digital competence measurement approaches across EU member states, identifying gaps, best practices, and lessons learned to inform the DIGI-METER indicator design.",
+      "value": "A systematic literature review of existing digital competence measurement approaches across EU member states, identifying gaps, best practices, and lessons learned to inform the DIGI-METER indicator design."
+    },
+    {
+      "key": "text_59",
+      "source": "[Status TBC]",
+      "value": "[Status TBC]"
+    },
+    {
+      "key": "text_60",
+      "source": "Digital Platform & Technology",
+      "value": "Digital Platform & Technology"
+    },
+    {
+      "key": "text_61",
+      "source": "Platform",
+      "value": "Platform"
+    },
+    {
+      "key": "text_62",
+      "source": "Planned",
+      "value": "Planned"
+    },
+    {
+      "key": "text_63",
+      "source": "DIGI-METER Self-Assessment Platform (v1.0)",
+      "value": "DIGI-METER Self-Assessment Platform (v1.0)"
+    },
+    {
+      "key": "text_64",
+      "source": "The web-based adaptive self-assessment platform enabling learners to evaluate their digital competences across all DigComp 2.2 areas. Features personalised feedback, progress tracking, and multilingual support.",
+      "value": "The web-based adaptive self-assessment platform enabling learners to evaluate their digital competences across all DigComp 2.2 areas. Features personalised feedback, progress tracking, and multilingual support."
+    },
+    {
+      "key": "text_65",
+      "source": "Planned — date to be confirmed",
+      "value": "Planned — date to be confirmed"
+    },
+    {
+      "key": "text_66",
+      "source": "Platform",
+      "value": "Platform"
+    },
+    {
+      "key": "text_67",
+      "source": "Planned",
+      "value": "Planned"
+    },
+    {
+      "key": "text_68",
+      "source": "Educator Dashboard & Institutional Analytics Module",
+      "value": "Educator Dashboard & Institutional Analytics Module"
+    },
+    {
+      "key": "text_69",
+      "source": "Class-level and institution-level visualisation dashboards providing educators and school leaders with anonymised aggregate digital competence data, trend analysis, and intervention recommendations.",
+      "value": "Class-level and institution-level visualisation dashboards providing educators and school leaders with anonymised aggregate digital competence data, trend analysis, and intervention recommendations."
+    },
+    {
+      "key": "text_70",
+      "source": "Planned — date to be confirmed",
+      "value": "Planned — date to be confirmed"
+    },
+    {
+      "key": "text_71",
+      "source": "Technical Report",
+      "value": "Technical Report"
+    },
+    {
+      "key": "text_72",
+      "source": "Planned",
+      "value": "Planned"
+    },
+    {
+      "key": "text_73",
+      "source": "AI Engine Architecture & Ethics-by-Design Documentation",
+      "value": "AI Engine Architecture & Ethics-by-Design Documentation"
+    },
+    {
+      "key": "text_74",
+      "source": "Full technical documentation of the adaptive assessment AI engine, including model design, bias testing results, GDPR compliance architecture, explainability mechanisms, and responsible AI audit trail.",
+      "value": "Full technical documentation of the adaptive assessment AI engine, including model design, bias testing results, GDPR compliance architecture, explainability mechanisms, and responsible AI audit trail."
+    },
+    {
+      "key": "text_75",
+      "source": "Planned — date to be confirmed",
+      "value": "Planned — date to be confirmed"
+    },
+    {
+      "key": "text_76",
+      "source": "Piloting & Validation",
+      "value": "Piloting & Validation"
+    },
+    {
+      "key": "text_77",
+      "source": "Research Report",
+      "value": "Research Report"
+    },
+    {
+      "key": "text_78",
+      "source": "Planned",
+      "value": "Planned"
+    },
+    {
+      "key": "text_79",
+      "source": "Pilot Testing Methodology & Cohort Design",
+      "value": "Pilot Testing Methodology & Cohort Design"
+    },
+    {
+      "key": "text_80",
+      "source": "The research design for multi-country pilot testing, including school and VET partner selection criteria, data collection instruments, ethical research protocols, and comparative analysis framework.",
+      "value": "The research design for multi-country pilot testing, including school and VET partner selection criteria, data collection instruments, ethical research protocols, and comparative analysis framework."
+    },
+    {
+      "key": "text_81",
+      "source": "Planned — date to be confirmed",
+      "value": "Planned — date to be confirmed"
+    },
+    {
+      "key": "text_82",
+      "source": "Research Report",
+      "value": "Research Report"
+    },
+    {
+      "key": "text_83",
+      "source": "Planned",
+      "value": "Planned"
+    },
+    {
+      "key": "text_84",
+      "source": "Pilot Findings Report: Learner Outcomes & Platform Performance",
+      "value": "Pilot Findings Report: Learner Outcomes & Platform Performance"
+    },
+    {
+      "key": "text_85",
+      "source": "Analysis of pilot testing results across participating countries: learner self-assessment patterns, competence gap data, platform usability findings, educator engagement, and recommendations for platform refinement.",
+      "value": "Analysis of pilot testing results across participating countries: learner self-assessment patterns, competence gap data, platform usability findings, educator engagement, and recommendations for platform refinement."
+    },
+    {
+      "key": "text_86",
+      "source": "Planned — date to be confirmed",
+      "value": "Planned — date to be confirmed"
+    },
+    {
+      "key": "text_87",
+      "source": "Open Resource",
+      "value": "Open Resource"
+    },
+    {
+      "key": "text_88",
+      "source": "Planned",
+      "value": "Planned"
+    },
+    {
+      "key": "text_89",
+      "source": "VET Teacher Digital Competence Toolkit",
+      "value": "VET Teacher Digital Competence Toolkit"
+    },
+    {
+      "key": "text_90",
+      "source": "A practical toolkit for VET teachers to integrate digital competence self-assessment into their regular teaching practice, including lesson guides, discussion frameworks, and CPD activity designs.",
+      "value": "A practical toolkit for VET teachers to integrate digital competence self-assessment into their regular teaching practice, including lesson guides, discussion frameworks, and CPD activity designs."
+    },
+    {
+      "key": "text_91",
+      "source": "Planned — date to be confirmed",
+      "value": "Planned — date to be confirmed"
+    },
+    {
+      "key": "text_92",
+      "source": "Policy Transfer & Dissemination",
+      "value": "Policy Transfer & Dissemination"
+    },
+    {
+      "key": "text_93",
+      "source": "Policy Brief",
+      "value": "Policy Brief"
+    },
+    {
+      "key": "text_94",
+      "source": "Planned",
+      "value": "Planned"
+    },
+    {
+      "key": "text_95",
+      "source": "Digital Competence Assessment in Schools: Policy Recommendations for EU Member States",
+      "value": "Digital Competence Assessment in Schools: Policy Recommendations for EU Member States"
+    },
+    {
+      "key": "text_96",
+      "source": "Evidence-based policy recommendations for national ministries and EU institutions on embedding DigComp 2.2 assessment tools into national curriculum frameworks and digital education strategies.",
+      "value": "Evidence-based policy recommendations for national ministries and EU institutions on embedding DigComp 2.2 assessment tools into national curriculum frameworks and digital education strategies."
+    },
+    {
+      "key": "text_97",
+      "source": "Planned — date to be confirmed",
+      "value": "Planned — date to be confirmed"
+    },
+    {
+      "key": "text_98",
+      "source": "Policy Brief",
+      "value": "Policy Brief"
+    },
+    {
+      "key": "text_99",
+      "source": "Planned",
+      "value": "Planned"
+    },
+    {
+      "key": "text_100",
+      "source": "VET Sector Digital Skills Benchmark Framework",
+      "value": "VET Sector Digital Skills Benchmark Framework"
+    },
+    {
+      "key": "text_101",
+      "source": "A policy-oriented benchmark framework connecting DIGI-METER indicators to VET qualification standards, employer expectations, and national digital skills strategies across participating countries.",
+      "value": "A policy-oriented benchmark framework connecting DIGI-METER indicators to VET qualification standards, employer expectations, and national digital skills strategies across participating countries."
+    },
+    {
+      "key": "text_102",
+      "source": "Planned — date to be confirmed",
+      "value": "Planned — date to be confirmed"
+    },
+    {
+      "key": "text_103",
+      "source": "Open Resource",
+      "value": "Open Resource"
+    },
+    {
+      "key": "text_104",
+      "source": "Planned",
+      "value": "Planned"
+    },
+    {
+      "key": "text_105",
+      "source": "Open Educational Resource Pack: Digital Competence for Educators",
+      "value": "Open Educational Resource Pack: Digital Competence for Educators"
+    },
+    {
+      "key": "text_106",
+      "source": "A freely available collection of learning materials, case studies, and activities supporting educator professional development around digital competence measurement and evidence-based teaching.",
+      "value": "A freely available collection of learning materials, case studies, and activities supporting educator professional development around digital competence measurement and evidence-based teaching."
+    },
+    {
+      "key": "text_107",
+      "source": "Planned — date to be confirmed",
+      "value": "Planned — date to be confirmed"
+    },
+    {
+      "key": "text_108",
+      "source": "Stay Informed",
+      "value": "Stay Informed"
+    },
+    {
+      "key": "text_109",
+      "source": "Get Notified When Resources Launch",
+      "value": "Get Notified When Resources Launch"
+    },
+    {
+      "key": "text_110",
+      "source": "Subscribe to receive alerts when new deliverables are published.",
+      "value": "Subscribe to receive alerts when new deliverables are published."
+    },
+    {
+      "key": "text_111",
+      "source": "Subscribe to Updates",
+      "value": "Subscribe to Updates"
+    },
+    {
+      "key": "text_112",
+      "source": "Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project translating DigComp 2.2 into actionable, trustworthy educational testing.",
+      "value": "Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project translating DigComp 2.2 into actionable, trustworthy educational testing."
+    },
+    {
+      "key": "text_113",
+      "source": "Quick Links",
+      "value": "Quick Links"
+    },
+    {
+      "key": "text_114",
+      "source": "About the Project",
+      "value": "About the Project"
+    },
+    {
+      "key": "text_115",
+      "source": "Consortium Partners",
+      "value": "Consortium Partners"
+    },
+    {
+      "key": "text_116",
+      "source": "Outputs & Resources",
+      "value": "Outputs & Resources"
+    },
+    {
+      "key": "text_117",
+      "source": "Events & Webinars",
+      "value": "Events & Webinars"
+    },
+    {
+      "key": "text_118",
+      "source": "Platform Access",
+      "value": "Platform Access"
+    },
+    {
+      "key": "text_119",
+      "source": "News & Updates",
+      "value": "News & Updates"
+    },
+    {
+      "key": "text_120",
+      "source": "Contact Us",
+      "value": "Contact Us"
+    },
+    {
+      "key": "text_121",
+      "source": "This Website",
+      "value": "This Website"
+    },
+    {
+      "key": "text_122",
+      "source": "This website is designed, hosted, and operated by Outside Media & Knowledge (Germany).",
+      "value": "This website is designed, hosted, and operated by Outside Media & Knowledge (Germany)."
+    },
+    {
+      "key": "text_123",
+      "source": "Germany",
+      "value": "Germany"
+    },
+    {
+      "key": "text_124",
+      "source": "Outside Media & Knowledge",
+      "value": "Outside Media & Knowledge"
+    },
+    {
+      "key": "text_125",
+      "source": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)",
+      "value": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)"
+    },
+    {
+      "key": "text_126",
+      "source": "© 2026 DIGI-METER Consortium. All rights reserved.",
+      "value": "© 2026 DIGI-METER Consortium. All rights reserved."
+    },
+    {
+      "key": "text_127",
+      "source": "Privacy Policy",
+      "value": "Privacy Policy"
+    },
+    {
+      "key": "text_128",
+      "source": "Cookie Policy",
+      "value": "Cookie Policy"
+    },
+    {
+      "key": "text_129",
+      "source": "Impressum",
+      "value": "Impressum"
+    }
+  ],
+  "attributes": [
+    {
+      "index": 0,
+      "attribute": "aria-label",
+      "source": "Co-funded by the European Union logo",
+      "value": "Co-funded by the European Union logo"
+    },
+    {
+      "index": 1,
+      "attribute": "aria-label",
+      "source": "Accessibility controls",
+      "value": "Accessibility controls"
+    },
+    {
+      "index": 2,
+      "attribute": "aria-label",
+      "source": "Decrease text size",
+      "value": "Decrease text size"
+    },
+    {
+      "index": 3,
+      "attribute": "aria-label",
+      "source": "Increase text size",
+      "value": "Increase text size"
+    },
+    {
+      "index": 4,
+      "attribute": "aria-label",
+      "source": "Select language",
+      "value": "Select language"
+    },
+    {
+      "index": 5,
+      "attribute": "aria-label",
+      "source": "Search content",
+      "value": "Search content"
+    },
+    {
+      "index": 6,
+      "attribute": "aria-label",
+      "source": "Submit search",
+      "value": "Submit search"
+    },
+    {
+      "index": 7,
+      "attribute": "aria-label",
+      "source": "DIGI-METER homepage link",
+      "value": "DIGI-METER homepage link"
+    },
+    {
+      "index": 8,
+      "attribute": "aria-label",
+      "source": "Main site navigation",
+      "value": "Main site navigation"
+    },
+    {
+      "index": 9,
+      "attribute": "aria-label",
+      "source": "Toggle mobile menu",
+      "value": "Toggle mobile menu"
+    },
+    {
+      "index": 10,
+      "attribute": "aria-label",
+      "source": "Close navigation menu",
+      "value": "Close navigation menu"
+    },
+    {
+      "index": 11,
+      "attribute": "aria-label",
+      "source": "Breadcrumb",
+      "value": "Breadcrumb"
+    },
+    {
+      "index": 12,
+      "attribute": "aria-label",
+      "source": "Filter outputs by type",
+      "value": "Filter outputs by type"
+    },
+    {
+      "index": 0,
+      "attribute": "title",
+      "source": "Toggle High Contrast Theme",
+      "value": "Toggle High Contrast Theme"
+    },
+    {
+      "index": 1,
+      "attribute": "title",
+      "source": "Decrease Text Size",
+      "value": "Decrease Text Size"
+    },
+    {
+      "index": 2,
+      "attribute": "title",
+      "source": "Increase Text Size",
+      "value": "Increase Text Size"
+    },
+    {
+      "index": 0,
+      "attribute": "placeholder",
+      "source": "Search site...",
+      "value": "Search site..."
+    },
+    {
+      "index": 0,
+      "attribute": "alt",
+      "source": "DIGI-METER Logo",
+      "value": "DIGI-METER Logo"
+    },
+    {
+      "index": 1,
+      "attribute": "alt",
+      "source": "DIGI-METER Logo Footer",
+      "value": "DIGI-METER Logo Footer"
+    }
+  ]
+}

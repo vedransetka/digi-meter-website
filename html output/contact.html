@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — DIGI-METER</title>
+  <meta name="description" content="Get in touch with the DIGI-METER consortium — for pilot participation, research collaboration, media enquiries, or newsletter subscription.">
+  <link rel="icon" type="image/png" href="assets/logo-digimeter.png">
+  <link rel="stylesheet" href="css/style.css?v=20260612l">
+  <style>
+    .page-hero {
+      background-color: var(--c-charcoal);
+      background-image:
+        radial-gradient(ellipse 60% 70% at 100% 0%, rgba(83,200,234,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 50% at 0% 100%, rgba(115,64,153,0.10) 0%, transparent 60%),
+        linear-gradient(to right, rgba(13,24,43,0.97) 0%, rgba(13,24,43,0.85) 45%, rgba(13,24,43,0.28) 100%),
+        url(assets/photos/people-learning-together-in.jpg);
+      background-size: auto, auto, auto, cover;
+      background-position: 0 0, 0 0, 0 0, center right;
+      padding: clamp(60px, 8vw, 110px) 0 clamp(40px, 5vw, 70px);
+    }
+    .page-hero-eyebrow { font-family: var(--ff-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--c-sky); font-weight: 700; display: block; margin-bottom: 16px; }
+    .page-hero h1 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; color: #fff; line-height: 1.15; margin: 0 0 16px; }
+    .page-hero p { font-size: clamp(0.95rem, 1.5vw, 1.1rem); color: rgba(255,255,255,0.65); max-width: 660px; line-height: 1.6; }
+    .page-breadcrumb { font-family: var(--ff-mono); font-size: 0.68rem; color: rgba(255,255,255,0.68); margin-bottom: 24px; display: flex; gap: 8px; align-items: center; }
+    .page-breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .page-breadcrumb a:hover { color: var(--c-sky); }
+    .page-breadcrumb span { color: rgba(255,255,255,0.6); }
+
+    /* Contact page layout */
+    .contact-page-layout { display: grid; grid-template-columns: 1fr; gap: var(--space-xl); }
+    @media (min-width: 768px) { .contact-page-layout { grid-template-columns: 1fr 1.3fr; } }
+
+    /* Info column */
+    .contact-info-item { display: flex; gap: 16px; align-items: flex-start; padding: 20px; background: rgba(83,200,234,0.04); border: 1px solid rgba(83,200,234,0.12); border-radius: 12px; }
+    .ci-icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(83,200,234,0.1); border: 1px solid rgba(83,200,234,0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .contact-info-item h4 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--c-slate); margin: 0 0 4px; }
+    .contact-info-item p, .contact-info-item a { font-size: 1rem; color: var(--c-charcoal); margin: 0; font-weight: 600; text-decoration: none; }
+    .contact-info-item a:hover { color: var(--c-sky); }
+
+    /* Subject tabs */
+    .subject-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+    .subj-tab { font-family: var(--ff-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em; padding: 6px 14px; border-radius: 30px; border: 1px solid rgba(13,24,43,0.12); background: #fff; color: var(--c-slate); cursor: pointer; transition: all 0.15s; }
+    .subj-tab.active { background: var(--c-charcoal); color: #fff; border-color: var(--c-charcoal); }
+
+    /* FAQ accordion */
+    .faq-item { border-bottom: 1px solid rgba(13,24,43,0.07); }
+    .faq-question { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; cursor: pointer; gap: 16px; }
+    .faq-question .faq-q-text { font-size: 1rem; font-weight: 600; color: var(--c-charcoal); margin: 0; line-height: 1.4; }
+    .faq-question .faq-icon { width: 28px; height: 28px; border-radius: 50%; background: rgba(83,200,234,0.08); border: 1px solid rgba(83,200,234,0.2); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1rem; color: var(--c-sky); transition: transform 0.2s; }
+    .faq-answer { font-size: 1rem; color: var(--c-slate); line-height: 1.65; padding-bottom: 18px; display: none; }
+    .faq-item.open .faq-answer { display: block; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+    html.high-contrast .contact-info-item { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.15); }
+    html.high-contrast .contact-info-item p, html.high-contrast .contact-info-item a { color: #fff; }
+    html.high-contrast .contact-info-item h4 { color: rgba(255,255,255,0.7); }
+    html.high-contrast .subj-tab { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.7); }
+    html.high-contrast .subj-tab.active { background: rgba(255,255,255,0.15); color: #fff; }
+    html.high-contrast .faq-question .faq-q-text { color: #fff; }
+    html.high-contrast .faq-item { border-bottom-color: rgba(255,255,255,0.1); }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <div class="top-bar" id="top-utility-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <div class="eu-badge-header" role="img" aria-label="Co-funded by the European Union logo">
+          <svg class="eu-flag-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" aria-hidden="true" focusable="false"><rect width="36" height="24" fill="#003399"/><g fill="#FFCC00"><polygon transform="translate(18,4)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(26,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(18,20)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(10,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/></g></svg>
+          <span class="eu-text">Co-funded by the<br>European Union</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="a11y-widget" aria-label="Accessibility controls">
+          <button class="a11y-btn" id="contrast-toggle" aria-pressed="false" title="Toggle High Contrast Theme">High Contrast</button>
+          <button class="a11y-btn" id="size-decrease" aria-label="Decrease text size">A-</button>
+          <button class="a11y-btn" id="size-increase" aria-label="Increase text size">A+</button>
+        </div>
+        <!-- Language Selector (project languages — confirm final list with consortium) -->
+        <div class="language-selector">
+          <label for="lang-select" class="sr-only">Select language</label>
+          <select id="lang-select" aria-label="Select language">
+            <option value="en" selected>EN — English</option>
+            <option value="el">EL — Ελληνικά</option>
+            <option value="de">DE — Deutsch</option>
+            <option value="fr">FR — Français</option>
+            <option value="it">IT — Italiano</option>
+            <option value="pt">PT — Português</option>
+            <option value="nl">NL — Nederlands</option>
+          </select>
+        </div>
+
+        <form class="search-box" role="search" onsubmit="event.preventDefault(); showToast(\'Site search will be available at launch.\', \'info\');">
+          <input type="search" class="search-input" placeholder="Search site..." aria-label="Search content">
+          <button type="submit" class="search-btn" aria-label="Submit search">🔍</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo"><img src="assets/logo-digimeter.png" alt="DIGI-METER Logo"></a>
+      <nav class="main-nav" aria-label="Main site navigation">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="outputs.html" class="nav-link">Outputs</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="partners.html" class="nav-link">Partners</a>
+        <a href="platform.html" class="nav-link">Platform</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <div class="header-cta"><a href="contact.html" class="btn btn-primary" style="padding: 0.58rem 1.4rem; font-size: 1rem;">Subscribe</a></div>
+      <button class="burger-menu" id="burger-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav-panel">
+        <span class="burger-bar" style="background-color: #fff;"></span><span class="burger-bar" style="background-color: #fff;"></span><span class="burger-bar" style="background-color: #fff;"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav-panel" id="mobile-nav-panel">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <ul class="mobile-menu">
+      <li><a href="about.html" class="mobile-link">About the Project</a></li>
+      <li><a href="outputs.html" class="mobile-link">Outputs &amp; Resources</a></li>
+      <li><a href="events.html" class="mobile-link">Events &amp; Webinars</a></li>
+      <li><a href="partners.html" class="mobile-link">Consortium Partners</a></li>
+      <li><a href="platform.html" class="mobile-link">Platform Access</a></li>
+      <li><a href="news.html" class="mobile-link">News &amp; Updates</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+    <div class="mobile-cta"><a href="contact.html" class="btn btn-primary" style="width:100%; text-align:center;">Subscribe</a></div>
+  </div>
+
+  <main id="main-content">
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="page-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span>›</span><span>Contact Us</span>
+        </nav>
+        <span class="page-hero-eyebrow">Get in Touch · Work With Us</span>
+        <h1>Contact<br>DIGI-METER</h1>
+        <p>Questions about the project, interest in participating in pilots, media enquiries, or research collaboration? Reach the right team directly.</p>
+      </div>
+    </section>
+
+    <!-- Contact form + info -->
+    <section class="section section-pad section-brand">
+      <div class="container">
+        <div class="contact-page-layout">
+
+          <!-- Info column -->
+          <div style="display: flex; flex-direction: column; gap: var(--space-m);">
+
+            <div>
+              <span class="eyebrow">Reach Us</span>
+              <h2>How Can We Help?</h2>
+              <p style="font-size: 1rem; color: var(--c-slate); line-height: 1.65; margin-bottom: var(--space-s);">
+                Whether you're a school looking to participate in our pilot, a researcher wanting to collaborate, a journalist covering digital education, or simply curious about the project — we're happy to hear from you.
+              </p>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <div class="contact-info-item">
+                <div class="ci-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--c-sky)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <h3>General Enquiries</h3>
+                  <a href="mailto:digimeter@csicy.com">digimeter@csicy.com</a>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="ci-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--c-sky)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <div>
+                  <h3>Project Coordinator (CSI)</h3>
+                  <a href="https://csicy.com/" target="_blank" rel="noopener">csicy.com</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Newsletter signup inline -->
+            <div style="background: rgba(13,24,43,0.04); border: 1px solid rgba(13,24,43,0.07); border-radius: 14px; padding: 24px;">
+              <h3 style="font-size: 1rem; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px;">Newsletter Subscription</h3>
+              <p style="font-size: 1rem; color: var(--c-slate); margin-bottom: 14px; line-height: 1.5;">Receive periodic progress updates, deliverable alerts, and event announcements.</p>
+              <form id="newsletter-form-contact" onsubmit="handleNewsletterContact(event)">
+                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                  <input type="email" placeholder="your@email.com" required aria-label="Newsletter email" style="flex: 1; min-width: 180px; background: #fff; border: 1px solid rgba(13,24,43,0.12); padding: 9px 14px; font-size: 1rem; outline: none; border-radius: 6px;">
+                  <button type="submit" class="btn btn-primary" style="padding: 9px 18px; font-size: 1rem; white-space: nowrap;">Subscribe</button>
+                </div>
+                <div style="margin-top: 8px; display: flex; gap: 8px; align-items: flex-start;">
+                  <input type="checkbox" id="nl-consent" required style="margin-top: 2px; flex-shrink: 0;">
+                  <label for="nl-consent" style="font-size: 0.68rem; color: var(--c-slate); line-height: 1.3;">I agree to receive DIGI-METER updates under GDPR privacy policies. *</label>
+                </div>
+              </form>
+            </div>
+
+          </div>
+
+          <!-- Contact form -->
+          <div>
+            <form class="contact-form block" id="contact-page-form" novalidate aria-label="Contact form" onsubmit="handleContactForm(event)">
+              <h3 style="font-size: 1.1rem; font-weight: 700; border-bottom: 1px solid rgba(13,24,43,0.07); padding-bottom: 14px; margin-bottom: 16px;">Send a Message</h3>
+
+              <!-- Subject tabs -->
+              <div class="subject-tabs">
+                <button type="button" class="subj-tab active" onclick="selectSubject(this, 'General Enquiry')">General</button>
+                <button type="button" class="subj-tab" onclick="selectSubject(this, 'Pilot Participation')">Pilot Schools</button>
+                <button type="button" class="subj-tab" onclick="selectSubject(this, 'Research Collaboration')">Research</button>
+                <button type="button" class="subj-tab" onclick="selectSubject(this, 'Media Enquiry')">Media</button>
+                <button type="button" class="subj-tab" onclick="selectSubject(this, 'Platform Access')">Platform</button>
+              </div>
+              <input type="hidden" id="contact-subject" value="General Enquiry">
+
+              <div class="form-group">
+                <label for="cf-name" class="form-label">Full Name *</label>
+                <input type="text" id="cf-name" class="form-input" required placeholder="Jane Smith" aria-required="true">
+              </div>
+              <div class="form-group">
+                <label for="cf-email" class="form-label">Email Address *</label>
+                <input type="email" id="cf-email" class="form-input" required placeholder="jane@example.com" aria-required="true">
+              </div>
+              <div class="form-group">
+                <label for="cf-org" class="form-label">Organisation</label>
+                <input type="text" id="cf-org" class="form-input" placeholder="School, institution, or organisation name">
+              </div>
+              <div class="form-group">
+                <label for="cf-country" class="form-label">Country</label>
+                <select id="cf-country" class="form-input" style="cursor: pointer;">
+                  <option value="" disabled selected>Select country...</option>
+                  <option>Austria</option><option>Belgium</option><option>Croatia</option><option>Cyprus</option><option>Czech Republic</option><option>Denmark</option><option>Estonia</option><option>Finland</option><option>France</option><option>Germany</option><option>Greece</option><option>Hungary</option><option>Ireland</option><option>Italy</option><option>Latvia</option><option>Lithuania</option><option>Luxembourg</option><option>Malta</option><option>Netherlands</option><option>Poland</option><option>Portugal</option><option>Romania</option><option>Slovakia</option><option>Slovenia</option><option>Spain</option><option>Sweden</option><option>United Kingdom</option><option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="cf-message" class="form-label">Message *</label>
+                <textarea id="cf-message" class="form-textarea" required placeholder="Tell us what you'd like to discuss..." aria-required="true" style="min-height: 130px;"></textarea>
+              </div>
+              <div class="form-checkbox-group">
+                <input type="checkbox" id="cf-consent" class="form-checkbox" required>
+                <label for="cf-consent" class="form-checkbox-label">I agree that DIGI-METER partners may process my submitted data to respond to my query under GDPR regulations. *</label>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px; font-size: 1rem;">Send Message</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-pad section-light">
+      <div class="container">
+        <div class="row row-side" style="gap: var(--space-2xl); align-items: flex-start;">
+          <div style="flex: 1; min-width: 0;">
+            <span class="eyebrow">FAQ</span>
+            <h2>Frequently Asked Questions</h2>
+            <div style="margin-top: var(--space-m);">
+
+              <div class="faq-item">
+                <button type="button" class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+                  <span class="faq-q-text">Can my school participate in the DIGI-METER pilot?</span>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">The project will pilot its tools with schools and VET providers across Europe. Participation details and timelines will be announced on this website and in the newsletter once confirmed by the consortium. To express your interest, contact us selecting "Pilot Schools" as your subject.</div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+                  <span class="faq-q-text">Is the platform free to use?</span>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">Access arrangements for the DIGI-METER platform will be announced by the consortium before launch. Details for pilot participants will be shared as part of the pilot onboarding information.</div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+                  <span class="faq-q-text">What data does the platform collect and how is it protected?</span>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">DIGI-METER follows an ethics-by-design approach, with attention to transparency, GDPR compliance, fairness, explainability, and user control. Detailed information about what the platform collects and how it is protected will be published in a dedicated privacy notice before the platform launches.</div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+                  <span class="faq-q-text">What languages will the platform support?</span>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">The list of supported languages is currently being finalised by the consortium and will be announced before the platform launches.</div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+                  <span class="faq-q-text">I'm a journalist. Where can I get press materials?</span>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">Press and media materials including the project factsheet, visual branding assets, and boilerplate text are available from Outside Media &amp; Knowledge, our communication lead. For interview requests or specific media enquiries, please email <a href="mailto:digimeter@csicy.com">digimeter@csicy.com</a> or use the form above with "Media" selected as the subject.</div>
+              </div>
+
+              <div class="faq-item">
+                <button type="button" class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+                  <span class="faq-q-text">Can I use DIGI-METER resources in my own research?</span>
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">Public DIGI-METER outputs will be published as open-access materials, and the applicable licence will be stated on each resource when it is released. Please credit the DIGI-METER project and European Union funding when citing project materials. For formal research collaboration, contact us via the "Research" subject.</div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Map / image side -->
+          <div style="flex: 0.8; min-width: 0;">
+            <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 12px 40px -12px rgba(13,24,43,0.16); aspect-ratio: 4/3; margin-bottom: var(--space-m);">
+              <img src="assets/photos/happy-students-studying-together.jpg" alt="Happy students studying together outdoors on a table with a tablet" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+            <div style="background: rgba(83,200,234,0.07); border: 1px solid rgba(83,200,234,0.15); border-radius: 12px; padding: 22px;">
+              <div style="font-family: var(--ff-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--c-sky); margin-bottom: 10px;">For Journalists</div>
+              <p style="font-size: 1rem; color: var(--c-slate); margin: 0 0 14px; line-height: 1.55;">Need quotes, data, or an expert for a story about digital education, AI in schools, or DigComp 2.2? Get in touch with the project team and we will connect you with the right expert.</p>
+              <a href="mailto:digimeter@csicy.com" class="btn btn-outline-dark" style="font-size: 1rem; padding: 8px 16px;">Media Contact →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="section site-footer section-pad-sm" id="site-footer">
+    <div class="container block" style="gap: var(--space-m);">
+      <div class="footer-top-row">
+        <div class="footer-brand-col block">
+          <div class="footer-brand-logo"><img src="assets/logo-digimeter.png" alt="DIGI-METER Logo Footer"></div>
+          <p class="footer-p">Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project.</p>
+          <!-- Project social media links to be added once channels are confirmed by the consortium -->
+        </div>
+        <div class="footer-nav-col block" style="gap:12px;">
+          <h3 class="text-white" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em;">Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="about.html">About the Project</a></li>
+            <li><a href="partners.html">Consortium Partners</a></li>
+            <li><a href="outputs.html">Outputs &amp; Resources</a></li>
+            <li><a href="events.html">Events &amp; Webinars</a></li>
+            <li><a href="platform.html">Platform Access</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter-col block" style="gap:12px;">
+          <h3 class="text-white" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em;">This Website</h3>
+          <p class="footer-p" style="font-size: 1rem;">This website is designed, hosted, and operated by Outside Media &amp; Knowledge (Germany).</p>
+          <div style="font-size:0.75rem;"><strong><a href="https://outsidemedia.eu/" style="color:inherit; text-decoration:none;">Outside Media &amp; Knowledge</a></strong><br>Germany</div>
+        </div>
+      </div>
+      <div class="footer-disclaimer-box">
+        <div class="footer-disclaimer-flag"><svg class="eu-flag-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" aria-hidden="true"><rect width="36" height="24" fill="#003399"/><g fill="#FFCC00"><polygon transform="translate(18,4)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(26,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(18,20)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(10,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/></g></svg></div>
+        <div class="footer-disclaimer-text">Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)</div>
+      </div>
+      <div class="footer-bottom-row">
+        <span>© 2026 DIGI-METER Consortium. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="cookies.html">Cookie Policy</a>
+          <a href="impressum.html">Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=20260612l"></script>
+  <script>
+    function selectSubject(btn, value) {
+      document.querySelectorAll('.subj-tab').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('contact-subject').value = value;
+    }
+    async function handleContactForm(e) {
+      e.preventDefault();
+      const form = e.target;
+      const name = document.getElementById('cf-name').value.trim();
+      const email = document.getElementById('cf-email').value.trim();
+      const org = document.getElementById('cf-org').value.trim();
+      const country = document.getElementById('cf-country').value;
+      const msg = document.getElementById('cf-message').value.trim();
+      const subject = document.getElementById('contact-subject').value;
+      const consent = document.getElementById('cf-consent').checked;
+      if (!name || !email || !msg) { showToast('Please fill in your name, email, and message.', 'error', 6000); return; }
+      if (!consent) { showToast('Please give GDPR consent so we can respond.', 'error', 6000); return; }
+      const btn = form.querySelector('button[type="submit"]');
+      const label = btn.textContent; btn.disabled = true; btn.textContent = 'Sending…';
+      const res = await window.digiPostForm(form, { form_type: 'Contact', subject, name, email, organisation: org, country, message: msg });
+      btn.disabled = false; btn.textContent = label;
+      showToast(res.message, res.ok ? 'success' : 'error', 7000);
+      if (res.ok) {
+        form.reset();
+        document.querySelectorAll('.subj-tab').forEach((b, i) => { b.classList.toggle('active', i === 0); });
+        document.getElementById('contact-subject').value = 'General Enquiry';
+      }
+    }
+    async function handleNewsletterContact(e) {
+      e.preventDefault();
+      const form = e.target;
+      const email = form.querySelector('input[type="email"]').value.trim();
+      const consent = document.getElementById('nl-consent').checked;
+      if (!email) { showToast('Please enter your email address.', 'error', 6000); return; }
+      if (!consent) { showToast('Please accept the privacy consent to subscribe.', 'error', 6000); return; }
+      const btn = form.querySelector('button[type="submit"]');
+      const label = btn.textContent; btn.disabled = true; btn.textContent = 'Sending…';
+      const res = await window.digiPostForm(form, { form_type: 'Newsletter', email });
+      btn.disabled = false; btn.textContent = label;
+      showToast(res.message, res.ok ? 'success' : 'error', 7000);
+      if (res.ok) form.reset();
+    }
+    function toggleFaq(el) {
+      const item = el.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => {
+        i.classList.remove('open');
+        const btn = i.querySelector('.faq-question');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        el.setAttribute('aria-expanded', 'true');
+      }
+    }
+  </script>
+</body>
+</html>

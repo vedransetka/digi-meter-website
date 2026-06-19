@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platform Access — DIGI-METER</title>
+  <meta name="description" content="DIGI-METER adaptive digital competence assessment platform — currently in development. Register your institution for early access and pilot participation.">
+  <link rel="icon" type="image/png" href="assets/logo-digimeter.png">
+  <link rel="stylesheet" href="css/style.css?v=20260612l">
+  <style>
+    .page-hero {
+      background-color: var(--c-charcoal);
+      background-image:
+        radial-gradient(ellipse 60% 70% at 100% 0%, rgba(83,200,234,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 50% at 0% 100%, rgba(115,64,153,0.10) 0%, transparent 60%),
+        linear-gradient(to right, rgba(13,24,43,0.97) 0%, rgba(13,24,43,0.85) 45%, rgba(13,24,43,0.28) 100%),
+        url(assets/photos/artificial-intelligence-technology-being.jpg);
+      background-size: auto, auto, auto, cover;
+      background-position: 0 0, 0 0, 0 0, center right;
+      padding: clamp(60px, 8vw, 110px) 0 clamp(40px, 5vw, 70px);
+    }
+    .page-hero-eyebrow { font-family: var(--ff-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--c-sky); font-weight: 700; display: block; margin-bottom: 16px; }
+    .page-hero h1 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; color: #fff; line-height: 1.15; margin: 0 0 16px; }
+    .page-hero p { font-size: clamp(0.95rem, 1.5vw, 1.1rem); color: rgba(255,255,255,0.65); max-width: 660px; line-height: 1.6; }
+    .page-breadcrumb { font-family: var(--ff-mono); font-size: 0.68rem; color: rgba(255,255,255,0.68); margin-bottom: 24px; display: flex; gap: 8px; align-items: center; }
+    .page-breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .page-breadcrumb a:hover { color: var(--c-sky); }
+    .page-breadcrumb span { color: rgba(255,255,255,0.6); }
+
+    /* Mockup (inside brand section) */
+    .platform-mockup-card { border-radius: 14px; overflow: hidden; border: 1px solid rgba(13,24,43,0.1); box-shadow: 0 12px 48px -14px rgba(13,24,43,0.22); }
+    .platform-mockup-card-bar { background: var(--c-charcoal); padding: 10px 16px; display: flex; align-items: center; gap: 12px; }
+    .pmb-dots { display: flex; gap: 5px; }
+    .pmb-dots span { width: 11px; height: 11px; border-radius: 50%; display: block; }
+    .pmb-dots span:nth-child(1) { background: #FF6057; }
+    .pmb-dots span:nth-child(2) { background: #FFBD2E; }
+    .pmb-dots span:nth-child(3) { background: #28C840; }
+    .pmb-url { background: rgba(255,255,255,0.08); border-radius: 5px; flex: 1; padding: 4px 10px; font-family: var(--ff-mono); font-size: 0.63rem; color: rgba(255,255,255,0.68); }
+    .platform-mockup-card img { width: 100%; display: block; }
+
+    /* Feature rows (on section-light) */
+    .features-alternating { display: flex; flex-direction: column; gap: var(--space-2xl); }
+    .feature-row { display: flex; flex-direction: column; gap: var(--space-l); align-items: center; }
+    @media (min-width: 768px) { .feature-row { flex-direction: row; } .feature-row.reverse { flex-direction: row-reverse; } }
+    .feature-row .fr-text { flex: 1; }
+    .feature-row .fr-visual { flex: 1; }
+    .feature-row .fr-visual img { width: 100%; border-radius: 14px; box-shadow: 0 12px 40px -12px rgba(13,24,43,0.16); }
+
+    /* Audience cards (on section-brand — white cards) */
+    .audience-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: var(--space-l); }
+    @media (min-width: 640px) { .audience-grid { grid-template-columns: 1fr 1fr; } }
+    .audience-card { background: #fff; border: 1px solid rgba(13,24,43,0.07); border-radius: 14px; padding: 28px; transition: box-shadow 0.2s, transform 0.2s; }
+    .audience-card:hover { box-shadow: 0 10px 32px -10px rgba(13,24,43,0.14); transform: translateY(-2px); }
+    .audience-card h3 { color: var(--c-charcoal); font-size: 1rem; font-weight: 700; margin: 0 0 8px; }
+    .audience-card p { color: var(--c-slate); font-size: 1rem; margin: 0; line-height: 1.6; }
+    .audience-card .ac-tag { font-family: var(--ff-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--c-sky); margin-bottom: 10px; display: block; font-weight: 700; }
+
+    /* Signup form block (on section-dark) */
+    .signup-block { background: rgba(83,200,234,0.05); border: 1px solid rgba(83,200,234,0.15); border-radius: 16px; padding: clamp(28px, 4vw, 44px); }
+    .signup-block h2 { color: #fff; font-size: 1.4rem; font-weight: 800; margin: 0 0 8px; }
+    .signup-block p { color: rgba(255,255,255,0.6); font-size: 1rem; margin: 0 0 20px; line-height: 1.6; }
+    .signup-form { display: flex; flex-direction: column; gap: 12px; max-width: 520px; }
+    .signup-form input, .signup-form select { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); color: #fff; padding: 12px 16px; font-size: 1rem; border-radius: 8px; outline: none; }
+    .signup-form input::placeholder { color: rgba(255,255,255,0.68); }
+    .signup-form select option { background: var(--c-charcoal); color: #fff; }
+    .signup-form input:focus, .signup-form select:focus { border-color: rgba(83,200,234,0.5); box-shadow: 0 0 0 3px rgba(83,200,234,0.1); }
+
+    html.high-contrast .platform-mockup-card { border-color: rgba(255,255,255,0.2); }
+    html.high-contrast .audience-card { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.15); }
+    html.high-contrast .audience-card h3 { color: #fff; }
+    html.high-contrast .signup-block { border-color: rgba(255,255,255,0.2); }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <div class="top-bar" id="top-utility-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <div class="eu-badge-header" role="img" aria-label="Co-funded by the European Union logo">
+          <svg class="eu-flag-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" aria-hidden="true" focusable="false"><rect width="36" height="24" fill="#003399"/><g fill="#FFCC00"><polygon transform="translate(18,4)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(26,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(18,20)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(10,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/></g></svg>
+          <span class="eu-text">Co-funded by the<br>European Union</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="a11y-widget" aria-label="Accessibility controls">
+          <button class="a11y-btn" id="contrast-toggle" aria-pressed="false" title="Toggle High Contrast Theme">High Contrast</button>
+          <button class="a11y-btn" id="size-decrease" aria-label="Decrease text size">A-</button>
+          <button class="a11y-btn" id="size-increase" aria-label="Increase text size">A+</button>
+        </div>
+        <!-- Language Selector (project languages — confirm final list with consortium) -->
+        <div class="language-selector">
+          <label for="lang-select" class="sr-only">Select language</label>
+          <select id="lang-select" aria-label="Select language">
+            <option value="en" selected>EN — English</option>
+            <option value="el">EL — Ελληνικά</option>
+            <option value="de">DE — Deutsch</option>
+            <option value="fr">FR — Français</option>
+            <option value="it">IT — Italiano</option>
+            <option value="pt">PT — Português</option>
+            <option value="nl">NL — Nederlands</option>
+          </select>
+        </div>
+
+        <form class="search-box" role="search" onsubmit="event.preventDefault(); showToast(\'Site search will be available at launch.\', \'info\');">
+          <input type="search" class="search-input" placeholder="Search site..." aria-label="Search content">
+          <button type="submit" class="search-btn" aria-label="Submit search">🔍</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo"><img src="assets/logo-digimeter.png" alt="DIGI-METER Logo"></a>
+      <nav class="main-nav" aria-label="Main site navigation">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="outputs.html" class="nav-link">Outputs</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="partners.html" class="nav-link">Partners</a>
+        <a href="platform.html" class="nav-link active">Platform</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-cta"><a href="#request-access" class="btn btn-primary" style="padding: 0.58rem 1.4rem; font-size: 1rem;">Request Access</a></div>
+      <button class="burger-menu" id="burger-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav-panel">
+        <span class="burger-bar" style="background-color: #fff;"></span><span class="burger-bar" style="background-color: #fff;"></span><span class="burger-bar" style="background-color: #fff;"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav-panel" id="mobile-nav-panel">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <ul class="mobile-menu">
+      <li><a href="about.html" class="mobile-link">About the Project</a></li>
+      <li><a href="outputs.html" class="mobile-link">Outputs &amp; Resources</a></li>
+      <li><a href="events.html" class="mobile-link">Events &amp; Webinars</a></li>
+      <li><a href="partners.html" class="mobile-link">Consortium Partners</a></li>
+      <li><a href="platform.html" class="mobile-link">Platform Access</a></li>
+      <li><a href="news.html" class="mobile-link">News &amp; Updates</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+    <div class="mobile-cta"><a href="#request-access" class="btn btn-primary" style="width:100%; text-align:center;">Request Access</a></div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Page Hero — standard pattern matching all other subpages -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="page-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span>›</span><span>Platform Access</span>
+        </nav>
+        <span class="page-hero-eyebrow">Self-Assessment Tool · In Active Development</span>
+        <h1>DIGI-METER<br>Adaptive Platform</h1>
+        <p>An AI-supported self-assessment platform enabling learners to measure their digital competences against the DigComp 2.2 framework — with personalised feedback, educator dashboards, and institutional analytics.</p>
+      </div>
+    </section>
+
+    <!-- Platform overview + mockup -->
+    <section class="section section-pad section-brand">
+      <div class="container">
+        <div class="row row-side about-row">
+          <div class="col-main block">
+            <span class="eyebrow">Platform Overview</span>
+            <h2>A Complete Digital Competence Measurement Ecosystem</h2>
+            <p style="font-size: 1rem; color: var(--c-slate); line-height: 1.7; margin-bottom: var(--space-s);">
+              DIGI-METER is being built as a web-based platform that covers the full digital competence measurement cycle — from individual learner self-assessment through to class-level educator dashboards and institution-level analytics. Every layer is grounded in the DigComp 2.2 framework and designed around privacy-by-design principles.
+            </p>
+            <div style="background: rgba(115,64,153,0.08); border-left: 3px solid var(--c-purple); padding: 18px 22px; border-radius: 0 8px 8px 0; margin-bottom: var(--space-s);">
+              <h3 style="font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 6px;">Ethics &amp; Privacy First</h3>
+              <p style="font-size: 1rem; color: var(--c-slate); margin: 0; line-height: 1.6;">All learner data is pseudonymised. Educators see only aggregated class-level data. Every component is GDPR-compliant and audited by Ergonact's ethics-by-design framework.</p>
+            </div>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-top: 4px;">
+              <a href="#request-access" class="btn btn-primary">Request Early Access</a>
+              <a href="about.html" class="btn btn-outline-dark">About the Project</a>
+            </div>
+          </div>
+          <div class="col-side">
+            <div class="about-img-wrap">
+              <div class="platform-mockup-card">
+                <div class="platform-mockup-card-bar">
+                  <div class="pmb-dots"><span></span><span></span><span></span></div>
+                  <div class="pmb-url">platform.digi-meter.eu</div>
+                </div>
+                <img src="assets/platform-teaser.jpg" alt="DIGI-METER platform preview showing assessment data dashboard">
+              </div>
+              <div class="about-stat-chip">
+                <span style="font-family: var(--ff-mono); color: var(--c-sky); font-weight: 700;">In Development</span>&thinsp;&middot;&thinsp;Launch Date TBC
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section section-pad section-light" id="features">
+      <div class="container">
+        <div class="block align-center" style="margin-bottom: var(--space-xl);">
+          <span class="eyebrow">Platform Capabilities</span>
+          <h2>What DIGI-METER Does</h2>
+          <p class="lead-p" style="max-width: 560px; margin: 0 auto;">The platform covers the full digital competence measurement cycle — from individual learner assessment through to institutional-level data and policy-ready reporting.</p>
+        </div>
+
+        <div class="features-alternating">
+
+          <div class="feature-row">
+            <div class="fr-text block">
+              <span class="eyebrow">Learner Experience</span>
+              <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--c-charcoal); margin-bottom: 12px;">Adaptive Self-Assessment</h3>
+              <p style="color: var(--c-slate); font-size: 1rem; line-height: 1.7; margin-bottom: var(--space-s);">Learners complete an adaptive digital competence assessment that adjusts question difficulty and focus based on their responses. The AI engine maps answers to DigComp 2.2 proficiency levels across all five competence areas.</p>
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
+                <li style="display: flex; gap: 10px; color: var(--c-slate); font-size: 1rem; align-items: flex-start;">
+                  <span style="color: var(--c-sky); margin-top: 2px; flex-shrink: 0; font-weight: 700;">✓</span>
+                  Adaptive questioning across all 21 DigComp 2.2 competences
+                </li>
+                <li style="display: flex; gap: 10px; color: var(--c-slate); font-size: 1rem; align-items: flex-start;">
+                  <span style="color: var(--c-sky); margin-top: 2px; flex-shrink: 0; font-weight: 700;">✓</span>
+                  Personalised competence profile with proficiency level mapping
+                </li>
+                <li style="display: flex; gap: 10px; color: var(--c-slate); font-size: 1rem; align-items: flex-start;">
+                  <span style="color: var(--c-sky); margin-top: 2px; flex-shrink: 0; font-weight: 700;">✓</span>
+                  Actionable learning recommendations and resource suggestions
+                </li>
+                <li style="display: flex; gap: 10px; color: var(--c-slate); font-size: 1rem; align-items: flex-start;">
+                  <span style="color: var(--c-sky); margin-top: 2px; flex-shrink: 0; font-weight: 700;">✓</span>
+                  Progress tracking across multiple assessment sessions
+                </li>
+              </ul>
+            </div>
+            <div class="fr-visual">
+              <img src="assets/photos/smiling-black-female-student.jpg" alt="Student using laptop for online learning and self-assessment">
+            </div>
+          </div>
+
+          <div class="feature-row reverse">
+            <div class="fr-text block">
+              <span class="eyebrow">Educator Tools</span>
+              <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--c-charcoal); margin-bottom: 12px;">Class &amp; Cohort Dashboard</h3>
+              <p style="color: var(--c-slate); font-size: 1rem; line-height: 1.7; margin-bottom: var(--space-s);">Educators receive an anonymised, real-time view of their class's digital competence profile — identifying where learners excel and where targeted support is needed. All data is privacy-by-design compliant.</p>
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
+                <li style="display: flex; gap: 10px; color: var(--c-slate); font-size: 1rem; align-items: flex-start;">
+                  <span style="color: var(--c-purple); margin-top: 2px; flex-shrink: 0; font-weight: 700;">✓</span>
+                  Anonymised class-level competence visualisations
+                </li>
+                <li style="display: flex; gap: 10px; color: var(--c-slate); font-size: 1rem; align-items: flex-start;">
+                  <span style="color: var(--c-purple); margin-top: 2px; flex-shrink: 0; font-weight: 700;">✓</span>
+                  Competence gap identification across DigComp 2.2 areas
+                </li>
+                <li style="display: flex; gap: 10px; color: var(--c-slate); font-size: 1rem; align-items: flex-start;">
+                  <span style="color: var(--c-purple); margin-top: 2px; flex-shrink: 0; font-weight: 700;">✓</span>
+                  Exportable reports for institutional reporting and CPD planning
+                </li>
+                <li style="display: flex; gap: 10px; color: var(--c-slate); font-size: 1rem; align-items: flex-start;">
+                  <span style="color: var(--c-purple); margin-top: 2px; flex-shrink: 0; font-weight: 700;">✓</span>
+                  Tracking of learner progress over time
+                </li>
+              </ul>
+            </div>
+            <div class="fr-visual">
+              <img src="assets/photos/analyzing-business-data-graphs.jpg" alt="Professional analyzing data graphs and business charts on a tablet">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Who it's for -->
+    <section class="section section-pad section-brand">
+      <div class="container">
+        <div class="block align-center" style="margin-bottom: var(--space-l);">
+          <span class="eyebrow">Who Can Use It</span>
+          <h2>Built for Everyone in the Learning Ecosystem</h2>
+        </div>
+        <div class="audience-grid">
+          <div class="audience-card">
+            <span class="ac-tag">Students &amp; Learners</span>
+            <h3>Understand Your Digital Skills</h3>
+            <p>Take a personalised assessment to see exactly where you are across all 21 DigComp 2.2 competences. Get specific feedback and know what to work on next.</p>
+          </div>
+          <div class="audience-card">
+            <span class="ac-tag">Teachers &amp; Trainers</span>
+            <h3>See Your Class at a Glance</h3>
+            <p>Access class-level dashboards showing aggregate competence data. Identify gaps early and plan targeted learning interventions grounded in real evidence.</p>
+          </div>
+          <div class="audience-card">
+            <span class="ac-tag">Schools &amp; VET Centres</span>
+            <h3>Institutional Reporting &amp; Planning</h3>
+            <p>Use institution-level data to benchmark digital competence across cohorts, track year-on-year progress, and demonstrate impact to stakeholders and inspectorates.</p>
+          </div>
+          <div class="audience-card">
+            <span class="ac-tag">Researchers &amp; Policymakers</span>
+            <h3>Cross-Country Evidence Base</h3>
+            <p>Access anonymised, aggregated research-quality data on digital competence trends across European education systems — informing evidence-based policy development.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Early access form -->
+    <section class="section section-pad section-dark" id="request-access">
+      <div class="container">
+        <div class="row row-side" style="gap: var(--space-xl); align-items: flex-start;">
+          <div class="col-main">
+            <div class="signup-block">
+              <span style="font-family: var(--ff-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--c-sky); display: block; margin-bottom: 12px;">Early Access Registration</span>
+              <h2>Request Early Access</h2>
+              <p>Register your institution to be among the first to pilot the DIGI-METER platform. We will contact you ahead of the platform launch to confirm participation and onboarding details.</p>
+              <form class="signup-form" id="platform-signup-form" onsubmit="handlePlatformSignup(event)">
+                <input type="text" id="pf-institution" placeholder="Institution Name *" required aria-label="Institution name">
+                <input type="email" id="pf-email" placeholder="Official Institution Email *" required aria-label="Institution email address">
+                <input type="text" id="pf-contact" placeholder="Contact Name *" required aria-label="Contact person name">
+                <select id="pf-type" required aria-label="Institution type">
+                  <option value="" disabled selected>Institution Type *</option>
+                  <option value="school">Secondary School</option>
+                  <option value="vet">VET Provider / Training Centre</option>
+                  <option value="higher">Higher Education Institution</option>
+                  <option value="policy">Education Authority / Ministry</option>
+                  <option value="research">Research Organisation</option>
+                  <option value="other">Other</option>
+                </select>
+                <select id="pf-country" required aria-label="Country">
+                  <option value="" disabled selected>Country *</option>
+                  <option>Austria</option><option>Belgium</option><option>Croatia</option><option>Cyprus</option><option>Czech Republic</option><option>Denmark</option><option>Estonia</option><option>Finland</option><option>France</option><option>Germany</option><option>Greece</option><option>Hungary</option><option>Ireland</option><option>Italy</option><option>Latvia</option><option>Lithuania</option><option>Luxembourg</option><option>Malta</option><option>Netherlands</option><option>Poland</option><option>Portugal</option><option>Romania</option><option>Slovakia</option><option>Slovenia</option><option>Spain</option><option>Sweden</option><option>Other</option>
+                </select>
+                <div style="display: flex; gap: 8px; align-items: flex-start;">
+                  <input type="checkbox" id="platform-consent" required style="margin-top: 2px; flex-shrink: 0;">
+                  <label for="platform-consent" style="font-size: 0.75rem; color: rgba(255,255,255,0.7); line-height: 1.4;">I agree to be contacted by the DIGI-METER consortium regarding platform access and agree to GDPR-compliant data processing. *</label>
+                </div>
+                <button type="submit" class="btn btn-primary" style="padding: 12px 28px; font-size: 1rem; align-self: flex-start;">Submit Access Request</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-side block">
+            <span class="eyebrow text-sky">What Happens Next</span>
+            <div style="display: flex; flex-direction: column; gap: 20px; margin-top: var(--space-s);">
+              <div style="display: flex; gap: 16px; align-items: flex-start;">
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(83,200,234,0.1); border: 1px solid rgba(83,200,234,0.25); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-family: var(--ff-mono); font-size: 0.72rem; font-weight: 700; color: var(--c-sky);">1</div>
+                <div>
+                  <h3 style="color: rgba(255,255,255,0.9); font-size: 1rem; margin: 0 0 4px;">We Review Your Request</h3>
+                  <p style="color: rgba(255,255,255,0.7); font-size: 1rem; margin: 0; line-height: 1.5;">Our team reviews registrations and confirms eligibility based on institution type and geographic fit with pilot cohort design.</p>
+                </div>
+              </div>
+              <div style="display: flex; gap: 16px; align-items: flex-start;">
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(83,200,234,0.1); border: 1px solid rgba(83,200,234,0.25); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-family: var(--ff-mono); font-size: 0.72rem; font-weight: 700; color: var(--c-sky);">2</div>
+                <div>
+                  <h3 style="color: rgba(255,255,255,0.9); font-size: 1rem; margin: 0 0 4px;">Onboarding &amp; Training</h3>
+                  <p style="color: rgba(255,255,255,0.7); font-size: 1rem; margin: 0; line-height: 1.5;">Selected institutions receive onboarding support, training materials, and dedicated contact from the piloting team ahead of the platform launch.</p>
+                </div>
+              </div>
+              <div style="display: flex; gap: 16px; align-items: flex-start;">
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(115,64,153,0.15); border: 1px solid rgba(115,64,153,0.3); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-family: var(--ff-mono); font-size: 0.72rem; font-weight: 700; color: var(--c-purple);">3</div>
+                <div>
+                  <h3 style="color: rgba(255,255,255,0.9); font-size: 1rem; margin: 0 0 4px;">Platform Access</h3>
+                  <p style="color: rgba(255,255,255,0.7); font-size: 1rem; margin: 0; line-height: 1.5;">Your institution gains access to the full DIGI-METER platform for pilot testing, with dedicated support throughout the pilot period.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="section site-footer section-pad-sm" id="site-footer">
+    <div class="container block" style="gap: var(--space-m);">
+      <div class="footer-top-row">
+        <div class="footer-brand-col block">
+          <div class="footer-brand-logo"><img src="assets/logo-digimeter.png" alt="DIGI-METER Logo Footer"></div>
+          <p class="footer-p">Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project.</p>
+          <!-- Project social media links to be added once channels are confirmed by the consortium -->
+        </div>
+        <div class="footer-nav-col block" style="gap:12px;">
+          <h3 class="text-white" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em;">Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="about.html">About the Project</a></li>
+            <li><a href="partners.html">Consortium Partners</a></li>
+            <li><a href="outputs.html">Outputs &amp; Resources</a></li>
+            <li><a href="events.html">Events &amp; Webinars</a></li>
+            <li><a href="platform.html">Platform Access</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter-col block" style="gap:12px;">
+          <h3 class="text-white" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em;">This Website</h3>
+          <p class="footer-p" style="font-size: 1rem;">This website is designed, hosted, and operated by Outside Media &amp; Knowledge (Germany).</p>
+          <div style="font-size:0.75rem;"><strong><a href="https://outsidemedia.eu/" style="color:inherit; text-decoration:none;">Outside Media &amp; Knowledge</a></strong></div>
+        </div>
+      </div>
+      <div class="footer-disclaimer-box">
+        <div class="footer-disclaimer-flag"><svg class="eu-flag-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" aria-hidden="true"><rect width="36" height="24" fill="#003399"/><g fill="#FFCC00"><polygon transform="translate(18,4)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(26,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(18,20)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(10,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/></g></svg></div>
+        <div class="footer-disclaimer-text">Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)</div>
+      </div>
+      <div class="footer-bottom-row">
+        <span>© 2026 DIGI-METER Consortium. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="cookies.html">Cookie Policy</a>
+          <a href="impressum.html">Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=20260612l"></script>
+  <script>
+    async function handlePlatformSignup(e) {
+      e.preventDefault();
+      const form = e.target;
+      const institution = document.getElementById('pf-institution').value.trim();
+      const email = document.getElementById('pf-email').value.trim();
+      const contact = document.getElementById('pf-contact').value.trim();
+      const type = document.getElementById('pf-type').value;
+      const country = document.getElementById('pf-country').value;
+      const consent = document.getElementById('platform-consent').checked;
+      if (!institution || !email || !contact) { showToast('Please complete the required fields.', 'error', 6000); return; }
+      if (!consent) { showToast('Please agree to be contacted (GDPR consent).', 'error', 6000); return; }
+      const btn = form.querySelector('button[type="submit"]');
+      const label = btn.textContent; btn.disabled = true; btn.textContent = 'Sending…';
+      const res = await window.digiPostForm(form, {
+        form_type: 'Platform Access',
+        subject: 'Early access request — ' + (type || 'institution'),
+        name: contact, email, organisation: institution, country,
+        message: 'Institution: ' + institution + '\nType: ' + type + '\nContact: ' + contact
+      });
+      btn.disabled = false; btn.textContent = label;
+      showToast(res.message, res.ok ? 'success' : 'error', 7000);
+      if (res.ok) form.reset();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+backend:
+  name: github
+  repo: vedransetka/digi-meter-website
+  branch: main
+
+media_folder: html output/assets/uploads
+public_folder: /assets/uploads
+
+i18n:
+  structure: multiple_folders
+  locales: [en, el, de, fr, nl, pt]
+  default_locale: en
+  initial_locales: all
+
+collections:
+  - name: pages
+    label: Website pages
+    folder: content/pages
+    create: false
+    extension: json
+    format: json
+    i18n: true
+    identifier_field: page
+    summary: '{{page}} — {{translation_status}}'
+    fields:
+      - { name: page, label: Page key, widget: string, i18n: duplicate }
+      - { name: title, label: Browser title, widget: string, i18n: true }
+      - { name: description, label: Search description, widget: text, i18n: true }
+      - name: translation_status
+        label: Translation status
+        widget: select
+        options: [source, needs_translation, draft, reviewed]
+        i18n: true
+      - name: strings
+        label: Page text
+        widget: list
+        i18n: duplicate
+        summary: '{{fields.source}}'
+        fields:
+          - { name: key, label: Internal key, widget: hidden, i18n: duplicate }
+          - { name: source, label: English source, widget: text, i18n: duplicate }
+          - { name: value, label: Translation, widget: text, i18n: true }
+      - name: attributes
+        label: Accessibility and image text
+        widget: list
+        i18n: duplicate
+        required: false
+        fields:
+          - { name: index, label: Element index, widget: hidden, value_type: int, i18n: duplicate }
+          - { name: attribute, label: Attribute, widget: hidden, i18n: duplicate }
+          - { name: source, label: English source, widget: text, i18n: duplicate }
+          - { name: value, label: Translation, widget: text, i18n: true }

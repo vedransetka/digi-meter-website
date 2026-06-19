@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consortium Partners — DIGI-METER</title>
+  <meta name="description" content="Meet the 11 European partners behind DIGI-METER — an Erasmus+ consortium spanning Cyprus, Greece, Portugal, Italy, Germany, France, Belgium, and the Netherlands.">
+  <link rel="icon" type="image/png" href="assets/logo-digimeter.png">
+  <link rel="stylesheet" href="css/style.css?v=20260612l">
+  <style>
+    /* Page-specific extras */
+    .page-hero {
+      background-color: var(--c-charcoal);
+      background-image:
+        radial-gradient(ellipse 60% 70% at 100% 0%, rgba(83,200,234,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 50% at 0% 100%, rgba(115,64,153,0.10) 0%, transparent 60%),
+        linear-gradient(to right, rgba(13,24,43,0.97) 0%, rgba(13,24,43,0.85) 45%, rgba(13,24,43,0.28) 100%),
+        url(assets/photos/collaborative-colleagues-brainstorming-together.jpg);
+      background-size: auto, auto, auto, cover;
+      background-position: 0 0, 0 0, 0 0, center right;
+      padding: clamp(60px, 8vw, 110px) 0 clamp(40px, 5vw, 70px);
+      position: relative;
+    }
+    .page-hero-eyebrow { font-family: var(--ff-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--c-sky); font-weight: 700; display: block; margin-bottom: 16px; }
+    .page-hero h1 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; color: #fff; line-height: 1.15; margin: 0 0 16px; }
+    .page-hero p { font-size: clamp(0.95rem, 1.5vw, 1.1rem); color: rgba(255,255,255,0.65); max-width: 660px; line-height: 1.6; }
+    .page-breadcrumb { font-family: var(--ff-mono); font-size: 0.68rem; color: rgba(255,255,255,0.68); margin-bottom: 24px; display: flex; gap: 8px; align-items: center; }
+    .page-breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .page-breadcrumb a:hover { color: var(--c-sky); }
+    .page-breadcrumb span { color: rgba(255,255,255,0.6); }
+
+    /* Partners full detail layout */
+    .partner-profile { display: grid; grid-template-columns: 1fr; gap: var(--space-xl); margin-top: var(--space-xl); }
+    @media (min-width: 768px) { .partner-profile { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 1100px) { .partner-profile { grid-template-columns: 1fr 1fr 1fr; } }
+
+    .partner-card-full {
+      background: #fff;
+      border: 1px solid rgba(13,24,43,0.07);
+      border-radius: 16px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .partner-card-full:hover { box-shadow: 0 12px 40px -12px rgba(13,24,43,0.14); transform: translateY(-3px); }
+    .partner-card-full .pcf-logo { height: 52px; display: flex; align-items: center; }
+    .partner-card-full .pcf-logo img { max-height: 52px; max-width: 140px; width: auto; object-fit: contain; }
+    .partner-card-full .pcf-monogram { font-family: var(--ff-mono); font-size: 1.4rem; font-weight: 800; color: var(--c-charcoal); background: var(--c-off); width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 8px; }
+    .partner-card-full .pcf-header { display: flex; flex-direction: column; gap: 4px; }
+    .partner-card-full .pcf-name { font-size: 1.1rem; font-weight: 700; color: var(--c-charcoal); }
+    .partner-card-full .pcf-country { font-family: var(--ff-mono); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--c-slate); }
+    .partner-card-full .pcf-badge { display: inline-block; background: rgba(83,200,234,0.1); border: 1px solid rgba(83,200,234,0.25); color: var(--c-charcoal); font-family: var(--ff-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; padding: 3px 10px; border-radius: 20px; font-weight: 700; }
+    .partner-card-full .pcf-badge.coordinator { background: rgba(115,64,153,0.1); border-color: rgba(115,64,153,0.3); color: var(--c-purple); }
+    .partner-card-full .pcf-desc { font-size: 1rem; color: var(--c-slate); line-height: 1.6; }
+    .partner-card-full .pcf-desc p { margin: 0 0 0.75em; }
+    .partner-card-full .pcf-desc p:last-child { margin-bottom: 0; }
+    .partner-card-full .pcf-role { font-size: 1rem; color: var(--c-slate); border-top: 1px solid rgba(13,24,43,0.07); padding-top: 12px; }
+    .partner-card-full .pcf-role strong { color: var(--c-charcoal); }
+
+    /* Map / stats strip */
+    .partners-stat-row { display: flex; flex-wrap: wrap; gap: 16px; margin: var(--space-l) 0; }
+    .partners-stat-item { flex: 1; min-width: 140px; background: rgba(83,200,234,0.06); border: 1px solid rgba(83,200,234,0.15); border-radius: 12px; padding: 20px 24px; }
+    .partners-stat-item .ps-val { font-size: 2rem; font-weight: 800; color: var(--c-charcoal); font-family: var(--ff-mono); line-height: 1; }
+    .partners-stat-item .ps-val span { color: #1a7fa0; font-size: 1rem; display: block; margin-top: 4px; }
+    .partners-stat-item .ps-label { font-size: 0.75rem; color: var(--c-slate); margin-top: 4px; }
+
+    /* HC overrides */
+    html.high-contrast .partner-card-full { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.15); }
+    html.high-contrast .partner-card-full .pcf-name { color: #fff; }
+    html.high-contrast .partner-card-full .pcf-badge { color: #fff !important; border-color: rgba(255,255,255,0.45) !important; }
+    html.high-contrast .partner-card-full .pcf-role strong { color: rgba(255,255,255,0.9); }
+    html.high-contrast .partner-card-full .pcf-role { border-top-color: rgba(255,255,255,0.12); }
+    html.high-contrast .partners-stat-item { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.15); }
+    html.high-contrast .partners-stat-item .ps-val { color: #fff; }
+
+    /* Social / website link pills */
+    .pcf-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; padding-top: 12px; border-top: 1px solid rgba(13,24,43,0.07); }
+    .pcf-link { font-family: var(--ff-mono); font-size: 0.58rem; text-transform: uppercase; letter-spacing: 0.1em; padding: 4px 10px; border-radius: 20px; background: rgba(13,24,43,0.04); border: 1px solid rgba(13,24,43,0.1); color: var(--c-slate); text-decoration: none; transition: all 0.15s; font-weight: 700; white-space: nowrap; }
+    .pcf-link:hover { background: rgba(83,200,234,0.1); border-color: rgba(83,200,234,0.28); color: var(--c-sky); }
+    html.high-contrast .pcf-link { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15); color: rgba(255,255,255,0.6); }
+    html.high-contrast .pcf-link:hover { background: rgba(83,200,234,0.15); color: var(--c-sky); }
+    html.high-contrast .pcf-links { border-top-color: rgba(255,255,255,0.1); }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Top Utility Bar -->
+  <div class="top-bar" id="top-utility-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <div class="eu-badge-header" role="img" aria-label="Co-funded by the European Union logo">
+          <svg class="eu-flag-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" aria-hidden="true" focusable="false"><rect width="36" height="24" fill="#003399"/><g fill="#FFCC00"><polygon transform="translate(18,4)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(26,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(18,20)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(10,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/></g></svg>
+          <span class="eu-text">Co-funded by the<br>European Union</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="a11y-widget" aria-label="Accessibility controls">
+          <button class="a11y-btn" id="contrast-toggle" aria-pressed="false" title="Toggle High Contrast Theme">High Contrast</button>
+          <button class="a11y-btn" id="size-decrease" title="Decrease Text Size" aria-label="Decrease text size">A-</button>
+          <button class="a11y-btn" id="size-increase" title="Increase Text Size" aria-label="Increase text size">A+</button>
+        </div>
+        <!-- Language Selector (project languages — confirm final list with consortium) -->
+        <div class="language-selector">
+          <label for="lang-select" class="sr-only">Select language</label>
+          <select id="lang-select" aria-label="Select language">
+            <option value="en" selected>EN — English</option>
+            <option value="el">EL — Ελληνικά</option>
+            <option value="de">DE — Deutsch</option>
+            <option value="fr">FR — Français</option>
+            <option value="it">IT — Italiano</option>
+            <option value="pt">PT — Português</option>
+            <option value="nl">NL — Nederlands</option>
+          </select>
+        </div>
+
+        <form class="search-box" role="search" aria-label="Site search" onsubmit="event.preventDefault(); showToast(\'Site search will be available at launch.\', \'info\');">
+          <input type="search" class="search-input" placeholder="Search site..." aria-label="Search content">
+          <button type="submit" class="search-btn" aria-label="Submit search">🔍</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo" aria-label="DIGI-METER homepage link">
+        <img src="assets/logo-digimeter.png" alt="DIGI-METER Logo">
+      </a>
+      <nav class="main-nav" aria-label="Main site navigation">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="outputs.html" class="nav-link">Outputs</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="partners.html" class="nav-link active">Partners</a>
+        <a href="platform.html" class="nav-link">Platform</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-cta">
+        <a href="contact.html" class="btn btn-primary" style="padding: 0.58rem 1.4rem; font-size: 1rem; box-shadow: 0 0 20px rgba(83,200,234,0.3);">Subscribe</a>
+      </div>
+      <button class="burger-menu" id="burger-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav-panel">
+        <span class="burger-bar" style="background-color: #fff;"></span>
+        <span class="burger-bar" style="background-color: #fff;"></span>
+        <span class="burger-bar" style="background-color: #fff;"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav-panel" id="mobile-nav-panel">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <ul class="mobile-menu">
+      <li><a href="about.html" class="mobile-link">About the Project</a></li>
+      <li><a href="outputs.html" class="mobile-link">Outputs &amp; Resources</a></li>
+      <li><a href="events.html" class="mobile-link">Events &amp; Webinars</a></li>
+      <li><a href="partners.html" class="mobile-link">Consortium Partners</a></li>
+      <li><a href="platform.html" class="mobile-link">Platform Access</a></li>
+      <li><a href="news.html" class="mobile-link">News &amp; Updates</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+    <div class="mobile-cta">
+      <a href="contact.html" class="btn btn-primary" style="width:100%; text-align:center;">Subscribe</a>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="page-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <span>Consortium Partners</span>
+        </nav>
+        <span class="page-hero-eyebrow">Erasmus+ Consortium · 11 Partners · 8 Countries</span>
+        <h1>A Multidisciplinary<br>European Alliance</h1>
+        <p>DIGI-METER brings together researchers, educators, technologists, ethicists, and communicators from across Europe — united by a shared commitment to evidence-based digital competence assessment.</p>
+      </div>
+    </section>
+
+    <!-- Stats strip -->
+    <section class="section section-pad-sm section-light">
+      <div class="container">
+        <div class="partners-stat-row">
+          <div class="partners-stat-item">
+            <div class="ps-val">11 <span>Partners</span></div>
+            <div class="ps-label">Multidisciplinary consortium members</div>
+          </div>
+          <div class="partners-stat-item">
+            <div class="ps-val">8 <span>Countries</span></div>
+            <div class="ps-label">Cyprus, Greece, Portugal, Italy, Germany, France, Belgium, Netherlands</div>
+          </div>
+          <div class="partners-stat-item">
+            <div class="ps-val">36 <span>Months</span></div>
+            <div class="ps-label">Project duration</div>
+          </div>
+          <div class="partners-stat-item">
+            <div class="ps-val">1 <span>Framework</span></div>
+            <div class="ps-label">DigComp 2.2 — the EU digital competence reference</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Grid - Full profiles -->
+    <section class="section section-pad section-brand">
+      <div class="container">
+
+        <div class="block align-center" style="margin-bottom: var(--space-l);">
+          <span class="eyebrow">Project Partners</span>
+          <h2>Who We Are</h2>
+          <p class="lead-p" style="max-width: 640px; margin: 0 auto;">
+            Each partner contributes a distinct area of expertise. Together we cover the full cycle from framework design through technical development, piloting, policy transfer, and communication.
+          </p>
+        </div>
+
+        <div class="partner-profile">
+
+          <!-- CSI -->
+          <div class="partner-card-full">
+            <div class="pcf-logo">
+              <img src="assets/logos/csi.png" alt="CSI — Center for Social Innovation Logo">
+            </div>
+            <div class="pcf-header">
+              <div class="pcf-name">Center for Social Innovation (CSI)</div>
+              <div class="pcf-country"><span aria-hidden="true">🇨🇾</span> Cyprus</div>
+              <span class="pcf-badge coordinator">Coordinator</span>
+            </div>
+            <p class="pcf-desc">
+              Center for Social Innovation (CSI) is a research and development organisation based in Cyprus, focused on fostering positive social change through innovation, education, technology, and collaboration. CSI works across local, European, and international projects, developing solutions that address societal challenges in areas such as digital transformation, education and training, social inclusion, entrepreneurship, sustainability, and youth empowerment. Through research-driven methodologies and strong stakeholder engagement, CSI designs and implements innovative tools, training programmes, policy recommendations, and awareness initiatives that strengthen communities and support lifelong learning. The organisation actively participates in Erasmus+, Horizon Europe, and other EU-funded programmes, collaborating with universities, public authorities, NGOs, and private-sector partners to promote social impact, digital resilience, and inclusive growth. CSI's mission is to bridge innovation and society by creating practical, sustainable, and human-centred solutions.
+            </p>
+            <div class="pcf-role"><strong>Project Coordination</strong> — Project coordination, quality assurance, reporting, sustainability support, and overall consortium coordination.</div>
+            <div class="pcf-links">
+              <a href="https://csicy.com/" class="pcf-link" target="_blank" rel="noopener noreferrer">Website</a>
+              <a href="https://www.linkedin.com/company/center-for-social-innovation-csi/" class="pcf-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://www.facebook.com/CSI.CYPRUS/" class="pcf-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a href="https://www.instagram.com/csi_cy/" class="pcf-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://www.youtube.com/@csicyprus" class="pcf-link" target="_blank" rel="noopener noreferrer">YouTube</a>
+              <a href="https://www.tiktok.com/@csicyprus" class="pcf-link" target="_blank" rel="noopener noreferrer">TikTok</a>
+              <a href="https://open.spotify.com/show/1qHSum9o1U9ucSzZhwcBpj" class="pcf-link" target="_blank" rel="noopener noreferrer">Spotify</a>
+            </div>
+          </div>
+
+          <!-- SciCo -->
+          <div class="partner-card-full">
+            <div class="pcf-logo">
+              <img src="assets/logos/scico.png" alt="SciCo Logo">
+            </div>
+            <div class="pcf-header">
+              <div class="pcf-name">SciCo</div>
+              <div class="pcf-country"><span aria-hidden="true">🇬🇷</span> Greece</div>
+              <span class="pcf-badge">Methodology</span>
+            </div>
+            <p class="pcf-desc">
+              SciCo (Science Communication) is a non-profit organisation focused on scientific engagement and empowerment through innovative, interactive, and entertaining means. Founded in 2008, it brings together scientists, academics, educators, artists, and science enthusiasts, and today operates as a social enterprise.
+            </p>
+            <p class="pcf-desc">
+              Through high-impact outreach activities — including science festivals, digital platforms, and workshops — SciCo has reached more than 400,000 people across Greece. The organisation has also expanded internationally through its own projects and participation in EU programmes and networks.
+            </p>
+            <div class="pcf-role"><strong>Education &amp; Framework Development</strong> — Framework mapping, DigComp 2.2 indicator development, educational methodology, and teacher engagement.</div>
+            <div class="pcf-links">
+              <a href="https://scico.gr/en/" class="pcf-link" target="_blank" rel="noopener noreferrer">Website</a>
+              <a href="https://www.linkedin.com/company/scico" class="pcf-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://www.facebook.com/Making.Science.Simple/" class="pcf-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a href="https://www.instagram.com/scicogreece" class="pcf-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://x.com/scico_" class="pcf-link" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+              <a href="https://www.youtube.com/channel/UCs9qi1iv1G4BheLaZPXcs_g" class="pcf-link" target="_blank" rel="noopener noreferrer">YouTube</a>
+            </div>
+          </div>
+
+          <!-- UBITECH -->
+          <div class="partner-card-full">
+            <div class="pcf-logo">
+              <img src="assets/logos/ubitech.png" alt="UBITECH Logo">
+            </div>
+            <div class="pcf-header">
+              <div class="pcf-name">UBITECH</div>
+              <div class="pcf-country"><span aria-hidden="true">🇬🇷</span> Greece</div>
+              <span class="pcf-badge">Development</span>
+            </div>
+            <p class="pcf-desc">
+              UBITECH is a leading, innovative, and research-driven software house, systems integrator, and technology provider, established in Athens, Greece, in 2005. The company delivers advanced technical solutions and consulting services to businesses, organisations, and public authorities, enabling secure access to diverse information resources and services. With strong expertise in Deep Tech, Artificial Intelligence, data analytics, cybersecurity, cloud computing, and digital transformation, UBITECH develops cutting-edge solutions that address complex technological and societal challenges. The company actively participates in European and international research and innovation initiatives, combining strong research capabilities with market-oriented innovation. UBITECH has also expanded internationally through affiliated companies and subsidiaries in Limassol, Cyprus, and Buenos Aires, Argentina.
+            </p>
+            <div class="pcf-role"><strong>Technology Development</strong> — Technical development of the platform, adaptive assessment engine, APIs, dashboard, and secure cloud integration.</div>
+            <div class="pcf-links">
+              <a href="https://ubitech.eu/" class="pcf-link" target="_blank" rel="noopener noreferrer">Website</a>
+              <a href="https://www.linkedin.com/company/ubitech/" class="pcf-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://www.instagram.com/ubitech_limited" class="pcf-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="https://www.youtube.com/@UbitechTechnology" class="pcf-link" target="_blank" rel="noopener noreferrer">YouTube</a>
+            </div>
+          </div>
+
+          <!-- Approximar -->
+          <div class="partner-card-full">
+            <div class="pcf-logo">
+              <img src="assets/logos/aproximar.png" alt="Approximar Logo">
+            </div>
+            <div class="pcf-header">
+              <div class="pcf-name">Approximar</div>
+              <div class="pcf-country"><span aria-hidden="true">🇵🇹</span> Portugal</div>
+              <span class="pcf-badge">Piloting</span>
+            </div>
+            <p class="pcf-desc">
+              Approximar brings strong experience in vocational education, social innovation, and stakeholder engagement. In DIGI-METER, the organisation supports pilot preparation, implementation, user feedback collection, and validation activities in real educational and VET settings. Its contribution helps ensure that the project tools are practical, inclusive, and relevant for institutions and learners.
+            </p>
+            <div class="pcf-role"><strong>Piloting and Validation</strong> — Piloting, VET engagement, validation activities, user feedback, and evidence from learning contexts.</div>
+          </div>
+
+          <!-- Lascò -->
+          <div class="partner-card-full">
+            <div class="pcf-logo">
+              <img src="assets/logos/lasco.svg" alt="Lascò Logo">
+            </div>
+            <div class="pcf-header">
+              <div class="pcf-name">Lascò</div>
+              <div class="pcf-country"><span aria-hidden="true">🇮🇹</span> Italy</div>
+              <span class="pcf-badge">Policy</span>
+            </div>
+            <p class="pcf-desc">
+              Lascò specialises in digital transformation, innovation design, and digital skills development, with activities spanning educational technology, educational research, and the design of digital skilling actions for diverse target groups — including public authorities, education providers, large enterprises, and SMEs at national and international level.
+            </p>
+            <p class="pcf-desc">
+              The company brings expertise in education science, digital upskilling and reskilling, and technology-enhanced learning, addressing diverse learner profiles across multiple sectors. Within European-funded projects, Lascò has contributed to the development of skills frameworks, curricula, training methodologies, and innovative learning solutions — including practices recognised by the UN Global Compact – Spanish Network for their contribution to the SDGs. Lascò also served as one of 20 Core Members in Europe of the Digital Working Group of the European Commission's Harnessing Talent Platform (DG REGIO), leading an expert group on regional education and training systems for the twin transition.
+            </p>
+            <div class="pcf-role"><strong>Policy Transfer</strong> — Scaling project outcomes into national and EU education policy frameworks.</div>
+            <div class="pcf-links">
+              <a href="https://en.lasco.io/" class="pcf-link" target="_blank" rel="noopener noreferrer">Website</a>
+              <a href="https://www.linkedin.com/company/lascosrl/" class="pcf-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://www.facebook.com/lasco.io/" class="pcf-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a href="https://www.instagram.com/lasco.insta/" class="pcf-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+          </div>
+
+          <!-- Outside Media & Knowledge -->
+          <div class="partner-card-full">
+            <div class="pcf-logo">
+              <a href="https://outsidemedia.eu/" target="_blank" rel="noopener noreferrer"><img src="assets/logos/outside-media.png" alt="Outside Media &amp; Knowledge Logo"></a>
+            </div>
+            <div class="pcf-header">
+              <div class="pcf-name"><a href="https://outsidemedia.eu/" target="_blank" rel="noopener noreferrer" style="color:inherit; text-decoration:none;">Outside Media &amp; Knowledge</a></div>
+              <div class="pcf-country"><span aria-hidden="true">🇩🇪</span> Germany</div>
+              <span class="pcf-badge">Communication</span>
+            </div>
+            <p class="pcf-desc">
+              Outside Media &amp; Knowledge is a German creative and knowledge-transfer agency specialising in digital communication for European-funded projects. As co-leaders of WP5 Communication, Dissemination &amp; Exploitation, Outside Media &amp; Knowledge is responsible for project branding, website development and operation, visual identity, social media, press relations, and the full dissemination and exploitation strategy. This website is designed, hosted, and maintained by Outside Media &amp; Knowledge.
+            </p>
+            <div class="pcf-role"><strong>Co-leaders of WP5 Communication, Dissemination &amp; Exploitation</strong> — Responsible for project branding, website development and operation, social media, press kit, and dissemination strategy.</div>
+            <div class="pcf-links">
+              <a href="https://outsidemedia.eu/" class="pcf-link" target="_blank" rel="noopener noreferrer">Website</a>
+            </div>
+          </div>
+
+          <!-- Syncnify -->
+          <div class="partner-card-full">
+            <div class="pcf-logo">
+              <img src="assets/logos/syncnify.png" alt="Syncnify Logo">
+            </div>
+            <div class="pcf-header">
+              <div class="pcf-name">Syncnify</div>
+              <div class="pcf-country"><span aria-hidden="true">🇫🇷</span> France</div>
+              <span class="pcf-badge">Analytics</span>
+            </div>
+            <p class="pcf-desc">
+              Syncnify is a Paris-based social innovation and consulting agency that helps organisations transform sustainability, inclusivity, and innovation into concrete strategies and measurable action. It works with businesses, public institutions, research organisations, and civil society actors to design tailored solutions that respond to today's social, environmental, and economic challenges. With a strong European outlook, Syncnify supports partnership development, capacity-building activities, strategic communication, and change-oriented advisory services. Syncnify is a member of the Pact for Skills and the European Digital SMEs Alliance, reflecting its commitment to skills development, digital transformation, and cross-sector collaboration at European level.
+            </p>
+            <div class="pcf-role"><strong>Analytics &amp; User Experience</strong> — Analytics, dashboard interfaces, front-end support, user experience, and data visualisation.</div>
+            <div class="pcf-links">
+              <a href="https://www.syncnify.fr" class="pcf-link" target="_blank" rel="noopener noreferrer">Website</a>
+              <a href="https://www.linkedin.com/company/syncnifyparis/" class="pcf-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://www.facebook.com/SyncnifyParis/" class="pcf-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </div>
+          </div>
+
+          <!-- CEC -->
+          <div class="partner-card-full">
+            <div class="pcf-logo">
+              <img src="assets/logos/cec.gif" alt="CEC — Chrysako Educational Centre Logo">
+            </div>
+            <div class="pcf-header">
+              <div class="pcf-name">CEC (Chrysako Educational Centre Limited)</div>
+              <div class="pcf-country"><span aria-hidden="true">🇨🇾</span> Cyprus</div>
+              <span class="pcf-badge">VET</span>
+            </div>
+            <p class="pcf-desc">
+              CEC (Chrysako Educational Centre Limited) operates the College of Tourism and Hotel Management (COTHM), a private higher education institution in Cyprus specialising in tourism, hospitality, business, management, and vocational education and training. The institution offers certificate, diploma, bachelor's, and master's programmes combining academic excellence with industry-oriented practical training.
+            </p>
+            <p class="pcf-desc">
+              COTHM promotes innovation, sustainability, employability, and digital transformation through higher education, VET, curriculum development, work-based learning, and industry collaboration. The college also participates in research and European projects focusing on tourism sustainability, circular economy, digital education, immersive technologies, serious games, and gamification. Through Erasmus+ collaborations, COTHM supports internationalisation and the development of innovative learning approaches for the tourism and hospitality sectors.
+            </p>
+            <div class="pcf-role"><strong>VET Engagement &amp; Dissemination</strong> — VET sector input, stakeholder engagement, dissemination activities, event support, and WP5 communication coordination.</div>
+            <div class="pcf-links">
+              <a href="https://www.cothm.ac.cy/" class="pcf-link" target="_blank" rel="noopener noreferrer">Website</a>
+            </div>
+          </div>
+
+          <!-- AB Corporation -->
+          <div class="partner-card-full">
+            <div class="pcf-logo">
+              <img src="assets/logos/abcorporation.png" alt="AB Corporation Logo">
+            </div>
+            <div class="pcf-header">
+              <div class="pcf-name">AB Corporation</div>
+              <div class="pcf-country"><span aria-hidden="true">🇧🇪</span> Belgium</div>
+              <span class="pcf-badge">EU Policy</span>
+            </div>
+            <p class="pcf-desc">
+              AB Corporation is a consultancy specialised in guiding organisations through the full journey of EU proposal writing and project management. With a mission to transform innovative ideas into funded, high-impact projects, the company supports clients from early concept development to successful submission and implementation. Its expertise spans proposal writing, funding scheme selection, project management, and strategic partnership building, ensuring each initiative is aligned with the most relevant and competitive EU opportunities. Combining deep knowledge of the EU landscape with a personalised, success-driven approach, AB Corporation helps clients secure funding, manage complex projects, and turn ambitious visions into tangible results.
+            </p>
+            <div class="pcf-role"><strong>EU Policy &amp; Standardisation</strong> — EU policy liaison, credential and standardisation expertise, DigComp/EDSC alignment, and policy engagement.</div>
+            <div class="pcf-links">
+              <a href="https://ab-corporation.com/" class="pcf-link" target="_blank" rel="noopener noreferrer">Website</a>
+              <a href="https://www.linkedin.com/company/abcorporations/" class="pcf-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </div>
+
+          <!-- Ergonact -->
+          <div class="partner-card-full">
+            <div class="pcf-logo">
+              <img src="assets/logos/ergonact.png" alt="Ergonact Logo">
+            </div>
+            <div class="pcf-header">
+              <div class="pcf-name">Ergonact</div>
+              <div class="pcf-country"><span aria-hidden="true">🇨🇾</span> Cyprus</div>
+              <span class="pcf-badge">Ethics</span>
+            </div>
+            <p class="pcf-desc">
+              Ergonact Ltd is a Cyprus-based consultancy operating at the intersection of AI transformation, data governance, and EU-funded research and innovation. The company helps SMEs, public sector organisations, and research consortia move from strategy to execution — combining hands-on advisory with structured assessment methodologies.
+            </p>
+            <p class="pcf-desc">
+              Ergonact's consulting portfolio spans data and AI readiness assessments, cybersecurity readiness, automation evaluations, and AI adoption advisory. The team leads ethics and data governance workstreams across multi-partner European projects, ensuring compliance with the EU AI Act, GDPR, and sector-specific regulatory frameworks. As an active partner in Horizon Europe, Erasmus+, and Digital Europe Programme consortia, Ergonact contributes technical, ethical, and operational expertise to collaborative innovation initiatives.
+            </p>
+            <div class="pcf-role"><strong>Ethics, AI &amp; Accessibility</strong> — Ethics, accessibility, AI compliance, GDPR support, bias audits, and responsible technology guidance.</div>
+            <div class="pcf-links">
+              <a href="https://www.ergonact.com" class="pcf-link" target="_blank" rel="noopener noreferrer">Website</a>
+              <a href="https://www.linkedin.com/company/84142143/" class="pcf-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </div>
+
+          <!-- Crow Group -->
+          <div class="partner-card-full">
+            <div class="pcf-logo">
+              <img src="assets/logos/crowgroup.svg" alt="Crow Group Logo">
+            </div>
+            <div class="pcf-header">
+              <div class="pcf-name">Crow Group</div>
+              <div class="pcf-country"><span aria-hidden="true">🇳🇱</span> Netherlands</div>
+              <span class="pcf-badge">Engagement</span>
+            </div>
+            <p class="pcf-desc">
+              Crow Group contributes experience in applied research, sustainable development, public-sector innovation, and stakeholder engagement. In DIGI-METER, it supports policy alignment, exploitation planning, and outreach to relevant networks. Its contribution helps strengthen the long-term relevance and practical uptake of the project results.
+            </p>
+            <div class="pcf-role"><strong>Stakeholder Engagement &amp; Exploitation</strong> — Stakeholder engagement, policy alignment, exploitation support, and applied research contribution.</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Collaboration photo strip -->
+    <section class="section section-pad section-light">
+      <div class="container">
+        <div class="row row-side" style="gap: var(--space-l); align-items: center;">
+          <div class="col-main block">
+            <span class="eyebrow">Why Our Consortium Works</span>
+            <h2>Diverse Expertise, Shared Goals</h2>
+            <p style="font-size: 1rem; color: var(--c-slate); line-height: 1.65; margin-bottom: var(--space-s);">
+              Our consortium spans educational research, AI engineering, policy consulting, ethics, VET training, creative communication, and stakeholder relations. This intentional diversity ensures DIGI-METER is technically rigorous, ethically sound, pedagogically grounded, and practically applicable across different national education systems.
+            </p>
+            <p style="font-size: 1rem; color: var(--c-slate); line-height: 1.65;">
+              The geographic spread — from Cyprus to the Netherlands, from Portugal to Belgium — also means our tools are tested and validated in genuinely different cultural and institutional contexts, making them transferable across the EU and beyond.
+            </p>
+            <div style="margin-top: var(--space-s); display: flex; gap: 12px; flex-wrap: wrap;">
+              <a href="about.html" class="btn btn-outline-dark">About the Project</a>
+              <a href="contact.html" class="btn btn-primary">Become a Stakeholder</a>
+            </div>
+          </div>
+          <div class="col-side">
+            <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 12px 48px -16px rgba(13,24,43,0.2); aspect-ratio: 4/3;">
+              <img src="assets/photos/collaborative-colleagues-brainstorming-together.jpg" alt="Diverse group of colleagues collaborating around a table with laptops and documents" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="section site-footer section-pad-sm" id="site-footer">
+    <div class="container block" style="gap: var(--space-m);">
+      <div class="footer-top-row">
+        <div class="footer-brand-col block">
+          <div class="footer-brand-logo">
+            <img src="assets/logo-digimeter.png" alt="DIGI-METER Logo Footer">
+          </div>
+          <p class="footer-p">Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project translating DigComp 2.2 into actionable, trustworthy educational testing.</p>
+          <!-- Project social media links to be added once channels are confirmed by the consortium -->
+        </div>
+        <div class="footer-nav-col block" style="gap:12px;">
+          <h3 class="text-white" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em;">Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="about.html">About the Project</a></li>
+            <li><a href="partners.html">Consortium Partners</a></li>
+            <li><a href="outputs.html">Outputs &amp; Resources</a></li>
+            <li><a href="events.html">Events &amp; Webinars</a></li>
+            <li><a href="platform.html">Platform Access</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter-col block" style="gap:12px;">
+          <h3 class="text-white" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em;">This Website</h3>
+          <p class="footer-p" style="font-size: 1rem;">This website is designed, hosted, and operated by Outside Media &amp; Knowledge (Germany).</p>
+          <div style="font-size:0.75rem;">
+            <strong><a href="https://outsidemedia.eu/" style="color:inherit; text-decoration:none;">Outside Media &amp; Knowledge</a></strong><br>Germany
+          </div>
+        </div>
+      </div>
+      <div class="footer-disclaimer-box">
+        <div class="footer-disclaimer-flag">
+          <svg class="eu-flag-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" aria-hidden="true" focusable="false"><rect width="36" height="24" fill="#003399"/><g fill="#FFCC00"><polygon transform="translate(18,4)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(26,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(18,20)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(10,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/></g></svg>
+        </div>
+        <div class="footer-disclaimer-text">Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)</div>
+      </div>
+      <div class="footer-bottom-row">
+        <span>© 2026 DIGI-METER Consortium. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="cookies.html">Cookie Policy</a>
+          <a href="impressum.html">Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=20260612l"></script>
+</body>
+</html>

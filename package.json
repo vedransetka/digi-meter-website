@@ -1,0 +1,14 @@
+{
+  "name": "digi-meter-multilingual-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "migrate": "node scripts/extract-content.mjs",
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "cheerio": "^1.1.2"
+  }
+}

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — DIGI-METER</title>
+  <meta name="description" content="DIGI-METER Privacy Policy — how we collect, use, and protect your personal data in accordance with GDPR.">
+  <link rel="icon" type="image/png" href="assets/logo-digimeter.png">
+  <link rel="stylesheet" href="css/style.css?v=20260612l">
+  <style>
+    .page-hero {
+      background-color: var(--c-charcoal);
+      background-image:
+        radial-gradient(ellipse 60% 70% at 100% 0%, rgba(83,200,234,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 50% at 0% 100%, rgba(115,64,153,0.10) 0%, transparent 60%),
+        linear-gradient(to right, rgba(13,24,43,0.97) 0%, rgba(13,24,43,0.85) 45%, rgba(13,24,43,0.28) 100%),
+        url(assets/photos/professional-woman-in-front.jpg);
+      background-size: auto, auto, auto, cover;
+      background-position: 0 0, 0 0, 0 0, center right;
+      padding: clamp(60px, 8vw, 110px) 0 clamp(40px, 5vw, 70px);
+    }
+    .page-hero-eyebrow { font-family: var(--ff-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--c-sky); font-weight: 700; display: block; margin-bottom: 16px; }
+    .page-hero h1 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; color: #fff; line-height: 1.15; margin: 0 0 16px; }
+    .page-hero p { font-size: clamp(0.95rem, 1.5vw, 1.1rem); color: rgba(255,255,255,0.65); max-width: 660px; line-height: 1.6; }
+    .page-breadcrumb { font-family: var(--ff-mono); font-size: 0.68rem; color: rgba(255,255,255,0.68); margin-bottom: 24px; display: flex; gap: 8px; align-items: center; }
+    .page-breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .page-breadcrumb a:hover { color: var(--c-sky); }
+    .page-breadcrumb span { color: rgba(255,255,255,0.6); }
+
+    /* Policy prose layout */
+    .policy-wrap { max-width: 780px; }
+    .policy-wrap h2 { font-size: 1.2rem; font-weight: 800; color: var(--c-charcoal); margin: var(--space-xl) 0 var(--space-s); padding-top: var(--space-m); border-top: 1px solid rgba(13,24,43,0.08); }
+    .policy-wrap h2:first-of-type { margin-top: 0; border-top: none; padding-top: 0; }
+    .policy-wrap h3 { font-size: 1rem; font-weight: 700; color: var(--c-charcoal); margin: var(--space-m) 0 var(--space-xs); }
+    .policy-wrap p { font-size: 1rem; color: var(--c-slate); line-height: 1.7; margin-bottom: var(--space-xs); }
+    .policy-wrap ul, .policy-wrap ol { margin: var(--space-xs) 0 var(--space-s) var(--space-m); }
+    .policy-wrap li { font-size: 1rem; color: var(--c-slate); line-height: 1.7; margin-bottom: 6px; }
+    .policy-wrap strong { color: var(--c-charcoal); font-weight: 700; }
+    .policy-wrap a { color: var(--c-purple); text-decoration: underline; }
+    .policy-wrap a:hover { color: var(--c-sky); }
+    .policy-note { background: rgba(83,200,234,0.06); border-left: 3px solid var(--c-sky); border-radius: 0 8px 8px 0; padding: 14px 18px; margin: var(--space-s) 0; }
+    .policy-note p { margin: 0; font-size: 1rem; }
+    .policy-updated { font-family: var(--ff-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--c-slate); background: rgba(13,24,43,0.04); border: 1px solid rgba(13,24,43,0.08); border-radius: 6px; padding: 8px 14px; display: inline-block; margin-bottom: var(--space-l); }
+    .rights-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin: var(--space-s) 0; }
+    @media (min-width: 640px) { .rights-grid { grid-template-columns: 1fr 1fr; } }
+    .right-item { background: #fff; border: 1px solid rgba(13,24,43,0.07); border-radius: 10px; padding: 16px 20px; }
+    .right-item strong { display: block; font-size: 1rem; color: var(--c-charcoal); margin-bottom: 4px; }
+    .right-item span { font-size: 1rem; color: var(--c-slate); line-height: 1.5; }
+
+    html.high-contrast .policy-wrap h2, html.high-contrast .policy-wrap h3, html.high-contrast .policy-wrap strong { color: #fff; }
+    html.high-contrast .policy-wrap p, html.high-contrast .policy-wrap li { color: rgba(255,255,255,0.75); }
+    html.high-contrast .right-item { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.12); }
+    html.high-contrast .right-item strong { color: #fff; }
+    html.high-contrast .right-item span { color: rgba(255,255,255,0.65); }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <div class="top-bar" id="top-utility-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <div class="eu-badge-header" role="img" aria-label="Co-funded by the European Union logo">
+          <svg class="eu-flag-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" aria-hidden="true" focusable="false"><rect width="36" height="24" fill="#003399"/><g fill="#FFCC00"><polygon transform="translate(18,4)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(26,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(18,20)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(10,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/></g></svg>
+          <span class="eu-text">Co-funded by the<br>European Union</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="a11y-widget" aria-label="Accessibility controls">
+          <button class="a11y-btn" id="contrast-toggle" aria-pressed="false" title="Toggle High Contrast Theme">High Contrast</button>
+          <button class="a11y-btn" id="size-decrease" aria-label="Decrease text size">A-</button>
+          <button class="a11y-btn" id="size-increase" aria-label="Increase text size">A+</button>
+        </div>
+        <!-- Language Selector (project languages — confirm final list with consortium) -->
+        <div class="language-selector">
+          <label for="lang-select" class="sr-only">Select language</label>
+          <select id="lang-select" aria-label="Select language">
+            <option value="en" selected>EN — English</option>
+            <option value="el">EL — Ελληνικά</option>
+            <option value="de">DE — Deutsch</option>
+            <option value="fr">FR — Français</option>
+            <option value="it">IT — Italiano</option>
+            <option value="pt">PT — Português</option>
+            <option value="nl">NL — Nederlands</option>
+          </select>
+        </div>
+
+        <form class="search-box" role="search" onsubmit="event.preventDefault(); showToast(\'Site search will be available at launch.\', \'info\');">
+          <input type="search" class="search-input" placeholder="Search site..." aria-label="Search content">
+          <button type="submit" class="search-btn" aria-label="Submit search">🔍</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo"><img src="assets/logo-digimeter.png" alt="DIGI-METER Logo"></a>
+      <nav class="main-nav" aria-label="Main site navigation">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="outputs.html" class="nav-link">Outputs</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="partners.html" class="nav-link">Partners</a>
+        <a href="platform.html" class="nav-link">Platform</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-cta"><a href="contact.html" class="btn btn-primary" style="padding: 0.58rem 1.4rem; font-size: 1rem;">Subscribe</a></div>
+      <button class="burger-menu" id="burger-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav-panel">
+        <span class="burger-bar" style="background-color: #fff;"></span><span class="burger-bar" style="background-color: #fff;"></span><span class="burger-bar" style="background-color: #fff;"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav-panel" id="mobile-nav-panel">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <ul class="mobile-menu">
+      <li><a href="about.html" class="mobile-link">About the Project</a></li>
+      <li><a href="outputs.html" class="mobile-link">Outputs &amp; Resources</a></li>
+      <li><a href="events.html" class="mobile-link">Events &amp; Webinars</a></li>
+      <li><a href="partners.html" class="mobile-link">Consortium Partners</a></li>
+      <li><a href="platform.html" class="mobile-link">Platform Access</a></li>
+      <li><a href="news.html" class="mobile-link">News &amp; Updates</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+    <div class="mobile-cta"><a href="contact.html" class="btn btn-primary" style="width:100%; text-align:center;">Subscribe</a></div>
+  </div>
+
+  <main id="main-content">
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="page-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span>›</span><span>Privacy Policy</span>
+        </nav>
+        <span class="page-hero-eyebrow">GDPR Compliant · Last Updated May 2026</span>
+        <h1>Privacy<br>Policy</h1>
+        <p>How DIGI-METER collects, uses, and protects your personal data — and how to exercise your rights under GDPR.</p>
+      </div>
+    </section>
+
+    <section class="section section-pad section-light">
+      <div class="container">
+        <div class="policy-wrap">
+
+          <span class="policy-updated">Last updated: 28 May 2026 · Version 1.0</span>
+
+          <h2>1. Who We Are</h2>
+          <p>The DIGI-METER project is an Erasmus+ Forward-Looking project co-funded by the European Union under Grant Agreement No. 101259860. The data controller responsible for this website and its data processing activities is:</p>
+          <div class="policy-note">
+            <p><strong><a href="https://outsidemedia.eu/" target="_blank" rel="noopener noreferrer" style="color:inherit;">Outside Media &amp; Knowledge</a></strong><br>
+            Project lead for communication and dissemination<br>
+            Email: <a href="mailto:info@outsidemedia.eu">info@outsidemedia.eu</a><br>
+            Germany</p>
+          </div>
+          <p>Responsibility for learner assessment data on the DIGI-METER platform (once launched) will be described in a separate, detailed privacy notice published together with the platform.</p>
+
+          <h2>2. What Data We Collect</h2>
+
+          <h3>2.1 Contact and Newsletter Forms</h3>
+          <p>When you use the contact form or subscribe to our newsletter, we collect:</p>
+          <ul>
+            <li><strong>Full name</strong> — to address you appropriately</li>
+            <li><strong>Email address</strong> — to respond to your message or send newsletter updates</li>
+            <li><strong>Organisation name</strong> — optional, to understand your professional context</li>
+            <li><strong>Message content</strong> — the content of your enquiry</li>
+            <li><strong>Country</strong> — optional, to route your request to the right partner</li>
+          </ul>
+
+          <h3>2.2 Platform Assessment Data (Future)</h3>
+          <p>When the DIGI-METER assessment platform launches, it will collect:</p>
+          <ul>
+            <li>Assessment responses and competence profile data</li>
+            <li>Pseudonymised learner identifiers (no real names stored at platform level)</li>
+            <li>Aggregated class-level data visible to educators</li>
+          </ul>
+          <p>All platform data will be processed under a separate, detailed privacy notice presented at registration time.</p>
+
+          <h3>2.3 Technical and Usage Data</h3>
+          <p>This website does not use analytics tracking or advertising cookies. Your browser preferences (high-contrast mode, font size) are stored locally in your browser's <code>localStorage</code> and are never transmitted to our servers.</p>
+
+          <h2>3. Legal Basis for Processing</h2>
+          <p>We process your personal data under the following legal bases (GDPR Article 6):</p>
+          <ul>
+            <li><strong>Consent (Art. 6(1)(a))</strong> — Newsletter subscriptions. You can withdraw consent at any time by contacting us.</li>
+            <li><strong>Legitimate interests (Art. 6(1)(f))</strong> — Responding to project enquiries and protecting website security.</li>
+            <li><strong>Legal obligation (Art. 6(1)(c))</strong> — Compliance with Erasmus+ grant reporting requirements.</li>
+          </ul>
+
+          <h2>4. How We Use Your Data</h2>
+          <ul>
+            <li>Responding to contact form enquiries</li>
+            <li>Sending DIGI-METER project updates (newsletter subscribers only)</li>
+            <li>Organising and managing pilot school participation</li>
+            <li>Erasmus+ grant reporting and quality assurance (anonymised/aggregated only)</li>
+            <li>Improving project outputs and dissemination</li>
+          </ul>
+          <p>We will <strong>never</strong> sell, rent, or share your personal data with third parties for commercial purposes.</p>
+
+          <h2>5. Data Sharing Within the Consortium</h2>
+          <p>DIGI-METER is delivered by a consortium of 11 organisations across 8 European countries. Your data may be shared internally among consortium partners solely for the purposes described above, under a signed Data Processing Agreement. The consortium partners are:</p>
+          <ul>
+            <li>CSI — Center for Social Innovation (Cyprus, coordinator)</li>
+            <li>SciCo (Greece), UBITECH (Greece), Approximar (Portugal), Lasco (Italy)</li>
+            <li>Outside Media &amp; Knowledge (Germany), Syncnify (France), CEC (Cyprus)</li>
+            <li>AB Corporation (Belgium), Ergonact (Cyprus), Crow Group (Netherlands)</li>
+          </ul>
+
+          <h2>6. Data Retention</h2>
+          <ul>
+            <li><strong>Contact form messages:</strong> Retained for up to 24 months after the end of the project, then deleted.</li>
+            <li><strong>Newsletter subscriptions:</strong> Until you unsubscribe or withdraw consent.</li>
+            <li><strong>Platform assessment data:</strong> Detailed retention schedule provided in the platform privacy notice at launch.</li>
+          </ul>
+
+          <h2>7. Your Rights Under GDPR</h2>
+          <p>You have the following rights regarding your personal data. To exercise any of them, contact us at <a href="mailto:info@outsidemedia.eu">info@outsidemedia.eu</a>. We will respond within one month, as required by the GDPR.</p>
+
+          <div class="rights-grid">
+            <div class="right-item">
+              <strong>Right of Access (Art. 15)</strong>
+              <span>Request a copy of the personal data we hold about you.</span>
+            </div>
+            <div class="right-item">
+              <strong>Right to Rectification (Art. 16)</strong>
+              <span>Ask us to correct inaccurate or incomplete data.</span>
+            </div>
+            <div class="right-item">
+              <strong>Right to Erasure (Art. 17)</strong>
+              <span>Ask us to delete your data where there is no compelling reason to keep it.</span>
+            </div>
+            <div class="right-item">
+              <strong>Right to Portability (Art. 20)</strong>
+              <span>Receive your data in a structured, machine-readable format.</span>
+            </div>
+            <div class="right-item">
+              <strong>Right to Restrict Processing (Art. 18)</strong>
+              <span>Ask us to pause processing while a dispute is resolved.</span>
+            </div>
+            <div class="right-item">
+              <strong>Right to Object (Art. 21)</strong>
+              <span>Object to processing based on legitimate interests.</span>
+            </div>
+          </div>
+
+          <p style="margin-top: var(--space-m);">You also have the right to lodge a complaint with your national data protection supervisory authority. In Germany: <a href="https://www.bfdi.bund.de" target="_blank" rel="noopener">Bundesbeauftragter für den Datenschutz (BfDI)</a>.</p>
+
+          <h2>8. Cookies and Local Storage</h2>
+          <p>This website does not set tracking or analytics cookies. We use browser <code>localStorage</code> only for storing your accessibility preferences (contrast mode, font size) and form draft state. These values never leave your browser. See our <a href="cookies.html">Cookie Policy</a> for full details.</p>
+
+          <h2>9. Security</h2>
+          <p>We take appropriate technical and organisational measures to protect your personal data against unauthorised access, alteration, disclosure, or destruction. Form submissions are sent over an encrypted connection (HTTPS) and delivered by email to the project team. Access to contact form data is restricted to the project communication lead (Outside Media &amp; Knowledge) and relevant consortium partners on a need-to-know basis.</p>
+
+          <h2>10. Children's Data</h2>
+          <p>This public website is not directed at children under 16 and does not knowingly collect data from them. The DIGI-METER platform (when launched) will process learner data from secondary school students under appropriate institutional data processing agreements and parental/guardian consent mechanisms as required by national law.</p>
+
+          <h2>11. Changes to This Policy</h2>
+          <p>We may update this Privacy Policy as the project progresses, particularly when the assessment platform launches. Material changes will be announced on this website. The version number and update date at the top of this page will reflect the latest revision.</p>
+
+          <h2>12. Contact</h2>
+          <p>For any privacy-related questions, data subject requests, or concerns, please contact:</p>
+          <div class="policy-note">
+            <p><strong><a href="https://outsidemedia.eu/" target="_blank" rel="noopener noreferrer" style="color:inherit;">Outside Media &amp; Knowledge</a></strong><br>
+            Email: <a href="mailto:info@outsidemedia.eu">info@outsidemedia.eu</a><br>
+            Subject line: "DIGI-METER Privacy Request"</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-pad section-dark">
+      <div class="container align-center">
+        <span class="eyebrow">Related Legal Documents</span>
+        <h2 style="color: #fff;">Other Policies</h2>
+        <p class="lead-p" style="margin: 0 auto var(--space-l);">Review our full legal framework covering cookies, data preferences, and accessibility commitments.</p>
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
+          <a href="cookies.html" class="btn btn-ghost">Cookie Policy</a>
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="section site-footer section-pad-sm" id="site-footer">
+    <div class="container block" style="gap: var(--space-m);">
+      <div class="footer-top-row">
+        <div class="footer-brand-col block">
+          <div class="footer-brand-logo"><img src="assets/logo-digimeter.png" alt="DIGI-METER Logo Footer"></div>
+          <p class="footer-p">Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project.</p>
+          <!-- Project social media links to be added once channels are confirmed by the consortium -->
+        </div>
+        <div class="footer-nav-col block" style="gap:12px;">
+          <h3 class="text-white" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em;">Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="about.html">About the Project</a></li>
+            <li><a href="partners.html">Consortium Partners</a></li>
+            <li><a href="outputs.html">Outputs &amp; Resources</a></li>
+            <li><a href="events.html">Events &amp; Webinars</a></li>
+            <li><a href="platform.html">Platform Access</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter-col block" style="gap:12px;">
+          <h3 class="text-white" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em;">This Website</h3>
+          <p class="footer-p" style="font-size: 1rem;">This website is designed, hosted, and operated by Outside Media &amp; Knowledge (Germany).</p>
+          <div style="font-size:0.75rem;"><strong><a href="https://outsidemedia.eu/" style="color:inherit; text-decoration:none;">Outside Media &amp; Knowledge</a></strong></div>
+        </div>
+      </div>
+      <div class="footer-disclaimer-box">
+        <div class="footer-disclaimer-flag"><svg class="eu-flag-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" aria-hidden="true"><rect width="36" height="24" fill="#003399"/><g fill="#FFCC00"><polygon transform="translate(18,4)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(26,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(18,20)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(10,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/></g></svg></div>
+        <div class="footer-disclaimer-text">Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)</div>
+      </div>
+      <div class="footer-bottom-row">
+        <span>© 2026 DIGI-METER Consortium. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="privacy.html" aria-current="page">Privacy Policy</a>
+          <a href="cookies.html">Cookie Policy</a>
+          <a href="impressum.html">Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=20260612l"></script>
+</body>
+</html>

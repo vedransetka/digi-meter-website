@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>DIGI-METER - Measuring Digital Competence for Resilient Learning Ecosystems</title>
+  <meta name="description" content="DIGI-METER is an Erasmus+ Forward-Looking project developing AI-supported tools, dashboards, and indicators based on DigComp 2.2 to measure and improve digital skills in schools and vocational training.">
+  <meta name="keywords" content="DIGI-METER, DigComp 2.2, digital competence, Erasmus+, self-assessment, teacher dashboard, VET, AI education, digital skills">
+  <meta name="author" content="Outside Media & Knowledge">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo-digimeter.png">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css?v=20260612l">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ==========================================================================
+       1. Top Utility & Accessibility Bar
+       ========================================================================== -->
+  <div class="top-bar" id="top-utility-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <!-- EU Emblem & Funding Wording -->
+        <div class="eu-badge-header" role="img" aria-label="Co-funded by the European Union logo">
+          <svg class="eu-flag-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" aria-hidden="true" focusable="false"><rect width="36" height="24" fill="#003399"/><g fill="#FFCC00"><polygon transform="translate(18,4)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(26,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(18,20)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(10,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/></g></svg>
+          <span class="eu-text">Co-funded by the<br>European Union</span>
+        </div>
+      </div>
+      
+      <div class="top-bar-right">
+        <!-- Accessibility Controls -->
+        <div class="a11y-widget" aria-label="Accessibility controls">
+          <button class="a11y-btn" id="contrast-toggle" aria-pressed="false" title="Toggle High Contrast Theme">High Contrast</button>
+          <button class="a11y-btn" id="size-decrease" title="Decrease Text Size" aria-label="Decrease text size">A-</button>
+          <button class="a11y-btn" id="size-increase" title="Increase Text Size" aria-label="Increase text size">A+</button>
+        </div>
+        <!-- Language Selector (project languages — confirm final list with consortium) -->
+        <div class="language-selector">
+          <label for="lang-select" class="sr-only">Select language</label>
+          <select id="lang-select" aria-label="Select language">
+            <option value="en" selected>EN — English</option>
+            <option value="el">EL — Ελληνικά</option>
+            <option value="de">DE — Deutsch</option>
+            <option value="fr">FR — Français</option>
+            <option value="it">IT — Italiano</option>
+            <option value="pt">PT — Português</option>
+            <option value="nl">NL — Nederlands</option>
+          </select>
+        </div>
+
+        <form class="search-box" role="search" aria-label="Site search" onsubmit="event.preventDefault(); showToast('Site search will be available at launch.', 'info');">
+          <input type="search" class="search-input" placeholder="Search site..." aria-label="Search content">
+          <button type="submit" class="search-btn" aria-label="Submit search">🔍</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       2. Sticky Navigation Header
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <!-- Site Branding Logo -->
+      <a href="index.html" class="site-logo" aria-label="DIGI-METER homepage link">
+        <img src="assets/logo-digimeter.png" alt="DIGI-METER Logo">
+      </a>
+      
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" aria-label="Main site navigation">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="outputs.html" class="nav-link">Outputs</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="partners.html" class="nav-link">Partners</a>
+        <a href="platform.html" class="nav-link">Platform</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      
+      <!-- Primary Header CTA -->
+      <div class="header-cta">
+        <a href="contact.html" class="btn btn-primary" style="padding: 0.58rem 1.4rem; font-size: 1rem; box-shadow: 0 0 20px rgba(83,200,234,0.3);">Subscribe</a>
+      </div>
+      
+      <!-- Hamburger Icon for Mobile -->
+      <button class="burger-menu" id="burger-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav-panel">
+        <span class="burger-bar" style="background-color: #fff;"></span>
+        <span class="burger-bar" style="background-color: #fff;"></span>
+        <span class="burger-bar" style="background-color: #fff;"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Navigation Sidebar -->
+  <div class="mobile-nav-panel" id="mobile-nav-panel">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <ul class="mobile-menu">
+      <li><a href="about.html" class="mobile-link">About the Project</a></li>
+      <li><a href="outputs.html" class="mobile-link">Outputs &amp; Resources</a></li>
+      <li><a href="events.html" class="mobile-link">Events &amp; Webinars</a></li>
+      <li><a href="partners.html" class="mobile-link">Consortium Partners</a></li>
+      <li><a href="platform.html" class="mobile-link">Platform Access</a></li>
+      <li><a href="news.html" class="mobile-link">News &amp; Updates</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+    <div class="mobile-cta">
+      <a href="contact.html" class="btn btn-primary" style="width:100%; text-align:center;">Subscribe</a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       3. Main Content Container
+       ========================================================================== -->
+  <main id="main-content">
+    <!-- ==========================================================================
+         Section 3.1: High-Fidelity Hero Banner (Design Reference Aligned)
+         ========================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-row">
+          
+          <!-- Left Text Column -->
+          <div class="hero-text-block" style="max-width: 650px;">
+            <span class="eyebrow text-sky" style="font-weight: 700;">Erasmus+ • Forward-Looking</span>
+            
+            <h1 class="hero-title" style="margin: 12px 0 16px 0;">
+              Measuring <br>
+              <span class="grad-text-comp">Digital Competence</span>
+            </h1>
+            
+            <p class="hero-desc">
+              DIGI-METER turns DigComp 2.2 into practical, inclusive and evidence-based tools for learners, educators and institutions across Europe.
+            </p>
+            
+            <div class="hero-actions" style="margin-top: 10px;">
+              <a href="about.html" class="btn btn-primary" style="padding: 0.78rem 1.8rem; font-size: 1rem; font-weight: 600;">Explore the Project <span style="font-family: var(--ff-sans); font-weight: 700; margin-left: 6px;">➔</span></a>
+              <a href="outputs.html" class="btn btn-ghost" style="padding: 0.78rem 1.8rem; font-size: 1rem; font-weight: 600;">View Resources</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Four Stats Cards Grid inside Hero -->
+        <div class="hero-stats-grid" id="glance">
+          
+          <div class="hero-stat-card">
+            <span class="label">Consortium</span>
+            <div class="value">11 Partners</div>
+          </div>
+
+          <div class="hero-stat-card">
+            <span class="label">Coverage</span>
+            <div class="value">8 EU Countries</div>
+          </div>
+          
+          <div class="hero-stat-card">
+            <span class="label">Duration</span>
+            <div class="value">36 Months</div>
+          </div>
+          
+          <div class="hero-stat-card">
+            <span class="label">Framework</span>
+            <div class="value">DigComp 2.2</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 3.3: Core Navigation Entry Cards
+         ========================================================================== -->
+    <section class="section section-pad-sm section-light" id="entries" aria-label="Core categories entry gateway">
+      <div class="container">
+        <h2 class="sr-only">Explore DIGI-METER</h2>
+        <div class="grid grid-5">
+
+          <!-- Primary card -->
+          <div class="entry-card entry-card--primary block">
+            <div class="entry-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <div class="entry-card-header">
+              <span class="entry-card-tag">Project</span>
+              <h3>About DIGI-METER</h3>
+            </div>
+            <p style="font-size: 1rem; color: var(--c-slate);">What the project is, who it serves, and the DigComp 2.2 framework behind it.</p>
+            <a href="about.html" class="entry-link">Learn more →</a>
+          </div>
+
+          <!-- Primary card -->
+          <div class="entry-card entry-card--primary block">
+            <div class="entry-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </div>
+            <div class="entry-card-header">
+              <span class="entry-card-tag">Deliverables</span>
+              <h3>Outputs & Resources</h3>
+            </div>
+            <p style="font-size: 1rem; color: var(--c-slate);">Indicator frameworks, VET toolkits, policy briefs, and open research reports.</p>
+            <a href="outputs.html" class="entry-link">Access deliverables →</a>
+          </div>
+
+          <!-- Secondary card -->
+          <div class="entry-card block">
+            <div class="entry-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div class="entry-card-header">
+              <span class="entry-card-tag">Calendar</span>
+              <h3>Events & Webinars</h3>
+            </div>
+            <p style="font-size: 1rem; color: var(--c-slate);">Webinars, info-days, pilot workshops, and policy roundtables across Europe.</p>
+            <a href="events.html" class="entry-link">View calendar →</a>
+          </div>
+
+          <!-- Primary card -->
+          <div class="entry-card entry-card--primary block">
+            <div class="entry-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="entry-card-header">
+              <span class="entry-card-tag">Tool</span>
+              <h3>Self-Assessment Platform</h3>
+            </div>
+            <p style="font-size: 1rem; color: var(--c-slate);">Adaptive competence assessment for learners and dashboards for educators.</p>
+            <a href="platform.html" class="entry-link">Get early access →</a>
+          </div>
+
+          <!-- Secondary card -->
+          <div class="entry-card block">
+            <div class="entry-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            </div>
+            <div class="entry-card-header">
+              <span class="entry-card-tag">Press</span>
+              <h3>Media & Press Kit</h3>
+            </div>
+            <p style="font-size: 1rem; color: var(--c-slate);">Logos, boilerplate text, explainer video, and official press releases.</p>
+            <a href="#media" class="entry-link">View media section →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 3.4: About the Project Description
+         ========================================================================== -->
+    <section class="section section-pad section-brand" id="about">
+      <div class="container">
+
+        <!-- ── Block 1: Text LEFT · Image RIGHT ───────────────────────────── -->
+        <div class="about-block row row-side about-row">
+
+          <div class="col-main block">
+            <span class="eyebrow">Project Overview</span>
+            <h2>Measuring Digital Competence for Resilient Learning Ecosystems</h2>
+            <p class="lead-p" style="font-size: 1rem;">
+              DIGI-METER responds to a key challenge in European education systems: while the DigComp 2.2 framework clearly defines the competences citizens need in digital environments, its practical use in schools and vocational education and training is still fragmented. DIGI-METER helps bridge this gap by translating DigComp 2.2 into measurable indicators, practical assessment tools, and clear feedback for learners, educators, and institutions.
+            </p>
+          </div>
+
+          <div class="col-side about-media-col">
+            <div class="about-img-wrap">
+              <div class="about-img-box about-img-portrait">
+                <img src="assets/about-img.jpg" alt="Students and researchers collaborating in a bright modern library utilizing technology tools and papers">
+              </div>
+              <div class="about-stat-chip">
+                <span style="font-family: var(--ff-mono); color: var(--c-purple); font-weight: 700;">11</span>&thinsp;Partners &middot; 8 EU Countries
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ── Block 2: Image LEFT · Text RIGHT ───────────────────────────── -->
+        <div class="about-block row row-side about-row">
+
+          <div class="col-side about-media-col about-media-col--left">
+            <div class="about-img-wrap">
+              <div class="about-img-box about-img-portrait">
+                <img src="assets/platform-teaser.jpg" alt="IT Specialist analyzing complex business charts and graphs on a tablet screen in a dashboard">
+              </div>
+              <div class="about-stat-chip">
+                <span style="font-family: var(--ff-mono); color: var(--c-sky); font-weight: 700;">DigComp 2.2</span>&thinsp;&middot; AI-Powered
+              </div>
+            </div>
+          </div>
+
+          <div class="col-main block">
+            <span class="eyebrow">What We're Building</span>
+            <h3 style="font-size: 1.35rem; font-weight: 700; line-height: 1.35; color: var(--c-charcoal);">AI-Supported Tools for Schools, VET Providers &amp; Policymakers</h3>
+            <p style="font-size: 1rem; color: var(--c-slate);">
+              Through the project, partners will develop AI-supported self-assessment tools, a teacher dashboard, and open resources that help schools, VET providers, and policymakers better understand, monitor, and improve digital skills. The tools are designed to support personalised learning, evidence-based decision-making, and more consistent digital competence assessment across different educational contexts.
+            </p>
+            <div style="background: rgba(115, 64, 153, 0.08); border-left: 3px solid var(--c-purple); padding: 18px 22px;">
+              <h3 style="font-size: 1rem; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.02em;">Ethics-by-Design Approach</h3>
+              <p style="font-size: 1rem; color: var(--c-slate); margin:0;">
+                A strong focus is placed on ethics, inclusion, accessibility, and data protection. DIGI-METER follows an ethics-by-design approach, with attention to transparency, GDPR compliance, fairness, explainability, and user control.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 3.5: Consortium Partners Grid
+         ========================================================================== -->
+    <section class="section section-pad section-light" id="consortium" style="background-color: var(--c-bg); border-top: 1px solid rgba(13, 24, 43, 0.05);">
+      <div class="container">
+        
+        <div class="block align-center">
+          <span class="eyebrow">Our Consortium</span>
+          <h2>Brought Together by a<br>Multidisciplinary European Alliance</h2>
+          <p class="lead-p align-center">
+            DIGI-METER combines expertise in digital education, pedagogical design, psychometrics, AI, software development, piloting, communication, dissemination, ethics, accessibility, and policy transfer.
+          </p>
+        </div>
+
+        <!-- Partners Grid (Clicking triggers detail modal drawer) -->
+        <div class="partner-grid" role="list" aria-label="Consortium Partners Grid">
+          
+          <div role="listitem"><button type="button" class="partner-card" data-partner="csi" aria-haspopup="dialog" aria-label="CSI, Cyprus coordinator — view details">
+            <div class="partner-logo-container">
+              <img src="assets/logos/csi.png" alt="CSI Logo">
+            </div>
+            <div class="partner-card-name">CSI</div>
+            <div class="partner-card-country">Cyprus</div>
+            <div class="partner-card-role-badge">Coordinator</div>
+          </button></div>
+
+          <div role="listitem"><button type="button" class="partner-card" data-partner="scico" aria-haspopup="dialog" aria-label="SciCo, Greece partner — view details">
+            <div class="partner-logo-container">
+              <img src="assets/logos/scico.png" alt="SciCo Logo">
+            </div>
+            <div class="partner-card-name">SciCo</div>
+            <div class="partner-card-country">Greece</div>
+            <div class="partner-card-role-badge">Methodology</div>
+          </button></div>
+
+          <div role="listitem"><button type="button" class="partner-card" data-partner="ubitech" aria-haspopup="dialog" aria-label="UBITECH, Greece technical developer — view details">
+            <div class="partner-logo-container">
+              <img src="assets/logos/ubitech.png" alt="UBITECH Logo">
+            </div>
+            <div class="partner-card-name">UBITECH</div>
+            <div class="partner-card-country">Greece</div>
+            <div class="partner-card-role-badge">Development</div>
+          </button></div>
+
+          <div role="listitem"><button type="button" class="partner-card" data-partner="approximar" aria-haspopup="dialog" aria-label="Approximar, Portugal pilot testing — view details">
+            <div class="partner-logo-container">
+              <img src="assets/logos/aproximar.png" alt="Approximar Logo">
+            </div>
+            <div class="partner-card-name">Approximar</div>
+            <div class="partner-card-country">Portugal</div>
+            <div class="partner-card-role-badge">Piloting</div>
+          </button></div>
+
+          <div role="listitem"><button type="button" class="partner-card" data-partner="lasco" aria-haspopup="dialog" aria-label="Lasco, Italy dissemination — view details">
+            <div class="partner-logo-container">
+              <img src="assets/logos/lasco.svg" alt="Lasco Logo">
+            </div>
+            <div class="partner-card-name">Lascò</div>
+            <div class="partner-card-country">Italy</div>
+            <div class="partner-card-role-badge">Policy</div>
+          </button></div>
+
+          <div role="listitem"><button type="button" class="partner-card" data-partner="omk" aria-haspopup="dialog" aria-label="Outside Media &amp; Knowledge, Germany, website developer — view details">
+            <div class="partner-logo-container">
+              <img src="assets/logos/outside-media.png" alt="Outside Media &amp; Knowledge">
+            </div>
+            <div class="partner-card-name">Outside Media &amp; Knowledge</div>
+            <div class="partner-card-country">Germany</div>
+            <div class="partner-card-role-badge">Communication</div>
+          </button></div>
+
+          <div role="listitem"><button type="button" class="partner-card" data-partner="syncnify" aria-haspopup="dialog" aria-label="Syncnify, France analytics — view details">
+            <div class="partner-logo-container">
+              <img src="assets/logos/syncnify.png" alt="Syncnify Logo">
+            </div>
+            <div class="partner-card-name">Syncnify</div>
+            <div class="partner-card-country">France</div>
+            <div class="partner-card-role-badge">Analytics</div>
+          </button></div>
+
+          <div role="listitem"><button type="button" class="partner-card" data-partner="cec" aria-haspopup="dialog" aria-label="CEC / COTHM, Cyprus VET partner — view details">
+            <div class="partner-logo-container">
+              <img src="assets/logos/cec.gif" alt="CEC / COTHM Logo">
+            </div>
+            <div class="partner-card-name">CEC / COTHM</div>
+            <div class="partner-card-country">Cyprus</div>
+            <div class="partner-card-role-badge">VET Support</div>
+          </button></div>
+
+          <div role="listitem"><button type="button" class="partner-card" data-partner="abcorp" aria-haspopup="dialog" aria-label="AB Corporation, Belgium EU policy — view details">
+            <div class="partner-logo-container">
+              <img src="assets/logos/abcorporation.png" alt="AB Corporation Logo">
+            </div>
+            <div class="partner-card-name">AB Corporation</div>
+            <div class="partner-card-country">Belgium</div>
+            <div class="partner-card-role-badge">EU Policy</div>
+          </button></div>
+
+          <div role="listitem"><button type="button" class="partner-card" data-partner="ergonact" aria-haspopup="dialog" aria-label="Ergonact, Cyprus ethics and security — view details">
+            <div class="partner-logo-container">
+              <img src="assets/logos/ergonact.png" alt="Ergonact Logo">
+            </div>
+            <div class="partner-card-name">Ergonact</div>
+            <div class="partner-card-country">Cyprus</div>
+            <div class="partner-card-role-badge">Ethics & AI</div>
+          </button></div>
+
+          <div role="listitem"><button type="button" class="partner-card" data-partner="crow" aria-haspopup="dialog" aria-label="Crow Group, Netherlands dissemination — view details">
+            <div class="partner-logo-container">
+              <img src="assets/logos/crowgroup.svg" alt="Crow Group Logo">
+            </div>
+            <div class="partner-card-name">Crow Group</div>
+            <div class="partner-card-country">Netherlands</div>
+            <div class="partner-card-role-badge">Exploitation</div>
+          </button></div>
+
+        </div>
+        
+        <div class="align-center" style="margin-top: var(--space-s);">
+          <span style="font-size: 0.75rem; color: var(--c-slate); font-family: var(--ff-mono);">Click any partner card to view their full contributions and project roles.</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 3.6: Outputs & Resources Repository
+         ========================================================================== -->
+    <section class="section section-pad section-dark" id="resources">
+      <div class="container">
+        
+        <div class="block">
+          <span class="eyebrow text-sky">Public Repository</span>
+          <h2>Outputs & Resource Deliverables</h2>
+          <p class="lead-p">
+            Access validated frameworks, adaptive engine models, indicator guides, policy briefs, and educational deliverables created under WP1-WP5.
+          </p>
+        </div>
+
+        <!-- Filter Categories Tabs -->
+        <div class="filter-tabs" role="group" aria-label="Resource categories">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All Resources</button>
+          <button class="filter-btn" data-filter="frameworks" aria-pressed="false">Indicators & Frameworks</button>
+          <button class="filter-btn" data-filter="toolkits" aria-pressed="false">VET Toolkits</button>
+          <button class="filter-btn" data-filter="reports" aria-pressed="false">Research Reports</button>
+          <button class="filter-btn" data-filter="policy" aria-pressed="false">Policy Briefs</button>
+        </div>
+
+        <!-- Resources Grid -->
+        <div class="resource-grid">
+          
+          <!-- Card 1 -->
+          <div class="card-feature block resource-card" data-category="frameworks">
+            <span class="resource-tag">Planned Deliverable</span>
+            <h3>DigComp 2.2 Translation & Indicator Mapping</h3>
+            <p>
+              Detailed breakdown of DigComp 2.2 descriptors translated into specific, measurable indicators for schools and vocational education.
+            </p>
+            <div class="resource-meta">
+              <span>Publication date: TBC</span>
+              <button type="button" class="resource-download-link" style="background:none;border:none;cursor:pointer;font:inherit;" onclick="showToast('This deliverable will be available here after validation and publication.', 'info')">Available after publication</button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card-feature block resource-card" data-category="toolkits frameworks">
+            <span class="resource-tag">Planned Deliverable</span>
+            <h3>Teacher Dashboard Pedagogical Design Guide</h3>
+            <p>
+              Guidelines for implementing user-friendly dashboard panels that visualize learner competencies and recommend personalized materials.
+            </p>
+            <div class="resource-meta">
+              <span>Publication date: TBC</span>
+              <button type="button" class="resource-download-link" style="background:none;border:none;cursor:pointer;font:inherit;" onclick="showToast('This deliverable will be available here after validation and publication.', 'info')">Available after publication</button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card-feature block resource-card" data-category="reports">
+            <span class="resource-tag">Planned Report</span>
+            <h3>Adaptive Engine Scoring API & Technical Design</h3>
+            <p>
+              Technical overview of the backend adaptive self-assessment algorithms, securing privacy controls, and data mapping.
+            </p>
+            <div class="resource-meta">
+              <span>Publication date: TBC</span>
+              <button type="button" class="resource-download-link" style="background:none;border:none;cursor:pointer;font:inherit;" onclick="showToast('This report will be available here after validation and publication.', 'info')">Available after publication</button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card-feature block resource-card" data-category="toolkits">
+            <span class="resource-tag">Planned Toolkit</span>
+            <h3>Vocational Training (VET) Digital Competence Pack</h3>
+            <p>
+              Practical classroom self-assessment tasks, rubrics, and feedback worksheets customized for vocational training context ecosystems.
+            </p>
+            <div class="resource-meta">
+              <span>Publication date: TBC</span>
+              <button type="button" class="resource-download-link" style="background:none;border:none;cursor:pointer;font:inherit;" onclick="showToast('This toolkit will be available here after validation and publication.', 'info')">Available after publication</button>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="card-feature block resource-card" data-category="policy">
+            <span class="resource-tag">Planned Policy Brief</span>
+            <h3>Enhancing European Digital Competence Frameworks</h3>
+            <p>
+              Strategic recommendations for policymakers linking DIGI-METER results with Digital Education Action Plan priorities and EDSC systems.
+            </p>
+            <div class="resource-meta">
+              <span>Publication date: TBC</span>
+              <button type="button" class="resource-download-link" style="background:none;border:none;cursor:pointer;font:inherit;" onclick="showToast('This policy brief will be available here after validation and publication.', 'info')">Available after publication</button>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="card-feature block resource-card" data-category="reports">
+            <span class="resource-tag">Planned Report</span>
+            <h3>DIGI-METER Piloting Findings & Multi-Country Evaluation</h3>
+            <p>
+              Outcomes from piloting and validating the project tools across European contexts, including VET user feedback.
+            </p>
+            <div class="resource-meta">
+              <span>Publication date: TBC</span>
+              <button type="button" class="resource-download-link" style="background:none;border:none;cursor:pointer;font:inherit;" onclick="showToast('This report will be available here after validation and publication.', 'info')">Available after publication</button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="align-center" style="margin-top: var(--space-m);">
+          <span style="font-size:0.85rem; color: rgba(255, 255, 255, 0.65);">
+            External repositories: 
+            <a href="https://erasmus-plus.ec.europa.eu/projects" target="_blank" rel="noopener noreferrer" style="color: var(--c-sky); text-decoration: underline;">Erasmus+ Project Results Platform</a> | 
+            <a href="https://zenodo.org" target="_blank" rel="noopener noreferrer" style="color: var(--c-sky); text-decoration: underline;">Zenodo Open Science</a>
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 3.7: Events Calendar
+         ========================================================================== -->
+    <section class="section section-pad section-light" id="events">
+      <div class="container">
+        
+        <div class="block">
+          <span class="eyebrow">Project Events</span>
+          <h2>Meetings, Webinars & conferences</h2>
+          <p class="lead-p">
+            Join the conversation, participate in piloting workshops, policy circles, and follow our progress.
+          </p>
+        </div>
+
+        <!-- Event tabs toggles -->
+        <div class="event-tabs">
+          <button class="event-tab-btn active" data-tab="upcoming-pane">Upcoming Events</button>
+          <button class="event-tab-btn" data-tab="past-pane">Past Events</button>
+        </div>
+
+        <!-- Event Panes -->
+        <div class="event-panes">
+          
+          <!-- Pane 1: Upcoming -->
+          <div class="event-pane active" id="upcoming-pane">
+            
+            <div class="event-card">
+              <div class="event-date-badge">
+                <span class="event-date-day" style="font-size:0.85rem;">TBC</span>
+                <span class="event-date-month">2026</span>
+              </div>
+              <div class="event-details">
+                <span class="event-type">Online Webinar</span>
+                <h3 class="event-title">Mapping DigComp 2.2: Indicators for VET Contexts</h3>
+                <p class="event-info-line">Date, time and registration details to be announced.</p>
+              </div>
+              <div class="event-action">
+                <button class="btn btn-outline-dark" onclick="showToast('Event registration will open soon. Subscribe to the newsletter for updates.', 'info')">Register Now</button>
+              </div>
+            </div>
+
+            <div class="event-card">
+              <div class="event-date-badge">
+                <span class="event-date-day" style="font-size:0.85rem;">TBC</span>
+                <span class="event-date-month">2026</span>
+              </div>
+              <div class="event-details">
+                <span class="event-type">Policy Roundtable</span>
+                <h3 class="event-title">Standardizing Competences: Digital Education Action Plan Goals</h3>
+                <p class="event-info-line">Date, location and registration details to be announced.</p>
+              </div>
+              <div class="event-action">
+                <button class="btn btn-outline-dark" onclick="showToast('Event registration will open soon. Subscribe to the newsletter for updates.', 'info')">Register Now</button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Pane 2: Past -->
+          <div class="event-pane" id="past-pane">
+            
+            <div class="event-card" style="opacity: 0.85;">
+              <div class="event-date-badge" style="background: var(--c-slate);">
+                <span class="event-date-day" style="font-size:0.85rem;">TBC</span>
+                <span class="event-date-month">2026</span>
+              </div>
+              <div class="event-details">
+                <span class="event-type">Kickoff Meeting</span>
+                <h3 class="event-title">DIGI-METER Consortium Launch & Work Plan Brief</h3>
+                <p class="event-info-line">Details and meeting summary to be published.</p>
+              </div>
+              <div class="event-action">
+                <a href="#" class="btn btn-outline-dark" style="font-size: 1rem; padding: 6px 12px;" onclick="event.preventDefault(); showToast('Kickoff slides will be available in the public repository.', 'info')">View Slides</a>
+              </div>
+            </div>
+
+            <div class="event-card" style="opacity: 0.85;">
+              <div class="event-date-badge" style="background: var(--c-slate);">
+                <span class="event-date-day" style="font-size:0.85rem;">TBC</span>
+                <span class="event-date-month">2026</span>
+              </div>
+              <div class="event-details">
+                <span class="event-type">Info-day</span>
+                <h3 class="event-title">Erasmus+ Forward-Looking: Project Presentation</h3>
+                <p class="event-info-line">Details to be announced.</p>
+              </div>
+              <div class="event-action">
+                <a href="#" class="btn btn-outline-dark" style="font-size: 1rem; padding: 6px 12px;" onclick="event.preventDefault(); showToast('Livestream recording will be linked once uploaded.', 'info')">Watch Video</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 3.8: Platform Access (Coming Soon teaser)
+         ========================================================================== -->
+    <section class="section section-pad section-dark" id="platform">
+      <div class="container">
+
+        <div class="platform-layout">
+
+          <!-- Left: text + features + form -->
+          <div class="platform-text-col">
+            <span class="eyebrow text-sky">Self-Assessment Tool</span>
+            <h2 class="text-white">DIGI-METER Adaptive Platform</h2>
+            <p style="font-size: 1rem; color: rgba(255,255,255,0.72); line-height: 1.75;">
+              Currently in active development, the secure platform will provide a personalized dashboard utilizing adaptive testing engines to assess digital competences.
+            </p>
+
+            <ul class="platform-features-list">
+              <li class="platform-feature-item">
+                <span class="platform-feature-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </span>
+                <div><strong>Learner Self-Assessment:</strong> Dynamic question paths based on real-time responses to accurately assess skills without fatigue.</div>
+              </li>
+              <li class="platform-feature-item">
+                <span class="platform-feature-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                </span>
+                <div><strong>Teacher Dashboard Panel:</strong> Aggregated class analytics to identify skill gaps, monitor progress, and suggest learning materials.</div>
+              </li>
+              <li class="platform-feature-item">
+                <span class="platform-feature-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </span>
+                <div><strong>Trustworthy &amp; Inclusive:</strong> Designed for WCAG 2.1 AA accessibility, GDPR compliance, and inclusive use.</div>
+              </li>
+            </ul>
+
+            <div class="platform-early-access">
+              <h3 style="font-size: 1rem; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--c-sky);">Get Notified for Launch</h3>
+              <p style="font-size: 1rem; color: rgba(255,255,255,0.7); margin-bottom: 14px;">
+                Be among the first educational institutions to take part in the pilot phase.
+              </p>
+              <form class="early-access-form" id="early-access-form">
+                <input type="email" placeholder="Enter institution email..." required aria-label="Institution email for platform notification">
+                <button type="submit" class="btn btn-primary" style="white-space: nowrap;">Request Access</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Right: platform mockup frame -->
+          <div class="platform-media-col">
+            <div class="platform-mockup">
+              <div class="platform-mockup-bar">
+                <div class="platform-mockup-dots" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+                <span class="platform-mockup-label">DIGI-METER · Platform Preview</span>
+              </div>
+              <div class="platform-mockup-img">
+                <img src="assets/platform-teaser.jpg" alt="Close-up of business professional pointing at complex digital data charts on a tablet">
+                <div class="platform-mockup-fade" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="platform-launch-badge">
+              <span class="platform-badge-dot" aria-hidden="true"></span>
+              <span style="font-family: var(--ff-mono); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase;">In Active Development &middot; Launch Date TBC</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 3.9: Latest News & Blog
+         ========================================================================== -->
+    <section class="section section-pad section-light" id="news" style="border-top: 1px solid rgba(13, 24, 43, 0.05);">
+      <div class="container">
+        
+        <div class="block">
+          <span class="eyebrow">News & Updates</span>
+          <h2>Latest Stories & Project Progress</h2>
+          <p class="lead-p">
+            Follow stories from the field, technical progress, and pedagogical insights from our partners.
+          </p>
+        </div>
+
+        <div class="news-grid">
+          
+          <!-- Post 1 -->
+          <article class="card-news" role="article">
+            <div class="news-thumb">
+              <img src="assets/hero-bg.jpg" alt="Abstract blue purple network grid graphic">
+            </div>
+            <div class="news-card-content">
+              <span class="news-card-tag">Project News</span>
+              <h3 class="news-card-title">[Article title — to be provided]</h3>
+              <p class="news-card-excerpt">
+                [Short description — to be provided before publication]</p>
+              <div class="news-card-meta">
+                <span>[Date TBC]</span>
+                <a href="news.html" class="news-card-link">More in News ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Post 2 -->
+          <article class="card-news" role="article">
+            <div class="news-thumb">
+              <img src="assets/platform-teaser.jpg" alt="Visual representational image for Dashboard statistics charts">
+            </div>
+            <div class="news-card-content">
+              <span class="news-card-tag">Technical Blog</span>
+              <h3 class="news-card-title">[Article title — to be provided]</h3>
+              <p class="news-card-excerpt">
+                [Short description — to be provided before publication]</p>
+              <div class="news-card-meta">
+                <span>[Date TBC]</span>
+                <a href="news.html" class="news-card-link">More in News ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Post 3 -->
+          <article class="card-news" role="article">
+            <div class="news-thumb">
+              <img src="assets/about-img.jpg" alt="Visual representational image for education libraries and student collaboration">
+            </div>
+            <div class="news-card-content">
+              <span class="news-card-tag">Field Story</span>
+              <h3 class="news-card-title">[Article title — to be provided]</h3>
+              <p class="news-card-excerpt">
+                [Short description — to be provided before publication]</p>
+              <div class="news-card-meta">
+                <span>[Date TBC]</span>
+                <a href="news.html" class="news-card-link">More in News ↗</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 3.10: Media & Press highlights
+         ========================================================================== -->
+    <section class="section section-pad section-light" id="media" style="background-color: var(--c-bg); border-top: 1px solid rgba(13, 24, 43, 0.05);">
+      <div class="container">
+        
+        <div class="row row-side">
+          
+          <!-- Content Left -->
+          <div class="col-main block">
+            <span class="eyebrow">Media & Press Kit</span>
+            <h2>Resources for Broadcasters & Partners</h2>
+            <p style="font-size: 1rem; color: var(--c-slate); line-height: 1.5; margin-bottom: var(--space-s);">
+              Here you can download materials to support communication. All downloadable assets carry the required EU visibility and credit information.
+            </p>
+
+            <div class="grid grid-2" style="gap: var(--space-xs); margin-bottom: var(--space-s);">
+              <div style="background:#ffffff; border: 1px solid rgba(13,24,43,0.06); padding: 20px;">
+                <h3 style="font-size: 1rem; text-transform: uppercase; margin-bottom: 6px;">DIGI-METER Factsheet</h3>
+                <p style="font-size: 1rem; color: var(--c-slate); margin-bottom: 12px;">[Factsheet description — to be provided]</p>
+                <a href="#" class="btn btn-outline-dark" style="font-size:0.75rem; padding: 6px 12px;" onclick="event.preventDefault(); showToast('Factsheet PDF will be available at project launch.', 'info')">Download Factsheet</a>
+              </div>
+
+              <div style="background:#ffffff; border: 1px solid rgba(13,24,43,0.06); padding: 20px;">
+                <h3 style="font-size: 1rem; text-transform: uppercase; margin-bottom: 6px;">Visual Branding Assets</h3>
+                <p style="font-size: 1rem; color: var(--c-slate); margin-bottom: 12px;">[Branding assets description — to be provided]</p>
+                <a href="#" class="btn btn-outline-dark" style="font-size:0.75rem; padding: 6px 12px;" onclick="event.preventDefault(); showToast('Branding assets pack will be available at project launch.', 'info')">Download Logo Pack</a>
+              </div>
+            </div>
+
+            <div style="background: var(--c-off); padding: 20px; border-left: 2px solid var(--c-purple);">
+              <h3 style="font-size: 1rem; text-transform: uppercase; margin-bottom: 6px; color: var(--c-slate);">Project Boilerplate Text</h3>
+              <p style="font-size: 0.75rem; color: var(--c-slate); line-height: 1.5; margin:0;">
+                [Official project boilerplate text — to be provided by consortium]
+              </p>
+            </div>
+          </div>
+
+          <!-- Video Right -->
+          <div class="col-side block">
+            <div class="media-video-container">
+              <div class="media-video-bg">
+                <img src="assets/media-img.jpg" alt="Team collaborating pointing at tables and laptop screen">
+              </div>
+              <button class="media-video-play-btn" onclick="showToast('Project explainer video will be published at launch.', 'info')" aria-label="Play project explainer video">▶</button>
+              
+              <div class="media-video-overlay-text">
+                <p>Explainer Video</p>
+                <h3>[Video title — to be provided]</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 3.11: Contact Form & Newsletter Subscription
+         ========================================================================== -->
+    <section class="section section-pad section-light" id="contact" style="border-top: 1px solid rgba(13, 24, 43, 0.05);">
+      <div class="container">
+        
+        <div class="row row-side-even" style="gap: var(--space-l);">
+          
+          <!-- Text and Newsletter Left -->
+          <div class="block" style="display:flex; flex-direction:column; gap: var(--space-s);">
+            <span class="eyebrow">Get in touch</span>
+            <h2>Start a Conversation with Us</h2>
+            <p class="lead-p" style="font-size: 1rem;">
+              Have questions about the project, or want your school to participate in pilot activities? Contact the DIGI-METER consortium.
+            </p>
+
+            <div style="margin: 10px 0;">
+              <h3 style="font-size: 1rem; text-transform: uppercase; margin-bottom: 4px; color: var(--c-slate);">General Enquiries</h3>
+              <p style="font-size: 1rem; font-family: var(--ff-mono); font-weight: 700;"><a href="mailto:digimeter@csicy.com">digimeter@csicy.com</a></p>
+              <h3 style="font-size: 1rem; text-transform: uppercase; margin: 12px 0 4px; color: var(--c-slate);">Project Coordinator (CSI)</h3>
+              <p style="font-size: 1rem; font-family: var(--ff-mono); font-weight: 700;"><a href="https://csicy.com/" target="_blank" rel="noopener noreferrer">csicy.com</a></p>
+            </div>
+
+            <!-- Integrated Newsletter signup -->
+            <div style="background: rgba(13, 24, 43, 0.03); border: 1px solid rgba(13, 24, 43, 0.06); padding: 24px; margin-top: 10px;">
+              <h3 style="font-size: 1rem; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.02em;">Newsletter Subscription</h3>
+              <p style="font-size: 1rem; color: var(--c-slate); margin-bottom: 12px;">Sign up to receive periodic progress alerts, deliverables news, and event calendar updates.</p>
+              
+              <form class="block" id="newsletter-sub-form">
+                <div style="display:flex; gap: 8px;">
+                  <input type="email" placeholder="Enter your email address..." required aria-label="Newsletter email address" style="background:#fff; border:1px solid rgba(13,24,43,0.12); padding: 8px 12px; font-size:0.85rem; flex:1; outline:none;">
+                  <button type="submit" class="btn btn-primary" style="padding: 8px 16px; font-size:0.85rem;">Subscribe</button>
+                </div>
+                <div class="form-checkbox-group" style="margin: 8px 0 0 0;">
+                  <input type="checkbox" id="newsletter-consent" class="form-checkbox" required>
+                  <label for="newsletter-consent" class="form-checkbox-label" style="font-size: 0.68rem; line-height: 1.3;">
+                    I consent to receiving DIGI-METER updates under standard GDPR privacy policies.
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Contact Form Right -->
+          <div>
+            <form class="contact-form block" id="main-contact-form" novalidate aria-label="Main contact form">
+              <h3 style="font-size:1.25rem; border-bottom:1px solid rgba(13,24,43,0.06); padding-bottom:12px; margin-bottom:12px;">Send a Message</h3>
+              
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name *</label>
+                <input type="text" id="contact-name" class="form-input" required placeholder="John Doe" aria-required="true">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address *</label>
+                <input type="email" id="contact-email" class="form-input" required placeholder="john@example.com" aria-required="true">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-org" class="form-label">Organization Name</label>
+                <input type="text" id="contact-org" class="form-input" placeholder="School, VET Center, or Institute">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-msg" class="form-label">Message *</label>
+                <textarea id="contact-msg" class="form-textarea" required placeholder="Write your message here..." aria-required="true"></textarea>
+              </div>
+
+              <div class="form-checkbox-group">
+                <input type="checkbox" id="contact-consent" class="form-checkbox" required>
+                <label for="contact-consent" class="form-checkbox-label">
+                  I agree that DIGI-METER partners may process my submitted data to respond to my query under GDPR regulations. *
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;">Submit Message</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       4. Footer & Legal Information
+       ========================================================================== -->
+  <footer class="section site-footer section-pad-sm" id="site-footer">
+    <div class="container block" style="gap: var(--space-m);">
+      
+      <!-- Footer top column grids -->
+      <div class="footer-top-row">
+        
+        <!-- Brand column -->
+        <div class="footer-brand-col block">
+          <div class="footer-brand-logo">
+            <img src="assets/logo-digimeter.png" alt="DIGI-METER Logo Footer">
+          </div>
+          <p class="footer-p">
+            Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project translating DigComp 2.2 into actionable, trustworthy educational testing.
+          </p>
+          <!-- Project social media links to be added once channels are confirmed by the consortium -->
+        </div>
+
+        <!-- Sitemap links column -->
+        <div class="footer-nav-col block" style="gap:12px;">
+          <h3 class="text-white" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em;">Sitemap Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="about.html">About the Project</a></li>
+            <li><a href="partners.html">Consortium Partners</a></li>
+            <li><a href="outputs.html">Outputs &amp; Resources</a></li>
+            <li><a href="events.html">Events &amp; Webinars</a></li>
+            <li><a href="platform.html">Platform Access</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Consortium overview contacts -->
+        <div class="footer-newsletter-col block" style="gap:12px;">
+          <h3 class="text-white" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em;">This Website</h3>
+          <p class="footer-p" style="font-size: 1rem;">
+            This website is designed, hosted, and operated by Outside Media &amp; Knowledge (Germany).
+          </p>
+          <div style="font-size:0.75rem;">
+            <strong><a href="https://outsidemedia.eu/" style="color:inherit; text-decoration:none;">Outside Media &amp; Knowledge</a></strong><br>
+            Germany
+          </div>
+        </div>
+
+      </div>
+
+      <!-- European Union Funding acknowledgement disclaimer -->
+      <div class="footer-disclaimer-box">
+        <div class="footer-disclaimer-flag">
+          <!-- Flag badge container -->
+          <svg class="eu-flag-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" aria-hidden="true" focusable="false"><rect width="36" height="24" fill="#003399"/><g fill="#FFCC00"><polygon transform="translate(18,4)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(26,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(18,20)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(10,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/></g></svg>
+        </div>
+        <div class="footer-disclaimer-text">
+          Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)
+        </div>
+      </div>
+
+      <!-- Legal footer bottom row -->
+      <div class="footer-bottom-row">
+        <span>© 2026 DIGI-METER Consortium. All rights reserved.</span>
+        
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="cookies.html">Cookie Policy</a>
+          <a href="impressum.html">Impressum</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       5. Consortium Partner Profile Detail Drawer (Slide-in right panel)
+       ========================================================================== -->
+  <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+    <div class="drawer-panel">
+      <!-- Header -->
+      <div class="drawer-header">
+        <h3 class="drawer-title" id="drawer-title">Center for Social Innovation</h3>
+        <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close details panel" title="Close details panel">&times;</button>
+      </div>
+      
+      <!-- Content Body -->
+      <div class="drawer-body">
+        
+        <!-- Logo box -->
+        <div class="drawer-logo-wrap">
+          <img id="drawer-logo" src="assets/logos/csi.png" alt="Partner Logo">
+          <div id="drawer-logo-placeholder" class="mono" style="display:none; font-size: 1.8rem; font-weight: 800; color: var(--c-charcoal); background: var(--c-off); width: 100px; height: 50px; align-items: center; justify-content: center;"></div>
+        </div>
+        
+        <!-- Location -->
+        <p id="drawer-country" class="mono text-sky" style="font-size: 1rem; font-weight: 700; margin-bottom: var(--space-2xs);">Cyprus | Coordinator</p>
+        
+        <!-- Contribution Card -->
+        <div class="drawer-meta-section">
+          <p class="drawer-meta-title">Main Consortium Contribution</p>
+          <p id="drawer-role-text" style="font-weight: 500; font-size: 1rem; color: var(--c-charcoal);">Overall project administration, quality audits, reporting timelines.</p>
+        </div>
+        
+        <!-- Background Description -->
+        <div style="margin-top: 10px;">
+          <p class="drawer-meta-title">Organization Description</p>
+          <p id="drawer-desc-text" style="font-size: 1rem; line-height: 1.6; color: var(--c-slate);">Detailed description goes here...</p>
+        </div>
+        
+        <!-- Action links -->
+        <div style="margin-top: auto; padding-top: var(--space-s);">
+          <a id="drawer-web-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; text-align: center; text-transform: uppercase;">Visit Website</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Scripts -->
+  <script src="js/main.js?v=20260612l"></script>
+</body>
+</html>

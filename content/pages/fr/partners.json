@@ -1,0 +1,1136 @@
+{
+  "page": "partners",
+  "title": "Consortium Partners — DIGI-METER",
+  "description": "Meet the 11 European partners behind DIGI-METER — an Erasmus+ consortium spanning Cyprus, Greece, Portugal, Italy, Germany, France, Belgium, and the Netherlands.",
+  "translation_status": "needs_translation",
+  "strings": [
+    {
+      "key": "text_0",
+      "source": "Skip to main content",
+      "value": "Skip to main content"
+    },
+    {
+      "key": "text_1",
+      "source": "Co-funded by the",
+      "value": "Co-funded by the"
+    },
+    {
+      "key": "text_2",
+      "source": "European Union",
+      "value": "European Union"
+    },
+    {
+      "key": "text_3",
+      "source": "High Contrast",
+      "value": "High Contrast"
+    },
+    {
+      "key": "text_4",
+      "source": "A-",
+      "value": "A-"
+    },
+    {
+      "key": "text_5",
+      "source": "A+",
+      "value": "A+"
+    },
+    {
+      "key": "text_6",
+      "source": "Select language",
+      "value": "Select language"
+    },
+    {
+      "key": "text_7",
+      "source": "EN — English",
+      "value": "EN — English"
+    },
+    {
+      "key": "text_8",
+      "source": "EL — Ελληνικά",
+      "value": "EL — Ελληνικά"
+    },
+    {
+      "key": "text_9",
+      "source": "DE — Deutsch",
+      "value": "DE — Deutsch"
+    },
+    {
+      "key": "text_10",
+      "source": "FR — Français",
+      "value": "FR — Français"
+    },
+    {
+      "key": "text_11",
+      "source": "IT — Italiano",
+      "value": "IT — Italiano"
+    },
+    {
+      "key": "text_12",
+      "source": "PT — Português",
+      "value": "PT — Português"
+    },
+    {
+      "key": "text_13",
+      "source": "NL — Nederlands",
+      "value": "NL — Nederlands"
+    },
+    {
+      "key": "text_14",
+      "source": "🔍",
+      "value": "🔍"
+    },
+    {
+      "key": "text_15",
+      "source": "About",
+      "value": "About"
+    },
+    {
+      "key": "text_16",
+      "source": "News",
+      "value": "News"
+    },
+    {
+      "key": "text_17",
+      "source": "Outputs",
+      "value": "Outputs"
+    },
+    {
+      "key": "text_18",
+      "source": "Events",
+      "value": "Events"
+    },
+    {
+      "key": "text_19",
+      "source": "Partners",
+      "value": "Partners"
+    },
+    {
+      "key": "text_20",
+      "source": "Platform",
+      "value": "Platform"
+    },
+    {
+      "key": "text_21",
+      "source": "Contact",
+      "value": "Contact"
+    },
+    {
+      "key": "text_22",
+      "source": "Subscribe",
+      "value": "Subscribe"
+    },
+    {
+      "key": "text_23",
+      "source": "About the Project",
+      "value": "About the Project"
+    },
+    {
+      "key": "text_24",
+      "source": "Outputs & Resources",
+      "value": "Outputs & Resources"
+    },
+    {
+      "key": "text_25",
+      "source": "Events & Webinars",
+      "value": "Events & Webinars"
+    },
+    {
+      "key": "text_26",
+      "source": "Consortium Partners",
+      "value": "Consortium Partners"
+    },
+    {
+      "key": "text_27",
+      "source": "Platform Access",
+      "value": "Platform Access"
+    },
+    {
+      "key": "text_28",
+      "source": "News & Updates",
+      "value": "News & Updates"
+    },
+    {
+      "key": "text_29",
+      "source": "Contact Us",
+      "value": "Contact Us"
+    },
+    {
+      "key": "text_30",
+      "source": "Subscribe",
+      "value": "Subscribe"
+    },
+    {
+      "key": "text_31",
+      "source": "Home",
+      "value": "Home"
+    },
+    {
+      "key": "text_32",
+      "source": "›",
+      "value": "›"
+    },
+    {
+      "key": "text_33",
+      "source": "Consortium Partners",
+      "value": "Consortium Partners"
+    },
+    {
+      "key": "text_34",
+      "source": "Erasmus+ Consortium · 11 Partners · 8 Countries",
+      "value": "Erasmus+ Consortium · 11 Partners · 8 Countries"
+    },
+    {
+      "key": "text_35",
+      "source": "A Multidisciplinary",
+      "value": "A Multidisciplinary"
+    },
+    {
+      "key": "text_36",
+      "source": "European Alliance",
+      "value": "European Alliance"
+    },
+    {
+      "key": "text_37",
+      "source": "DIGI-METER brings together researchers, educators, technologists, ethicists, and communicators from across Europe — united by a shared commitment to evidence-based digital competence assessment.",
+      "value": "DIGI-METER brings together researchers, educators, technologists, ethicists, and communicators from across Europe — united by a shared commitment to evidence-based digital competence assessment."
+    },
+    {
+      "key": "text_38",
+      "source": "11",
+      "value": "11"
+    },
+    {
+      "key": "text_39",
+      "source": "Partners",
+      "value": "Partners"
+    },
+    {
+      "key": "text_40",
+      "source": "Multidisciplinary consortium members",
+      "value": "Multidisciplinary consortium members"
+    },
+    {
+      "key": "text_41",
+      "source": "8",
+      "value": "8"
+    },
+    {
+      "key": "text_42",
+      "source": "Countries",
+      "value": "Countries"
+    },
+    {
+      "key": "text_43",
+      "source": "Cyprus, Greece, Portugal, Italy, Germany, France, Belgium, Netherlands",
+      "value": "Cyprus, Greece, Portugal, Italy, Germany, France, Belgium, Netherlands"
+    },
+    {
+      "key": "text_44",
+      "source": "36",
+      "value": "36"
+    },
+    {
+      "key": "text_45",
+      "source": "Months",
+      "value": "Months"
+    },
+    {
+      "key": "text_46",
+      "source": "Project duration",
+      "value": "Project duration"
+    },
+    {
+      "key": "text_47",
+      "source": "1",
+      "value": "1"
+    },
+    {
+      "key": "text_48",
+      "source": "Framework",
+      "value": "Framework"
+    },
+    {
+      "key": "text_49",
+      "source": "DigComp 2.2 — the EU digital competence reference",
+      "value": "DigComp 2.2 — the EU digital competence reference"
+    },
+    {
+      "key": "text_50",
+      "source": "Project Partners",
+      "value": "Project Partners"
+    },
+    {
+      "key": "text_51",
+      "source": "Who We Are",
+      "value": "Who We Are"
+    },
+    {
+      "key": "text_52",
+      "source": "Each partner contributes a distinct area of expertise. Together we cover the full cycle from framework design through technical development, piloting, policy transfer, and communication.",
+      "value": "Each partner contributes a distinct area of expertise. Together we cover the full cycle from framework design through technical development, piloting, policy transfer, and communication."
+    },
+    {
+      "key": "text_53",
+      "source": "Center for Social Innovation (CSI)",
+      "value": "Center for Social Innovation (CSI)"
+    },
+    {
+      "key": "text_54",
+      "source": "Cyprus",
+      "value": "Cyprus"
+    },
+    {
+      "key": "text_55",
+      "source": "🇨🇾",
+      "value": "🇨🇾"
+    },
+    {
+      "key": "text_56",
+      "source": "Coordinator",
+      "value": "Coordinator"
+    },
+    {
+      "key": "text_57",
+      "source": "Center for Social Innovation (CSI) is a research and development organisation based in Cyprus, focused on fostering positive social change through innovation, education, technology, and collaboration. CSI works across local, European, and international projects, developing solutions that address societal challenges in areas such as digital transformation, education and training, social inclusion, entrepreneurship, sustainability, and youth empowerment. Through research-driven methodologies and strong stakeholder engagement, CSI designs and implements innovative tools, training programmes, policy recommendations, and awareness initiatives that strengthen communities and support lifelong learning. The organisation actively participates in Erasmus+, Horizon Europe, and other EU-funded programmes, collaborating with universities, public authorities, NGOs, and private-sector partners to promote social impact, digital resilience, and inclusive growth. CSI's mission is to bridge innovation and society by creating practical, sustainable, and human-centred solutions.",
+      "value": "Center for Social Innovation (CSI) is a research and development organisation based in Cyprus, focused on fostering positive social change through innovation, education, technology, and collaboration. CSI works across local, European, and international projects, developing solutions that address societal challenges in areas such as digital transformation, education and training, social inclusion, entrepreneurship, sustainability, and youth empowerment. Through research-driven methodologies and strong stakeholder engagement, CSI designs and implements innovative tools, training programmes, policy recommendations, and awareness initiatives that strengthen communities and support lifelong learning. The organisation actively participates in Erasmus+, Horizon Europe, and other EU-funded programmes, collaborating with universities, public authorities, NGOs, and private-sector partners to promote social impact, digital resilience, and inclusive growth. CSI's mission is to bridge innovation and society by creating practical, sustainable, and human-centred solutions."
+    },
+    {
+      "key": "text_58",
+      "source": "— Project coordination, quality assurance, reporting, sustainability support, and overall consortium coordination.",
+      "value": "— Project coordination, quality assurance, reporting, sustainability support, and overall consortium coordination."
+    },
+    {
+      "key": "text_59",
+      "source": "Project Coordination",
+      "value": "Project Coordination"
+    },
+    {
+      "key": "text_60",
+      "source": "Website",
+      "value": "Website"
+    },
+    {
+      "key": "text_61",
+      "source": "LinkedIn",
+      "value": "LinkedIn"
+    },
+    {
+      "key": "text_62",
+      "source": "Facebook",
+      "value": "Facebook"
+    },
+    {
+      "key": "text_63",
+      "source": "Instagram",
+      "value": "Instagram"
+    },
+    {
+      "key": "text_64",
+      "source": "YouTube",
+      "value": "YouTube"
+    },
+    {
+      "key": "text_65",
+      "source": "TikTok",
+      "value": "TikTok"
+    },
+    {
+      "key": "text_66",
+      "source": "Spotify",
+      "value": "Spotify"
+    },
+    {
+      "key": "text_67",
+      "source": "SciCo",
+      "value": "SciCo"
+    },
+    {
+      "key": "text_68",
+      "source": "Greece",
+      "value": "Greece"
+    },
+    {
+      "key": "text_69",
+      "source": "🇬🇷",
+      "value": "🇬🇷"
+    },
+    {
+      "key": "text_70",
+      "source": "Methodology",
+      "value": "Methodology"
+    },
+    {
+      "key": "text_71",
+      "source": "SciCo (Science Communication) is a non-profit organisation focused on scientific engagement and empowerment through innovative, interactive, and entertaining means. Founded in 2008, it brings together scientists, academics, educators, artists, and science enthusiasts, and today operates as a social enterprise.",
+      "value": "SciCo (Science Communication) is a non-profit organisation focused on scientific engagement and empowerment through innovative, interactive, and entertaining means. Founded in 2008, it brings together scientists, academics, educators, artists, and science enthusiasts, and today operates as a social enterprise."
+    },
+    {
+      "key": "text_72",
+      "source": "Through high-impact outreach activities — including science festivals, digital platforms, and workshops — SciCo has reached more than 400,000 people across Greece. The organisation has also expanded internationally through its own projects and participation in EU programmes and networks.",
+      "value": "Through high-impact outreach activities — including science festivals, digital platforms, and workshops — SciCo has reached more than 400,000 people across Greece. The organisation has also expanded internationally through its own projects and participation in EU programmes and networks."
+    },
+    {
+      "key": "text_73",
+      "source": "— Framework mapping, DigComp 2.2 indicator development, educational methodology, and teacher engagement.",
+      "value": "— Framework mapping, DigComp 2.2 indicator development, educational methodology, and teacher engagement."
+    },
+    {
+      "key": "text_74",
+      "source": "Education & Framework Development",
+      "value": "Education & Framework Development"
+    },
+    {
+      "key": "text_75",
+      "source": "Website",
+      "value": "Website"
+    },
+    {
+      "key": "text_76",
+      "source": "LinkedIn",
+      "value": "LinkedIn"
+    },
+    {
+      "key": "text_77",
+      "source": "Facebook",
+      "value": "Facebook"
+    },
+    {
+      "key": "text_78",
+      "source": "Instagram",
+      "value": "Instagram"
+    },
+    {
+      "key": "text_79",
+      "source": "X / Twitter",
+      "value": "X / Twitter"
+    },
+    {
+      "key": "text_80",
+      "source": "YouTube",
+      "value": "YouTube"
+    },
+    {
+      "key": "text_81",
+      "source": "UBITECH",
+      "value": "UBITECH"
+    },
+    {
+      "key": "text_82",
+      "source": "Greece",
+      "value": "Greece"
+    },
+    {
+      "key": "text_83",
+      "source": "🇬🇷",
+      "value": "🇬🇷"
+    },
+    {
+      "key": "text_84",
+      "source": "Development",
+      "value": "Development"
+    },
+    {
+      "key": "text_85",
+      "source": "UBITECH is a leading, innovative, and research-driven software house, systems integrator, and technology provider, established in Athens, Greece, in 2005. The company delivers advanced technical solutions and consulting services to businesses, organisations, and public authorities, enabling secure access to diverse information resources and services. With strong expertise in Deep Tech, Artificial Intelligence, data analytics, cybersecurity, cloud computing, and digital transformation, UBITECH develops cutting-edge solutions that address complex technological and societal challenges. The company actively participates in European and international research and innovation initiatives, combining strong research capabilities with market-oriented innovation. UBITECH has also expanded internationally through affiliated companies and subsidiaries in Limassol, Cyprus, and Buenos Aires, Argentina.",
+      "value": "UBITECH is a leading, innovative, and research-driven software house, systems integrator, and technology provider, established in Athens, Greece, in 2005. The company delivers advanced technical solutions and consulting services to businesses, organisations, and public authorities, enabling secure access to diverse information resources and services. With strong expertise in Deep Tech, Artificial Intelligence, data analytics, cybersecurity, cloud computing, and digital transformation, UBITECH develops cutting-edge solutions that address complex technological and societal challenges. The company actively participates in European and international research and innovation initiatives, combining strong research capabilities with market-oriented innovation. UBITECH has also expanded internationally through affiliated companies and subsidiaries in Limassol, Cyprus, and Buenos Aires, Argentina."
+    },
+    {
+      "key": "text_86",
+      "source": "— Technical development of the platform, adaptive assessment engine, APIs, dashboard, and secure cloud integration.",
+      "value": "— Technical development of the platform, adaptive assessment engine, APIs, dashboard, and secure cloud integration."
+    },
+    {
+      "key": "text_87",
+      "source": "Technology Development",
+      "value": "Technology Development"
+    },
+    {
+      "key": "text_88",
+      "source": "Website",
+      "value": "Website"
+    },
+    {
+      "key": "text_89",
+      "source": "LinkedIn",
+      "value": "LinkedIn"
+    },
+    {
+      "key": "text_90",
+      "source": "Instagram",
+      "value": "Instagram"
+    },
+    {
+      "key": "text_91",
+      "source": "YouTube",
+      "value": "YouTube"
+    },
+    {
+      "key": "text_92",
+      "source": "Approximar",
+      "value": "Approximar"
+    },
+    {
+      "key": "text_93",
+      "source": "Portugal",
+      "value": "Portugal"
+    },
+    {
+      "key": "text_94",
+      "source": "🇵🇹",
+      "value": "🇵🇹"
+    },
+    {
+      "key": "text_95",
+      "source": "Piloting",
+      "value": "Piloting"
+    },
+    {
+      "key": "text_96",
+      "source": "Approximar brings strong experience in vocational education, social innovation, and stakeholder engagement. In DIGI-METER, the organisation supports pilot preparation, implementation, user feedback collection, and validation activities in real educational and VET settings. Its contribution helps ensure that the project tools are practical, inclusive, and relevant for institutions and learners.",
+      "value": "Approximar brings strong experience in vocational education, social innovation, and stakeholder engagement. In DIGI-METER, the organisation supports pilot preparation, implementation, user feedback collection, and validation activities in real educational and VET settings. Its contribution helps ensure that the project tools are practical, inclusive, and relevant for institutions and learners."
+    },
+    {
+      "key": "text_97",
+      "source": "— Piloting, VET engagement, validation activities, user feedback, and evidence from learning contexts.",
+      "value": "— Piloting, VET engagement, validation activities, user feedback, and evidence from learning contexts."
+    },
+    {
+      "key": "text_98",
+      "source": "Piloting and Validation",
+      "value": "Piloting and Validation"
+    },
+    {
+      "key": "text_99",
+      "source": "Lascò",
+      "value": "Lascò"
+    },
+    {
+      "key": "text_100",
+      "source": "Italy",
+      "value": "Italy"
+    },
+    {
+      "key": "text_101",
+      "source": "🇮🇹",
+      "value": "🇮🇹"
+    },
+    {
+      "key": "text_102",
+      "source": "Policy",
+      "value": "Policy"
+    },
+    {
+      "key": "text_103",
+      "source": "Lascò specialises in digital transformation, innovation design, and digital skills development, with activities spanning educational technology, educational research, and the design of digital skilling actions for diverse target groups — including public authorities, education providers, large enterprises, and SMEs at national and international level.",
+      "value": "Lascò specialises in digital transformation, innovation design, and digital skills development, with activities spanning educational technology, educational research, and the design of digital skilling actions for diverse target groups — including public authorities, education providers, large enterprises, and SMEs at national and international level."
+    },
+    {
+      "key": "text_104",
+      "source": "The company brings expertise in education science, digital upskilling and reskilling, and technology-enhanced learning, addressing diverse learner profiles across multiple sectors. Within European-funded projects, Lascò has contributed to the development of skills frameworks, curricula, training methodologies, and innovative learning solutions — including practices recognised by the UN Global Compact – Spanish Network for their contribution to the SDGs. Lascò also served as one of 20 Core Members in Europe of the Digital Working Group of the European Commission's Harnessing Talent Platform (DG REGIO), leading an expert group on regional education and training systems for the twin transition.",
+      "value": "The company brings expertise in education science, digital upskilling and reskilling, and technology-enhanced learning, addressing diverse learner profiles across multiple sectors. Within European-funded projects, Lascò has contributed to the development of skills frameworks, curricula, training methodologies, and innovative learning solutions — including practices recognised by the UN Global Compact – Spanish Network for their contribution to the SDGs. Lascò also served as one of 20 Core Members in Europe of the Digital Working Group of the European Commission's Harnessing Talent Platform (DG REGIO), leading an expert group on regional education and training systems for the twin transition."
+    },
+    {
+      "key": "text_105",
+      "source": "— Scaling project outcomes into national and EU education policy frameworks.",
+      "value": "— Scaling project outcomes into national and EU education policy frameworks."
+    },
+    {
+      "key": "text_106",
+      "source": "Policy Transfer",
+      "value": "Policy Transfer"
+    },
+    {
+      "key": "text_107",
+      "source": "Website",
+      "value": "Website"
+    },
+    {
+      "key": "text_108",
+      "source": "LinkedIn",
+      "value": "LinkedIn"
+    },
+    {
+      "key": "text_109",
+      "source": "Facebook",
+      "value": "Facebook"
+    },
+    {
+      "key": "text_110",
+      "source": "Instagram",
+      "value": "Instagram"
+    },
+    {
+      "key": "text_111",
+      "source": "Outside Media & Knowledge",
+      "value": "Outside Media & Knowledge"
+    },
+    {
+      "key": "text_112",
+      "source": "Germany",
+      "value": "Germany"
+    },
+    {
+      "key": "text_113",
+      "source": "🇩🇪",
+      "value": "🇩🇪"
+    },
+    {
+      "key": "text_114",
+      "source": "Communication",
+      "value": "Communication"
+    },
+    {
+      "key": "text_115",
+      "source": "Outside Media & Knowledge is a German creative and knowledge-transfer agency specialising in digital communication for European-funded projects. As co-leaders of WP5 Communication, Dissemination & Exploitation, Outside Media & Knowledge is responsible for project branding, website development and operation, visual identity, social media, press relations, and the full dissemination and exploitation strategy. This website is designed, hosted, and maintained by Outside Media & Knowledge.",
+      "value": "Outside Media & Knowledge is a German creative and knowledge-transfer agency specialising in digital communication for European-funded projects. As co-leaders of WP5 Communication, Dissemination & Exploitation, Outside Media & Knowledge is responsible for project branding, website development and operation, visual identity, social media, press relations, and the full dissemination and exploitation strategy. This website is designed, hosted, and maintained by Outside Media & Knowledge."
+    },
+    {
+      "key": "text_116",
+      "source": "— Responsible for project branding, website development and operation, social media, press kit, and dissemination strategy.",
+      "value": "— Responsible for project branding, website development and operation, social media, press kit, and dissemination strategy."
+    },
+    {
+      "key": "text_117",
+      "source": "Co-leaders of WP5 Communication, Dissemination & Exploitation",
+      "value": "Co-leaders of WP5 Communication, Dissemination & Exploitation"
+    },
+    {
+      "key": "text_118",
+      "source": "Website",
+      "value": "Website"
+    },
+    {
+      "key": "text_119",
+      "source": "Syncnify",
+      "value": "Syncnify"
+    },
+    {
+      "key": "text_120",
+      "source": "France",
+      "value": "France"
+    },
+    {
+      "key": "text_121",
+      "source": "🇫🇷",
+      "value": "🇫🇷"
+    },
+    {
+      "key": "text_122",
+      "source": "Analytics",
+      "value": "Analytics"
+    },
+    {
+      "key": "text_123",
+      "source": "Syncnify is a Paris-based social innovation and consulting agency that helps organisations transform sustainability, inclusivity, and innovation into concrete strategies and measurable action. It works with businesses, public institutions, research organisations, and civil society actors to design tailored solutions that respond to today's social, environmental, and economic challenges. With a strong European outlook, Syncnify supports partnership development, capacity-building activities, strategic communication, and change-oriented advisory services. Syncnify is a member of the Pact for Skills and the European Digital SMEs Alliance, reflecting its commitment to skills development, digital transformation, and cross-sector collaboration at European level.",
+      "value": "Syncnify is a Paris-based social innovation and consulting agency that helps organisations transform sustainability, inclusivity, and innovation into concrete strategies and measurable action. It works with businesses, public institutions, research organisations, and civil society actors to design tailored solutions that respond to today's social, environmental, and economic challenges. With a strong European outlook, Syncnify supports partnership development, capacity-building activities, strategic communication, and change-oriented advisory services. Syncnify is a member of the Pact for Skills and the European Digital SMEs Alliance, reflecting its commitment to skills development, digital transformation, and cross-sector collaboration at European level."
+    },
+    {
+      "key": "text_124",
+      "source": "— Analytics, dashboard interfaces, front-end support, user experience, and data visualisation.",
+      "value": "— Analytics, dashboard interfaces, front-end support, user experience, and data visualisation."
+    },
+    {
+      "key": "text_125",
+      "source": "Analytics & User Experience",
+      "value": "Analytics & User Experience"
+    },
+    {
+      "key": "text_126",
+      "source": "Website",
+      "value": "Website"
+    },
+    {
+      "key": "text_127",
+      "source": "LinkedIn",
+      "value": "LinkedIn"
+    },
+    {
+      "key": "text_128",
+      "source": "Facebook",
+      "value": "Facebook"
+    },
+    {
+      "key": "text_129",
+      "source": "CEC (Chrysako Educational Centre Limited)",
+      "value": "CEC (Chrysako Educational Centre Limited)"
+    },
+    {
+      "key": "text_130",
+      "source": "Cyprus",
+      "value": "Cyprus"
+    },
+    {
+      "key": "text_131",
+      "source": "🇨🇾",
+      "value": "🇨🇾"
+    },
+    {
+      "key": "text_132",
+      "source": "VET",
+      "value": "VET"
+    },
+    {
+      "key": "text_133",
+      "source": "CEC (Chrysako Educational Centre Limited) operates the College of Tourism and Hotel Management (COTHM), a private higher education institution in Cyprus specialising in tourism, hospitality, business, management, and vocational education and training. The institution offers certificate, diploma, bachelor's, and master's programmes combining academic excellence with industry-oriented practical training.",
+      "value": "CEC (Chrysako Educational Centre Limited) operates the College of Tourism and Hotel Management (COTHM), a private higher education institution in Cyprus specialising in tourism, hospitality, business, management, and vocational education and training. The institution offers certificate, diploma, bachelor's, and master's programmes combining academic excellence with industry-oriented practical training."
+    },
+    {
+      "key": "text_134",
+      "source": "COTHM promotes innovation, sustainability, employability, and digital transformation through higher education, VET, curriculum development, work-based learning, and industry collaboration. The college also participates in research and European projects focusing on tourism sustainability, circular economy, digital education, immersive technologies, serious games, and gamification. Through Erasmus+ collaborations, COTHM supports internationalisation and the development of innovative learning approaches for the tourism and hospitality sectors.",
+      "value": "COTHM promotes innovation, sustainability, employability, and digital transformation through higher education, VET, curriculum development, work-based learning, and industry collaboration. The college also participates in research and European projects focusing on tourism sustainability, circular economy, digital education, immersive technologies, serious games, and gamification. Through Erasmus+ collaborations, COTHM supports internationalisation and the development of innovative learning approaches for the tourism and hospitality sectors."
+    },
+    {
+      "key": "text_135",
+      "source": "— VET sector input, stakeholder engagement, dissemination activities, event support, and WP5 communication coordination.",
+      "value": "— VET sector input, stakeholder engagement, dissemination activities, event support, and WP5 communication coordination."
+    },
+    {
+      "key": "text_136",
+      "source": "VET Engagement & Dissemination",
+      "value": "VET Engagement & Dissemination"
+    },
+    {
+      "key": "text_137",
+      "source": "Website",
+      "value": "Website"
+    },
+    {
+      "key": "text_138",
+      "source": "AB Corporation",
+      "value": "AB Corporation"
+    },
+    {
+      "key": "text_139",
+      "source": "Belgium",
+      "value": "Belgium"
+    },
+    {
+      "key": "text_140",
+      "source": "🇧🇪",
+      "value": "🇧🇪"
+    },
+    {
+      "key": "text_141",
+      "source": "EU Policy",
+      "value": "EU Policy"
+    },
+    {
+      "key": "text_142",
+      "source": "AB Corporation is a consultancy specialised in guiding organisations through the full journey of EU proposal writing and project management. With a mission to transform innovative ideas into funded, high-impact projects, the company supports clients from early concept development to successful submission and implementation. Its expertise spans proposal writing, funding scheme selection, project management, and strategic partnership building, ensuring each initiative is aligned with the most relevant and competitive EU opportunities. Combining deep knowledge of the EU landscape with a personalised, success-driven approach, AB Corporation helps clients secure funding, manage complex projects, and turn ambitious visions into tangible results.",
+      "value": "AB Corporation is a consultancy specialised in guiding organisations through the full journey of EU proposal writing and project management. With a mission to transform innovative ideas into funded, high-impact projects, the company supports clients from early concept development to successful submission and implementation. Its expertise spans proposal writing, funding scheme selection, project management, and strategic partnership building, ensuring each initiative is aligned with the most relevant and competitive EU opportunities. Combining deep knowledge of the EU landscape with a personalised, success-driven approach, AB Corporation helps clients secure funding, manage complex projects, and turn ambitious visions into tangible results."
+    },
+    {
+      "key": "text_143",
+      "source": "— EU policy liaison, credential and standardisation expertise, DigComp/EDSC alignment, and policy engagement.",
+      "value": "— EU policy liaison, credential and standardisation expertise, DigComp/EDSC alignment, and policy engagement."
+    },
+    {
+      "key": "text_144",
+      "source": "EU Policy & Standardisation",
+      "value": "EU Policy & Standardisation"
+    },
+    {
+      "key": "text_145",
+      "source": "Website",
+      "value": "Website"
+    },
+    {
+      "key": "text_146",
+      "source": "LinkedIn",
+      "value": "LinkedIn"
+    },
+    {
+      "key": "text_147",
+      "source": "Ergonact",
+      "value": "Ergonact"
+    },
+    {
+      "key": "text_148",
+      "source": "Cyprus",
+      "value": "Cyprus"
+    },
+    {
+      "key": "text_149",
+      "source": "🇨🇾",
+      "value": "🇨🇾"
+    },
+    {
+      "key": "text_150",
+      "source": "Ethics",
+      "value": "Ethics"
+    },
+    {
+      "key": "text_151",
+      "source": "Ergonact Ltd is a Cyprus-based consultancy operating at the intersection of AI transformation, data governance, and EU-funded research and innovation. The company helps SMEs, public sector organisations, and research consortia move from strategy to execution — combining hands-on advisory with structured assessment methodologies.",
+      "value": "Ergonact Ltd is a Cyprus-based consultancy operating at the intersection of AI transformation, data governance, and EU-funded research and innovation. The company helps SMEs, public sector organisations, and research consortia move from strategy to execution — combining hands-on advisory with structured assessment methodologies."
+    },
+    {
+      "key": "text_152",
+      "source": "Ergonact's consulting portfolio spans data and AI readiness assessments, cybersecurity readiness, automation evaluations, and AI adoption advisory. The team leads ethics and data governance workstreams across multi-partner European projects, ensuring compliance with the EU AI Act, GDPR, and sector-specific regulatory frameworks. As an active partner in Horizon Europe, Erasmus+, and Digital Europe Programme consortia, Ergonact contributes technical, ethical, and operational expertise to collaborative innovation initiatives.",
+      "value": "Ergonact's consulting portfolio spans data and AI readiness assessments, cybersecurity readiness, automation evaluations, and AI adoption advisory. The team leads ethics and data governance workstreams across multi-partner European projects, ensuring compliance with the EU AI Act, GDPR, and sector-specific regulatory frameworks. As an active partner in Horizon Europe, Erasmus+, and Digital Europe Programme consortia, Ergonact contributes technical, ethical, and operational expertise to collaborative innovation initiatives."
+    },
+    {
+      "key": "text_153",
+      "source": "— Ethics, accessibility, AI compliance, GDPR support, bias audits, and responsible technology guidance.",
+      "value": "— Ethics, accessibility, AI compliance, GDPR support, bias audits, and responsible technology guidance."
+    },
+    {
+      "key": "text_154",
+      "source": "Ethics, AI & Accessibility",
+      "value": "Ethics, AI & Accessibility"
+    },
+    {
+      "key": "text_155",
+      "source": "Website",
+      "value": "Website"
+    },
+    {
+      "key": "text_156",
+      "source": "LinkedIn",
+      "value": "LinkedIn"
+    },
+    {
+      "key": "text_157",
+      "source": "Crow Group",
+      "value": "Crow Group"
+    },
+    {
+      "key": "text_158",
+      "source": "Netherlands",
+      "value": "Netherlands"
+    },
+    {
+      "key": "text_159",
+      "source": "🇳🇱",
+      "value": "🇳🇱"
+    },
+    {
+      "key": "text_160",
+      "source": "Engagement",
+      "value": "Engagement"
+    },
+    {
+      "key": "text_161",
+      "source": "Crow Group contributes experience in applied research, sustainable development, public-sector innovation, and stakeholder engagement. In DIGI-METER, it supports policy alignment, exploitation planning, and outreach to relevant networks. Its contribution helps strengthen the long-term relevance and practical uptake of the project results.",
+      "value": "Crow Group contributes experience in applied research, sustainable development, public-sector innovation, and stakeholder engagement. In DIGI-METER, it supports policy alignment, exploitation planning, and outreach to relevant networks. Its contribution helps strengthen the long-term relevance and practical uptake of the project results."
+    },
+    {
+      "key": "text_162",
+      "source": "— Stakeholder engagement, policy alignment, exploitation support, and applied research contribution.",
+      "value": "— Stakeholder engagement, policy alignment, exploitation support, and applied research contribution."
+    },
+    {
+      "key": "text_163",
+      "source": "Stakeholder Engagement & Exploitation",
+      "value": "Stakeholder Engagement & Exploitation"
+    },
+    {
+      "key": "text_164",
+      "source": "Why Our Consortium Works",
+      "value": "Why Our Consortium Works"
+    },
+    {
+      "key": "text_165",
+      "source": "Diverse Expertise, Shared Goals",
+      "value": "Diverse Expertise, Shared Goals"
+    },
+    {
+      "key": "text_166",
+      "source": "Our consortium spans educational research, AI engineering, policy consulting, ethics, VET training, creative communication, and stakeholder relations. This intentional diversity ensures DIGI-METER is technically rigorous, ethically sound, pedagogically grounded, and practically applicable across different national education systems.",
+      "value": "Our consortium spans educational research, AI engineering, policy consulting, ethics, VET training, creative communication, and stakeholder relations. This intentional diversity ensures DIGI-METER is technically rigorous, ethically sound, pedagogically grounded, and practically applicable across different national education systems."
+    },
+    {
+      "key": "text_167",
+      "source": "The geographic spread — from Cyprus to the Netherlands, from Portugal to Belgium — also means our tools are tested and validated in genuinely different cultural and institutional contexts, making them transferable across the EU and beyond.",
+      "value": "The geographic spread — from Cyprus to the Netherlands, from Portugal to Belgium — also means our tools are tested and validated in genuinely different cultural and institutional contexts, making them transferable across the EU and beyond."
+    },
+    {
+      "key": "text_168",
+      "source": "About the Project",
+      "value": "About the Project"
+    },
+    {
+      "key": "text_169",
+      "source": "Become a Stakeholder",
+      "value": "Become a Stakeholder"
+    },
+    {
+      "key": "text_170",
+      "source": "Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project translating DigComp 2.2 into actionable, trustworthy educational testing.",
+      "value": "Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project translating DigComp 2.2 into actionable, trustworthy educational testing."
+    },
+    {
+      "key": "text_171",
+      "source": "Quick Links",
+      "value": "Quick Links"
+    },
+    {
+      "key": "text_172",
+      "source": "About the Project",
+      "value": "About the Project"
+    },
+    {
+      "key": "text_173",
+      "source": "Consortium Partners",
+      "value": "Consortium Partners"
+    },
+    {
+      "key": "text_174",
+      "source": "Outputs & Resources",
+      "value": "Outputs & Resources"
+    },
+    {
+      "key": "text_175",
+      "source": "Events & Webinars",
+      "value": "Events & Webinars"
+    },
+    {
+      "key": "text_176",
+      "source": "Platform Access",
+      "value": "Platform Access"
+    },
+    {
+      "key": "text_177",
+      "source": "News & Updates",
+      "value": "News & Updates"
+    },
+    {
+      "key": "text_178",
+      "source": "Contact Us",
+      "value": "Contact Us"
+    },
+    {
+      "key": "text_179",
+      "source": "This Website",
+      "value": "This Website"
+    },
+    {
+      "key": "text_180",
+      "source": "This website is designed, hosted, and operated by Outside Media & Knowledge (Germany).",
+      "value": "This website is designed, hosted, and operated by Outside Media & Knowledge (Germany)."
+    },
+    {
+      "key": "text_181",
+      "source": "Germany",
+      "value": "Germany"
+    },
+    {
+      "key": "text_182",
+      "source": "Outside Media & Knowledge",
+      "value": "Outside Media & Knowledge"
+    },
+    {
+      "key": "text_183",
+      "source": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)",
+      "value": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)"
+    },
+    {
+      "key": "text_184",
+      "source": "© 2026 DIGI-METER Consortium. All rights reserved.",
+      "value": "© 2026 DIGI-METER Consortium. All rights reserved."
+    },
+    {
+      "key": "text_185",
+      "source": "Privacy Policy",
+      "value": "Privacy Policy"
+    },
+    {
+      "key": "text_186",
+      "source": "Cookie Policy",
+      "value": "Cookie Policy"
+    },
+    {
+      "key": "text_187",
+      "source": "Impressum",
+      "value": "Impressum"
+    }
+  ],
+  "attributes": [
+    {
+      "index": 0,
+      "attribute": "aria-label",
+      "source": "Co-funded by the European Union logo",
+      "value": "Co-funded by the European Union logo"
+    },
+    {
+      "index": 1,
+      "attribute": "aria-label",
+      "source": "Accessibility controls",
+      "value": "Accessibility controls"
+    },
+    {
+      "index": 2,
+      "attribute": "aria-label",
+      "source": "Decrease text size",
+      "value": "Decrease text size"
+    },
+    {
+      "index": 3,
+      "attribute": "aria-label",
+      "source": "Increase text size",
+      "value": "Increase text size"
+    },
+    {
+      "index": 4,
+      "attribute": "aria-label",
+      "source": "Select language",
+      "value": "Select language"
+    },
+    {
+      "index": 5,
+      "attribute": "aria-label",
+      "source": "Site search",
+      "value": "Site search"
+    },
+    {
+      "index": 6,
+      "attribute": "aria-label",
+      "source": "Search content",
+      "value": "Search content"
+    },
+    {
+      "index": 7,
+      "attribute": "aria-label",
+      "source": "Submit search",
+      "value": "Submit search"
+    },
+    {
+      "index": 8,
+      "attribute": "aria-label",
+      "source": "DIGI-METER homepage link",
+      "value": "DIGI-METER homepage link"
+    },
+    {
+      "index": 9,
+      "attribute": "aria-label",
+      "source": "Main site navigation",
+      "value": "Main site navigation"
+    },
+    {
+      "index": 10,
+      "attribute": "aria-label",
+      "source": "Toggle mobile menu",
+      "value": "Toggle mobile menu"
+    },
+    {
+      "index": 11,
+      "attribute": "aria-label",
+      "source": "Close navigation menu",
+      "value": "Close navigation menu"
+    },
+    {
+      "index": 12,
+      "attribute": "aria-label",
+      "source": "Breadcrumb",
+      "value": "Breadcrumb"
+    },
+    {
+      "index": 0,
+      "attribute": "title",
+      "source": "Toggle High Contrast Theme",
+      "value": "Toggle High Contrast Theme"
+    },
+    {
+      "index": 1,
+      "attribute": "title",
+      "source": "Decrease Text Size",
+      "value": "Decrease Text Size"
+    },
+    {
+      "index": 2,
+      "attribute": "title",
+      "source": "Increase Text Size",
+      "value": "Increase Text Size"
+    },
+    {
+      "index": 0,
+      "attribute": "placeholder",
+      "source": "Search site...",
+      "value": "Search site..."
+    },
+    {
+      "index": 0,
+      "attribute": "alt",
+      "source": "DIGI-METER Logo",
+      "value": "DIGI-METER Logo"
+    },
+    {
+      "index": 1,
+      "attribute": "alt",
+      "source": "CSI — Center for Social Innovation Logo",
+      "value": "CSI — Center for Social Innovation Logo"
+    },
+    {
+      "index": 2,
+      "attribute": "alt",
+      "source": "SciCo Logo",
+      "value": "SciCo Logo"
+    },
+    {
+      "index": 3,
+      "attribute": "alt",
+      "source": "UBITECH Logo",
+      "value": "UBITECH Logo"
+    },
+    {
+      "index": 4,
+      "attribute": "alt",
+      "source": "Approximar Logo",
+      "value": "Approximar Logo"
+    },
+    {
+      "index": 5,
+      "attribute": "alt",
+      "source": "Lascò Logo",
+      "value": "Lascò Logo"
+    },
+    {
+      "index": 6,
+      "attribute": "alt",
+      "source": "Outside Media & Knowledge Logo",
+      "value": "Outside Media & Knowledge Logo"
+    },
+    {
+      "index": 7,
+      "attribute": "alt",
+      "source": "Syncnify Logo",
+      "value": "Syncnify Logo"
+    },
+    {
+      "index": 8,
+      "attribute": "alt",
+      "source": "CEC — Chrysako Educational Centre Logo",
+      "value": "CEC — Chrysako Educational Centre Logo"
+    },
+    {
+      "index": 9,
+      "attribute": "alt",
+      "source": "AB Corporation Logo",
+      "value": "AB Corporation Logo"
+    },
+    {
+      "index": 10,
+      "attribute": "alt",
+      "source": "Ergonact Logo",
+      "value": "Ergonact Logo"
+    },
+    {
+      "index": 11,
+      "attribute": "alt",
+      "source": "Crow Group Logo",
+      "value": "Crow Group Logo"
+    },
+    {
+      "index": 12,
+      "attribute": "alt",
+      "source": "Diverse group of colleagues collaborating around a table with laptops and documents",
+      "value": "Diverse group of colleagues collaborating around a table with laptops and documents"
+    },
+    {
+      "index": 13,
+      "attribute": "alt",
+      "source": "DIGI-METER Logo Footer",
+      "value": "DIGI-METER Logo Footer"
+    }
+  ]
+}

@@ -1,0 +1,697 @@
+{
+  "page": "news",
+  "title": "News & Updates — DIGI-METER",
+  "description": "Latest news, field stories, and technical updates from the DIGI-METER Erasmus+ project — covering research progress, pilot activities, and digital competence insights.",
+  "translation_status": "source",
+  "strings": [
+    {
+      "key": "text_0",
+      "source": "Skip to main content",
+      "value": "Skip to main content"
+    },
+    {
+      "key": "text_1",
+      "source": "Co-funded by the",
+      "value": "Co-funded by the"
+    },
+    {
+      "key": "text_2",
+      "source": "European Union",
+      "value": "European Union"
+    },
+    {
+      "key": "text_3",
+      "source": "High Contrast",
+      "value": "High Contrast"
+    },
+    {
+      "key": "text_4",
+      "source": "A-",
+      "value": "A-"
+    },
+    {
+      "key": "text_5",
+      "source": "A+",
+      "value": "A+"
+    },
+    {
+      "key": "text_6",
+      "source": "Select language",
+      "value": "Select language"
+    },
+    {
+      "key": "text_7",
+      "source": "EN — English",
+      "value": "EN — English"
+    },
+    {
+      "key": "text_8",
+      "source": "EL — Ελληνικά",
+      "value": "EL — Ελληνικά"
+    },
+    {
+      "key": "text_9",
+      "source": "DE — Deutsch",
+      "value": "DE — Deutsch"
+    },
+    {
+      "key": "text_10",
+      "source": "FR — Français",
+      "value": "FR — Français"
+    },
+    {
+      "key": "text_11",
+      "source": "IT — Italiano",
+      "value": "IT — Italiano"
+    },
+    {
+      "key": "text_12",
+      "source": "PT — Português",
+      "value": "PT — Português"
+    },
+    {
+      "key": "text_13",
+      "source": "NL — Nederlands",
+      "value": "NL — Nederlands"
+    },
+    {
+      "key": "text_14",
+      "source": "🔍",
+      "value": "🔍"
+    },
+    {
+      "key": "text_15",
+      "source": "About",
+      "value": "About"
+    },
+    {
+      "key": "text_16",
+      "source": "News",
+      "value": "News"
+    },
+    {
+      "key": "text_17",
+      "source": "Outputs",
+      "value": "Outputs"
+    },
+    {
+      "key": "text_18",
+      "source": "Events",
+      "value": "Events"
+    },
+    {
+      "key": "text_19",
+      "source": "Partners",
+      "value": "Partners"
+    },
+    {
+      "key": "text_20",
+      "source": "Platform",
+      "value": "Platform"
+    },
+    {
+      "key": "text_21",
+      "source": "Contact",
+      "value": "Contact"
+    },
+    {
+      "key": "text_22",
+      "source": "Subscribe",
+      "value": "Subscribe"
+    },
+    {
+      "key": "text_23",
+      "source": "About the Project",
+      "value": "About the Project"
+    },
+    {
+      "key": "text_24",
+      "source": "Outputs & Resources",
+      "value": "Outputs & Resources"
+    },
+    {
+      "key": "text_25",
+      "source": "Events & Webinars",
+      "value": "Events & Webinars"
+    },
+    {
+      "key": "text_26",
+      "source": "Consortium Partners",
+      "value": "Consortium Partners"
+    },
+    {
+      "key": "text_27",
+      "source": "Platform Access",
+      "value": "Platform Access"
+    },
+    {
+      "key": "text_28",
+      "source": "News & Updates",
+      "value": "News & Updates"
+    },
+    {
+      "key": "text_29",
+      "source": "Contact Us",
+      "value": "Contact Us"
+    },
+    {
+      "key": "text_30",
+      "source": "Subscribe",
+      "value": "Subscribe"
+    },
+    {
+      "key": "text_31",
+      "source": "Home",
+      "value": "Home"
+    },
+    {
+      "key": "text_32",
+      "source": "›",
+      "value": "›"
+    },
+    {
+      "key": "text_33",
+      "source": "News & Updates",
+      "value": "News & Updates"
+    },
+    {
+      "key": "text_34",
+      "source": "Project Stories · Field Reports · Technical Blog",
+      "value": "Project Stories · Field Reports · Technical Blog"
+    },
+    {
+      "key": "text_35",
+      "source": "News &",
+      "value": "News &"
+    },
+    {
+      "key": "text_36",
+      "source": "Updates",
+      "value": "Updates"
+    },
+    {
+      "key": "text_37",
+      "source": "Follow the latest from the DIGI-METER consortium — research insights, field stories from pilot schools, technical developments, and project milestones.",
+      "value": "Follow the latest from the DIGI-METER consortium — research insights, field stories from pilot schools, technical developments, and project milestones."
+    },
+    {
+      "key": "text_38",
+      "source": "Project News",
+      "value": "Project News"
+    },
+    {
+      "key": "text_39",
+      "source": "[Featured article title — to be provided]",
+      "value": "[Featured article title — to be provided]"
+    },
+    {
+      "key": "text_40",
+      "source": "[Short description — to be provided before publication]",
+      "value": "[Short description — to be provided before publication]"
+    },
+    {
+      "key": "text_41",
+      "source": "[Date TBC]",
+      "value": "[Date TBC]"
+    },
+    {
+      "key": "text_42",
+      "source": "Read Full Story →",
+      "value": "Read Full Story →"
+    },
+    {
+      "key": "text_43",
+      "source": "Technical Blog",
+      "value": "Technical Blog"
+    },
+    {
+      "key": "text_44",
+      "source": "[Article title — to be provided]",
+      "value": "[Article title — to be provided]"
+    },
+    {
+      "key": "text_45",
+      "source": "[Short description — to be provided before publication]",
+      "value": "[Short description — to be provided before publication]"
+    },
+    {
+      "key": "text_46",
+      "source": "[Date TBC]",
+      "value": "[Date TBC]"
+    },
+    {
+      "key": "text_47",
+      "source": "Read →",
+      "value": "Read →"
+    },
+    {
+      "key": "text_48",
+      "source": "Field Story",
+      "value": "Field Story"
+    },
+    {
+      "key": "text_49",
+      "source": "[Article title — to be provided]",
+      "value": "[Article title — to be provided]"
+    },
+    {
+      "key": "text_50",
+      "source": "[Short description — to be provided before publication]",
+      "value": "[Short description — to be provided before publication]"
+    },
+    {
+      "key": "text_51",
+      "source": "[Date TBC]",
+      "value": "[Date TBC]"
+    },
+    {
+      "key": "text_52",
+      "source": "Read →",
+      "value": "Read →"
+    },
+    {
+      "key": "text_53",
+      "source": "Policy Insight",
+      "value": "Policy Insight"
+    },
+    {
+      "key": "text_54",
+      "source": "[Article title — to be provided]",
+      "value": "[Article title — to be provided]"
+    },
+    {
+      "key": "text_55",
+      "source": "[Short description — to be provided before publication]",
+      "value": "[Short description — to be provided before publication]"
+    },
+    {
+      "key": "text_56",
+      "source": "[Date TBC]",
+      "value": "[Date TBC]"
+    },
+    {
+      "key": "text_57",
+      "source": "Read →",
+      "value": "Read →"
+    },
+    {
+      "key": "text_58",
+      "source": "All Stories",
+      "value": "All Stories"
+    },
+    {
+      "key": "text_59",
+      "source": "More from the Project",
+      "value": "More from the Project"
+    },
+    {
+      "key": "text_60",
+      "source": "Research Update",
+      "value": "Research Update"
+    },
+    {
+      "key": "text_61",
+      "source": "[Article title — to be provided]",
+      "value": "[Article title — to be provided]"
+    },
+    {
+      "key": "text_62",
+      "source": "[Short description — to be provided before publication]",
+      "value": "[Short description — to be provided before publication]"
+    },
+    {
+      "key": "text_63",
+      "source": "[Date TBC]",
+      "value": "[Date TBC]"
+    },
+    {
+      "key": "text_64",
+      "source": "Read More ↗",
+      "value": "Read More ↗"
+    },
+    {
+      "key": "text_65",
+      "source": "Technical Blog",
+      "value": "Technical Blog"
+    },
+    {
+      "key": "text_66",
+      "source": "[Article title — to be provided]",
+      "value": "[Article title — to be provided]"
+    },
+    {
+      "key": "text_67",
+      "source": "[Short description — to be provided before publication]",
+      "value": "[Short description — to be provided before publication]"
+    },
+    {
+      "key": "text_68",
+      "source": "[Date TBC]",
+      "value": "[Date TBC]"
+    },
+    {
+      "key": "text_69",
+      "source": "Read More ↗",
+      "value": "Read More ↗"
+    },
+    {
+      "key": "text_70",
+      "source": "Field Story",
+      "value": "Field Story"
+    },
+    {
+      "key": "text_71",
+      "source": "[Article title — to be provided]",
+      "value": "[Article title — to be provided]"
+    },
+    {
+      "key": "text_72",
+      "source": "[Short description — to be provided before publication]",
+      "value": "[Short description — to be provided before publication]"
+    },
+    {
+      "key": "text_73",
+      "source": "[Date TBC]",
+      "value": "[Date TBC]"
+    },
+    {
+      "key": "text_74",
+      "source": "Read More ↗",
+      "value": "Read More ↗"
+    },
+    {
+      "key": "text_75",
+      "source": "Partner Spotlight",
+      "value": "Partner Spotlight"
+    },
+    {
+      "key": "text_76",
+      "source": "[Article title — to be provided]",
+      "value": "[Article title — to be provided]"
+    },
+    {
+      "key": "text_77",
+      "source": "[Short description — to be provided before publication]",
+      "value": "[Short description — to be provided before publication]"
+    },
+    {
+      "key": "text_78",
+      "source": "[Date TBC]",
+      "value": "[Date TBC]"
+    },
+    {
+      "key": "text_79",
+      "source": "Read More ↗",
+      "value": "Read More ↗"
+    },
+    {
+      "key": "text_80",
+      "source": "Project News",
+      "value": "Project News"
+    },
+    {
+      "key": "text_81",
+      "source": "[Article title — to be provided]",
+      "value": "[Article title — to be provided]"
+    },
+    {
+      "key": "text_82",
+      "source": "[Short description — to be provided before publication]",
+      "value": "[Short description — to be provided before publication]"
+    },
+    {
+      "key": "text_83",
+      "source": "[Date TBC]",
+      "value": "[Date TBC]"
+    },
+    {
+      "key": "text_84",
+      "source": "Read More ↗",
+      "value": "Read More ↗"
+    },
+    {
+      "key": "text_85",
+      "source": "Research Update",
+      "value": "Research Update"
+    },
+    {
+      "key": "text_86",
+      "source": "[Article title — to be provided]",
+      "value": "[Article title — to be provided]"
+    },
+    {
+      "key": "text_87",
+      "source": "[Short description — to be provided before publication]",
+      "value": "[Short description — to be provided before publication]"
+    },
+    {
+      "key": "text_88",
+      "source": "[Date TBC]",
+      "value": "[Date TBC]"
+    },
+    {
+      "key": "text_89",
+      "source": "Read More ↗",
+      "value": "Read More ↗"
+    },
+    {
+      "key": "text_90",
+      "source": "Never Miss a Story",
+      "value": "Never Miss a Story"
+    },
+    {
+      "key": "text_91",
+      "source": "Subscribe to the DIGI-METER Newsletter",
+      "value": "Subscribe to the DIGI-METER Newsletter"
+    },
+    {
+      "key": "text_92",
+      "source": "Monthly updates with research progress, field stories, and event announcements.",
+      "value": "Monthly updates with research progress, field stories, and event announcements."
+    },
+    {
+      "key": "text_93",
+      "source": "Subscribe Now",
+      "value": "Subscribe Now"
+    },
+    {
+      "key": "text_94",
+      "source": "Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project.",
+      "value": "Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project."
+    },
+    {
+      "key": "text_95",
+      "source": "Quick Links",
+      "value": "Quick Links"
+    },
+    {
+      "key": "text_96",
+      "source": "About the Project",
+      "value": "About the Project"
+    },
+    {
+      "key": "text_97",
+      "source": "Consortium Partners",
+      "value": "Consortium Partners"
+    },
+    {
+      "key": "text_98",
+      "source": "Outputs & Resources",
+      "value": "Outputs & Resources"
+    },
+    {
+      "key": "text_99",
+      "source": "Events & Webinars",
+      "value": "Events & Webinars"
+    },
+    {
+      "key": "text_100",
+      "source": "Platform Access",
+      "value": "Platform Access"
+    },
+    {
+      "key": "text_101",
+      "source": "News & Updates",
+      "value": "News & Updates"
+    },
+    {
+      "key": "text_102",
+      "source": "Contact Us",
+      "value": "Contact Us"
+    },
+    {
+      "key": "text_103",
+      "source": "This Website",
+      "value": "This Website"
+    },
+    {
+      "key": "text_104",
+      "source": "This website is designed, hosted, and operated by Outside Media & Knowledge (Germany).",
+      "value": "This website is designed, hosted, and operated by Outside Media & Knowledge (Germany)."
+    },
+    {
+      "key": "text_105",
+      "source": "Outside Media & Knowledge",
+      "value": "Outside Media & Knowledge"
+    },
+    {
+      "key": "text_106",
+      "source": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)",
+      "value": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)"
+    },
+    {
+      "key": "text_107",
+      "source": "© 2026 DIGI-METER Consortium. All rights reserved.",
+      "value": "© 2026 DIGI-METER Consortium. All rights reserved."
+    },
+    {
+      "key": "text_108",
+      "source": "Privacy Policy",
+      "value": "Privacy Policy"
+    },
+    {
+      "key": "text_109",
+      "source": "Cookie Policy",
+      "value": "Cookie Policy"
+    },
+    {
+      "key": "text_110",
+      "source": "Impressum",
+      "value": "Impressum"
+    }
+  ],
+  "attributes": [
+    {
+      "index": 0,
+      "attribute": "aria-label",
+      "source": "Co-funded by the European Union logo",
+      "value": "Co-funded by the European Union logo"
+    },
+    {
+      "index": 1,
+      "attribute": "aria-label",
+      "source": "Accessibility controls",
+      "value": "Accessibility controls"
+    },
+    {
+      "index": 2,
+      "attribute": "aria-label",
+      "source": "Decrease text size",
+      "value": "Decrease text size"
+    },
+    {
+      "index": 3,
+      "attribute": "aria-label",
+      "source": "Increase text size",
+      "value": "Increase text size"
+    },
+    {
+      "index": 4,
+      "attribute": "aria-label",
+      "source": "Select language",
+      "value": "Select language"
+    },
+    {
+      "index": 5,
+      "attribute": "aria-label",
+      "source": "Search content",
+      "value": "Search content"
+    },
+    {
+      "index": 6,
+      "attribute": "aria-label",
+      "source": "Submit search",
+      "value": "Submit search"
+    },
+    {
+      "index": 7,
+      "attribute": "aria-label",
+      "source": "Main site navigation",
+      "value": "Main site navigation"
+    },
+    {
+      "index": 8,
+      "attribute": "aria-label",
+      "source": "Toggle mobile menu",
+      "value": "Toggle mobile menu"
+    },
+    {
+      "index": 9,
+      "attribute": "aria-label",
+      "source": "Close navigation menu",
+      "value": "Close navigation menu"
+    },
+    {
+      "index": 10,
+      "attribute": "aria-label",
+      "source": "Breadcrumb",
+      "value": "Breadcrumb"
+    },
+    {
+      "index": 0,
+      "attribute": "title",
+      "source": "Toggle High Contrast Theme",
+      "value": "Toggle High Contrast Theme"
+    },
+    {
+      "index": 0,
+      "attribute": "placeholder",
+      "source": "Search site...",
+      "value": "Search site..."
+    },
+    {
+      "index": 0,
+      "attribute": "alt",
+      "source": "DIGI-METER Logo",
+      "value": "DIGI-METER Logo"
+    },
+    {
+      "index": 1,
+      "attribute": "alt",
+      "source": "Four smiling multiethnic students using laptop and tablet together",
+      "value": "Four smiling multiethnic students using laptop and tablet together"
+    },
+    {
+      "index": 2,
+      "attribute": "alt",
+      "source": "University students in a classroom setting with laptops",
+      "value": "University students in a classroom setting with laptops"
+    },
+    {
+      "index": 3,
+      "attribute": "alt",
+      "source": "Professional woman in front of an AI display interface",
+      "value": "Professional woman in front of an AI display interface"
+    },
+    {
+      "index": 4,
+      "attribute": "alt",
+      "source": "Young high school teacher giving a lesson to students",
+      "value": "Young high school teacher giving a lesson to students"
+    },
+    {
+      "index": 5,
+      "attribute": "alt",
+      "source": "Creative team using VR and modern technology in an office",
+      "value": "Creative team using VR and modern technology in an office"
+    },
+    {
+      "index": 6,
+      "attribute": "alt",
+      "source": "Colleagues brainstorming together in a modern office",
+      "value": "Colleagues brainstorming together in a modern office"
+    },
+    {
+      "index": 7,
+      "attribute": "alt",
+      "source": "Professional analyzing charts and data at a desk",
+      "value": "Professional analyzing charts and data at a desk"
+    },
+    {
+      "index": 8,
+      "attribute": "alt",
+      "source": "DIGI-METER Logo Footer",
+      "value": "DIGI-METER Logo Footer"
+    }
+  ]
+}

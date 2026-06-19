@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events &amp; Webinars — DIGI-METER</title>
+  <meta name="description" content="DIGI-METER project events: consortium meetings, international webinars, pilot workshops, policy roundtables, and dissemination conferences across Europe.">
+  <link rel="icon" type="image/png" href="assets/logo-digimeter.png">
+  <link rel="stylesheet" href="css/style.css?v=20260612l">
+  <style>
+    .page-hero {
+      background-color: var(--c-charcoal);
+      background-image:
+        radial-gradient(ellipse 60% 70% at 100% 0%, rgba(83,200,234,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 50% at 0% 100%, rgba(115,64,153,0.10) 0%, transparent 60%),
+        linear-gradient(to right, rgba(13,24,43,0.97) 0%, rgba(13,24,43,0.85) 45%, rgba(13,24,43,0.28) 100%),
+        url(assets/photos/creative-teamwork-in-modern.jpg);
+      background-size: auto, auto, auto, cover;
+      background-position: 0 0, 0 0, 0 0, center right;
+      padding: clamp(60px, 8vw, 110px) 0 clamp(40px, 5vw, 70px);
+    }
+    .page-hero-eyebrow { font-family: var(--ff-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--c-sky); font-weight: 700; display: block; margin-bottom: 16px; }
+    .page-hero h1 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 800; color: #fff; line-height: 1.15; margin: 0 0 16px; }
+    .page-hero p { font-size: clamp(0.95rem, 1.5vw, 1.1rem); color: rgba(255,255,255,0.65); max-width: 660px; line-height: 1.6; }
+    .page-breadcrumb { font-family: var(--ff-mono); font-size: 0.68rem; color: rgba(255,255,255,0.68); margin-bottom: 24px; display: flex; gap: 8px; align-items: center; }
+    .page-breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .page-breadcrumb a:hover { color: var(--c-sky); }
+    .page-breadcrumb span { color: rgba(255,255,255,0.6); }
+
+    /* Tab bar */
+    .tab-bar { display: flex; gap: 0; border-bottom: 2px solid rgba(13,24,43,0.08); margin-bottom: var(--space-l); }
+    .tab-btn { font-family: var(--ff-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; padding: 12px 20px; background: none; border: none; border-bottom: 2px solid transparent; margin-bottom: -2px; cursor: pointer; color: var(--c-slate); transition: all 0.15s; }
+    .tab-btn.active { color: var(--c-charcoal); border-bottom-color: var(--c-charcoal); font-weight: 700; }
+    .tab-btn:hover:not(.active) { color: var(--c-charcoal); }
+
+    /* Event card - list style */
+    .events-list { display: flex; flex-direction: column; gap: 20px; }
+    .event-card { background: #fff; border: 1px solid rgba(13,24,43,0.07); border-radius: 14px; padding: 28px; display: flex; gap: 24px; align-items: flex-start; transition: box-shadow 0.2s; }
+    .event-card:hover { box-shadow: 0 8px 30px -8px rgba(13,24,43,0.12); }
+    .event-date-block { display: flex; flex-direction: column; align-items: center; min-width: 60px; background: rgba(83,200,234,0.07); border: 1px solid rgba(83,200,234,0.18); border-radius: 10px; padding: 10px 8px; }
+    .event-date-block .ed-day { font-size: 1.6rem; font-weight: 800; color: var(--c-charcoal); font-family: var(--ff-mono); line-height: 1; }
+    .event-date-block .ed-mon { font-family: var(--ff-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--c-sky); margin-top: 2px; }
+    .event-date-block .ed-year { font-family: var(--ff-mono); font-size: 0.58rem; color: var(--c-slate); }
+    .event-body { flex: 1; }
+    .event-body .ev-meta { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; align-items: center; }
+    .ev-type-tag { font-family: var(--ff-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; padding: 3px 10px; border-radius: 20px; font-weight: 700; }
+    .ev-type-tag.meeting { background: rgba(115,64,153,0.1); border: 1px solid rgba(115,64,153,0.2); color: var(--c-purple); }
+    .ev-type-tag.webinar { background: rgba(83,200,234,0.1); border: 1px solid rgba(83,200,234,0.22); color: var(--c-charcoal); }
+    .ev-type-tag.conference { background: rgba(13,24,43,0.07); border: 1px solid rgba(13,24,43,0.14); color: var(--c-slate); }
+    .ev-type-tag.workshop { background: rgba(40,180,100,0.1); border: 1px solid rgba(40,180,100,0.22); color: #1a7a40; }
+    .ev-location { font-family: var(--ff-mono); font-size: 0.65rem; color: var(--c-slate); display: flex; align-items: center; gap: 4px; }
+    .event-body h3 { font-size: 1rem; font-weight: 700; color: var(--c-charcoal); margin: 0 0 6px; line-height: 1.35; }
+    .event-body p { font-size: 1rem; color: var(--c-slate); margin: 0; line-height: 1.6; }
+    .event-body .ev-register { margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    .ev-status-pill { font-family: var(--ff-mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 12px; border-radius: 20px; }
+    .ev-status-pill.upcoming { background: rgba(83,200,234,0.1); color: var(--c-charcoal); border: 1px solid rgba(83,200,234,0.25); }
+    .ev-status-pill.past { background: rgba(13,24,43,0.06); color: var(--c-slate); border: 1px solid rgba(13,24,43,0.12); }
+
+    /* Photo strip */
+    .photo-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: var(--space-l); }
+    @media (max-width: 768px) { .photo-strip { grid-template-columns: repeat(2, 1fr); } }
+    .photo-strip-item { border-radius: 10px; overflow: hidden; aspect-ratio: 4/3; }
+    .photo-strip-item img { width: 100%; height: 100%; object-fit: cover; }
+
+    html.high-contrast .event-card { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.12); }
+    html.high-contrast .event-body h3 { color: #fff; }
+    html.high-contrast .tab-btn.active { color: #fff; border-bottom-color: var(--c-sky); }
+    html.high-contrast .event-date-block { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.15); }
+    html.high-contrast .event-date-block .ed-day { color: #fff; }
+    /* HC: status pills, type tags and meta text are white on the dark event card */
+    html.high-contrast .ev-status-pill,
+    html.high-contrast .ev-type-tag,
+    html.high-contrast .ev-location,
+    html.high-contrast .event-date-block .ed-mon,
+    html.high-contrast .event-date-block .ed-year { color: #fff !important; }
+    html.high-contrast .ev-status-pill,
+    html.high-contrast .ev-type-tag { border-color: rgba(255,255,255,0.4) !important; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <div class="top-bar" id="top-utility-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <div class="eu-badge-header" role="img" aria-label="Co-funded by the European Union logo">
+          <svg class="eu-flag-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" aria-hidden="true" focusable="false"><rect width="36" height="24" fill="#003399"/><g fill="#FFCC00"><polygon transform="translate(18,4)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(26,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(18,20)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(10,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/></g></svg>
+          <span class="eu-text">Co-funded by the<br>European Union</span>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="a11y-widget" aria-label="Accessibility controls">
+          <button class="a11y-btn" id="contrast-toggle" aria-pressed="false" title="Toggle High Contrast Theme">High Contrast</button>
+          <button class="a11y-btn" id="size-decrease" aria-label="Decrease text size">A-</button>
+          <button class="a11y-btn" id="size-increase" aria-label="Increase text size">A+</button>
+        </div>
+        <!-- Language Selector (project languages — confirm final list with consortium) -->
+        <div class="language-selector">
+          <label for="lang-select" class="sr-only">Select language</label>
+          <select id="lang-select" aria-label="Select language">
+            <option value="en" selected>EN — English</option>
+            <option value="el">EL — Ελληνικά</option>
+            <option value="de">DE — Deutsch</option>
+            <option value="fr">FR — Français</option>
+            <option value="it">IT — Italiano</option>
+            <option value="pt">PT — Português</option>
+            <option value="nl">NL — Nederlands</option>
+          </select>
+        </div>
+
+        <form class="search-box" role="search" onsubmit="event.preventDefault(); showToast(\'Site search will be available at launch.\', \'info\');">
+          <input type="search" class="search-input" placeholder="Search site..." aria-label="Search content">
+          <button type="submit" class="search-btn" aria-label="Submit search">🔍</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo"><img src="assets/logo-digimeter.png" alt="DIGI-METER Logo"></a>
+      <nav class="main-nav" aria-label="Main site navigation">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="news.html" class="nav-link">News</a>
+        <a href="outputs.html" class="nav-link">Outputs</a>
+        <a href="events.html" class="nav-link active">Events</a>
+        <a href="partners.html" class="nav-link">Partners</a>
+        <a href="platform.html" class="nav-link">Platform</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-cta"><a href="contact.html" class="btn btn-primary" style="padding: 0.58rem 1.4rem; font-size: 1rem;">Subscribe</a></div>
+      <button class="burger-menu" id="burger-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav-panel">
+        <span class="burger-bar" style="background-color: #fff;"></span><span class="burger-bar" style="background-color: #fff;"></span><span class="burger-bar" style="background-color: #fff;"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav-panel" id="mobile-nav-panel">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close navigation menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <ul class="mobile-menu">
+      <li><a href="about.html" class="mobile-link">About the Project</a></li>
+      <li><a href="outputs.html" class="mobile-link">Outputs &amp; Resources</a></li>
+      <li><a href="events.html" class="mobile-link">Events &amp; Webinars</a></li>
+      <li><a href="partners.html" class="mobile-link">Consortium Partners</a></li>
+      <li><a href="platform.html" class="mobile-link">Platform Access</a></li>
+      <li><a href="news.html" class="mobile-link">News &amp; Updates</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact Us</a></li>
+    </ul>
+    <div class="mobile-cta"><a href="contact.html" class="btn btn-primary" style="width:100%; text-align:center;">Subscribe</a></div>
+  </div>
+
+  <main id="main-content">
+
+    <section class="page-hero">
+      <div class="container">
+        <nav class="page-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span>›</span><span>Events &amp; Webinars</span>
+        </nav>
+        <span class="page-hero-eyebrow">Project Calendar</span>
+        <h1>Events &amp;<br>Webinars</h1>
+        <p>Consortium meetings, public webinars, stakeholder workshops, policy roundtables, and our final dissemination conference — all listed here as they are confirmed.</p>
+      </div>
+    </section>
+
+    <section class="section section-pad section-light">
+      <div class="container">
+
+        <h2 class="sr-only">Event calendar</h2>
+        <div class="tab-bar" role="group" aria-label="Filter events">
+          <button class="tab-btn active" aria-pressed="true" onclick="switchTab('upcoming', this)">Upcoming</button>
+          <button class="tab-btn" aria-pressed="false" onclick="switchTab('past', this)">Past Events</button>
+          <button class="tab-btn" aria-pressed="false" onclick="switchTab('all', this)">All Events</button>
+        </div>
+
+        <div class="events-list" id="events-list">
+
+          <!-- Kickoff meeting (past) -->
+          <div class="event-card" data-status="past">
+            <div class="event-date-block">
+              <div class="ed-day" style="font-size:0.85rem;">TBC</div>
+              <div class="ed-mon">Mar</div>
+              <div class="ed-year">2026</div>
+            </div>
+            <div class="event-body">
+              <div class="ev-meta">
+                <span class="ev-type-tag meeting">Consortium Meeting</span>
+                <span class="ev-location"><span aria-hidden="true">📍</span><span class="sr-only">Location: </span>Nicosia, Cyprus</span>
+              </div>
+              <h3>DIGI-METER Kickoff Meeting — M1</h3>
+              <p>[Short description — to be provided before publication]</p>
+              <div class="ev-register">
+                <span class="ev-status-pill past">Completed</span>
+                <a href="news.html" style="font-size: 1rem; color: #1a7fa0; font-weight: 600; text-decoration: underline;">Summary will be published in News →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Webinar 1 (upcoming) -->
+          <div class="event-card" data-status="upcoming">
+            <div class="event-date-block">
+              <div class="ed-day" style="font-size:0.85rem;">TBC</div>
+              <div class="ed-mon">Jun</div>
+              <div class="ed-year">2026</div>
+            </div>
+            <div class="event-body">
+              <div class="ev-meta">
+                <span class="ev-type-tag webinar">Public Webinar</span>
+                <span class="ev-location"><span aria-hidden="true">🌐</span><span class="sr-only">Format: </span>Online · Zoom</span>
+              </div>
+              <h3>Webinar #1: DigComp 2.2 in Practice — From Descriptors to Measurable Indicators</h3>
+              <p>[Short description — to be provided before publication]</p>
+              <div class="ev-register">
+                <span class="ev-status-pill upcoming">Coming Soon</span>
+                <button class="btn btn-primary" style="padding: 7px 18px; font-size: 1rem;" onclick="showToast('Webinar registration will open shortly. Subscribe for notification.', 'info')">Register Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Transnational meeting (upcoming) -->
+          <div class="event-card" data-status="upcoming">
+            <div class="event-date-block">
+              <div class="ed-day" style="font-size:0.85rem;">TBC</div>
+              <div class="ed-mon">Sep</div>
+              <div class="ed-year">2026</div>
+            </div>
+            <div class="event-body">
+              <div class="ev-meta">
+                <span class="ev-type-tag meeting">Transnational Meeting</span>
+                <span class="ev-location"><span aria-hidden="true">📍</span><span class="sr-only">Location: </span>[Location TBC]</span>
+              </div>
+              <h3>Transnational Meeting #1 — Framework Validation Workshop</h3>
+              <p>[Short description — to be provided before publication]</p>
+              <div class="ev-register">
+                <span class="ev-status-pill upcoming">Consortium Only</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Webinar 2 (upcoming) -->
+          <div class="event-card" data-status="upcoming">
+            <div class="event-date-block">
+              <div class="ed-day" style="font-size:0.85rem;">TBC</div>
+              <div class="ed-mon">Dec</div>
+              <div class="ed-year">2026</div>
+            </div>
+            <div class="event-body">
+              <div class="ev-meta">
+                <span class="ev-type-tag webinar">Public Webinar</span>
+                <span class="ev-location"><span aria-hidden="true">🌐</span><span class="sr-only">Format: </span>Online · Zoom</span>
+              </div>
+              <h3>Webinar #2: Ethics &amp; AI in Educational Assessment — What Schools Need to Know</h3>
+              <p>[Short description — to be provided before publication]</p>
+              <div class="ev-register">
+                <span class="ev-status-pill upcoming">Coming Soon</span>
+                <button class="btn btn-outline-dark" style="padding: 7px 18px; font-size: 1rem;" onclick="showToast('Subscribe to be notified when registration opens.', 'info')">Get Notified</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pilot Workshop -->
+          <div class="event-card" data-status="upcoming">
+            <div class="event-date-block">
+              <div class="ed-day" style="font-size:0.85rem;">TBC</div>
+              <div class="ed-mon">Mar</div>
+              <div class="ed-year">2027</div>
+            </div>
+            <div class="event-body">
+              <div class="ev-meta">
+                <span class="ev-type-tag workshop">Pilot Workshop</span>
+                <span class="ev-location"><span aria-hidden="true">📍</span><span class="sr-only">Location: </span>[Location TBC]</span>
+              </div>
+              <h3>Pilot Launch Workshop — Schools &amp; VET Pilot Partners</h3>
+              <p>[Short description — to be provided before publication]</p>
+              <div class="ev-register">
+                <span class="ev-status-pill upcoming">By Invitation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Policy Roundtable -->
+          <div class="event-card" data-status="upcoming">
+            <div class="event-date-block">
+              <div class="ed-day" style="font-size:0.85rem;">TBC</div>
+              <div class="ed-mon">Nov</div>
+              <div class="ed-year">2027</div>
+            </div>
+            <div class="event-body">
+              <div class="ev-meta">
+                <span class="ev-type-tag conference">Policy Roundtable</span>
+                <span class="ev-location"><span aria-hidden="true">📍</span><span class="sr-only">Location: </span>[Location TBC]</span>
+              </div>
+              <h3>EU Digital Competence Policy Roundtable — Mid-Project Findings</h3>
+              <p>[Short description — to be provided before publication]</p>
+              <div class="ev-register">
+                <span class="ev-status-pill upcoming">By Invitation</span>
+                <button class="btn btn-outline-dark" style="padding: 7px 18px; font-size: 1rem;" onclick="showToast('Register your interest in attending via our contact form.', 'info')">Express Interest</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Final Conference -->
+          <div class="event-card" data-status="upcoming">
+            <div class="event-date-block">
+              <div class="ed-day" style="font-size:0.85rem;">TBC</div>
+              <div class="ed-mon">May</div>
+              <div class="ed-year">2029</div>
+            </div>
+            <div class="event-body">
+              <div class="ev-meta">
+                <span class="ev-type-tag conference">Final Conference</span>
+                <span class="ev-location"><span aria-hidden="true">📍</span><span class="sr-only">Location: </span>[Location TBC]</span>
+              </div>
+              <h3>DIGI-METER Final Dissemination Conference</h3>
+              <p>[Short description — to be provided before publication]</p>
+              <div class="ev-register">
+                <span class="ev-status-pill upcoming">Planned · 2029</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Photo strip -->
+        <div class="photo-strip">
+          <div class="photo-strip-item">
+            <img src="assets/photos/multiracial-coworkers-gathered-at.jpg" alt="Diverse team gathered at a conference table">
+          </div>
+          <div class="photo-strip-item">
+            <img src="assets/photos/business-meeting-with-analytics.jpg" alt="Business meeting with analytics presentation">
+          </div>
+          <div class="photo-strip-item">
+            <img src="assets/photos/people-learning-together-in.jpg" alt="People learning together in an office setting">
+          </div>
+          <div class="photo-strip-item">
+            <img src="assets/photos/focused-professionals-collaborating-on.jpg" alt="Professionals collaborating on a tablet and laptop">
+          </div>
+        </div>
+
+        <!-- Subscribe CTA -->
+        <div style="margin-top: var(--space-xl); background: var(--c-charcoal); border-radius: 16px; padding: clamp(32px, 4vw, 52px); display: flex; gap: var(--space-m); flex-wrap: wrap; align-items: center; justify-content: space-between;">
+          <div>
+            <div style="font-family: var(--ff-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--c-sky); margin-bottom: 8px;">Event Updates</div>
+            <h3 style="color: #fff; font-size: 1.2rem; font-weight: 700; margin: 0 0 6px;">Never Miss an Event</h3>
+            <p style="color: rgba(255,255,255,0.7); font-size: 1rem; margin: 0;">Subscribe to the DIGI-METER newsletter for event announcements and registration links.</p>
+          </div>
+          <a href="contact.html" class="btn btn-primary" style="white-space: nowrap;">Subscribe to Newsletter</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="section site-footer section-pad-sm" id="site-footer">
+    <div class="container block" style="gap: var(--space-m);">
+      <div class="footer-top-row">
+        <div class="footer-brand-col block">
+          <div class="footer-brand-logo"><img src="assets/logo-digimeter.png" alt="DIGI-METER Logo Footer"></div>
+          <p class="footer-p">Measuring Digital Competence for Resilient Learning Ecosystems. An Erasmus+ Forward-Looking project.</p>
+          <!-- Project social media links to be added once channels are confirmed by the consortium -->
+        </div>
+        <div class="footer-nav-col block" style="gap:12px;">
+          <h3 class="text-white" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em;">Quick Links</h3>
+          <ul class="footer-list">
+            <li><a href="about.html">About the Project</a></li>
+            <li><a href="partners.html">Consortium Partners</a></li>
+            <li><a href="outputs.html">Outputs &amp; Resources</a></li>
+            <li><a href="events.html">Events &amp; Webinars</a></li>
+            <li><a href="platform.html">Platform Access</a></li>
+            <li><a href="news.html">News &amp; Updates</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter-col block" style="gap:12px;">
+          <h3 class="text-white" style="font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em;">This Website</h3>
+          <p class="footer-p" style="font-size: 1rem;">This website is designed, hosted, and operated by Outside Media &amp; Knowledge (Germany).</p>
+          <div style="font-size:0.75rem;"><strong><a href="https://outsidemedia.eu/" style="color:inherit; text-decoration:none;">Outside Media &amp; Knowledge</a></strong></div>
+        </div>
+      </div>
+      <div class="footer-disclaimer-box">
+        <div class="footer-disclaimer-flag"><svg class="eu-flag-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24" aria-hidden="true"><rect width="36" height="24" fill="#003399"/><g fill="#FFCC00"><polygon transform="translate(18,4)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(26,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(24.93,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(22,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(18,20)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,18.93)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,16)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(10,12)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(11.07,8)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/><polygon transform="translate(14,5.07)" points="0,-1.4 0.32,-0.44 1.33,-0.43 0.52,0.17 0.82,1.13 0,0.55 -0.82,1.13 -0.52,0.17 -1.33,-0.43 -0.32,-0.44"/></g></svg></div>
+        <div class="footer-disclaimer-text">Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Education and Culture Executive Agency (EACEA). Neither the European Union nor EACEA can be held responsible for them. (Project Number: 101259860)</div>
+      </div>
+      <div class="footer-bottom-row">
+        <span>© 2026 DIGI-METER Consortium. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="cookies.html">Cookie Policy</a>
+          <a href="impressum.html">Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=20260612l"></script>
+  <script>
+    function switchTab(type, btn) {
+      document.querySelectorAll('.tab-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
+      btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
+      document.querySelectorAll('.event-card').forEach(card => {
+        if (type === 'all' || card.dataset.status === type) card.style.display = '';
+        else card.style.display = 'none';
+      });
+    }
+  </script>
+</body>
+</html>
