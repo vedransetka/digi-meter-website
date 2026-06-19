@@ -2,6 +2,7 @@ backend:
   name: github
   repo: vedransetka/digi-meter-website
   branch: main
+  auth_methods: [token]
 
 media_folder: html output/assets/uploads
 public_folder: /assets/uploads
